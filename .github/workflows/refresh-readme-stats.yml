@@ -1,0 +1,58 @@
+name: Refresh README GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Update stats cache buster
+        env:
+          STATS_CACHE_BUST: ${{ github.run_id }}
+        run: |
+          python <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          readme = Path("README.md")
+          cache_bust = os.environ["STATS_CACHE_BUST"]
+          content = readme.read_text()
+
+          def refresh_stats_url(match):
+              url = match.group(0)
+              if "cache_bust=" in url:
+                  return re.sub(r"cache_bust=\d+", f"cache_bust={cache_bust}", url)
+              separator = "&" if "?" in url else "?"
+              return f"{url}{separator}cache_bust={cache_bust}"
+
+          updated = re.sub(
+              r"https://github-readme-stats\.vercel\.app/[^\"<>\s]+",
+              refresh_stats_url,
+              content,
+          )
+          readme.write_text(updated)
+          PY
+
+      - name: Commit refreshed stats URLs
+        run: |
+          if git diff --quiet README.md; then
+            echo "README stats URLs are already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Refresh README GitHub stats"
+          git push
