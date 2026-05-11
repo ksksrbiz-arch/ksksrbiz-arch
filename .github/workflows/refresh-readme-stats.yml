@@ -32,7 +32,7 @@ jobs:
           def refresh_stats_url(match):
               url = match.group(0)
               if "cache_bust=" in url:
-                  return re.sub(r"cache_bust=[^&\"<>\s]+", f"cache_bust={cache_bust}", url)
+                  return re.sub(r"cache_bust=[^&]+", f"cache_bust={cache_bust}", url)
               separator = "&" if "?" in url else "?"
               return f"{url}{separator}cache_bust={cache_bust}"
 
