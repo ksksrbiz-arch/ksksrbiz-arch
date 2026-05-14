@@ -4,11 +4,9 @@ on:
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [refresh-profile-readme-stats]
   push:
-    branches: [ main ]
-    paths:
-      - README.md
-      - .github/workflows/refresh-readme-stats.yml
 
 permissions:
   contents: write
