@@ -15,8 +15,8 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
 ### 📈 GitHub Stats (Auto-Updating)
 
 <p>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ksksrbiz-arch&show_icons=true&hide_border=true&include_all_commits=true&cache_bust=25956763014" alt="GitHub stats for ksksrbiz-arch">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&hide_border=true&cache_bust=25956763014" alt="Top languages for ksksrbiz-arch">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ksksrbiz-arch&show_icons=true&hide_border=true&include_all_commits=true&cache_bust=25985637558" alt="GitHub stats for ksksrbiz-arch">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&hide_border=true&cache_bust=25985637558" alt="Top languages for ksksrbiz-arch">
 </p>
 
 <!--
