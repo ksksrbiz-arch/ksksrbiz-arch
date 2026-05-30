@@ -33,13 +33,13 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
 ### 📈 GitHub Stats (Auto-Updating)
 
 <!--
-  STATS HOST: to use your own self-hosted github-readme-stats instance,
-  replace "github-readme-stats.vercel.app" in the two URLs below with your
-  Vercel domain (e.g. "ksksrbiz-stats.vercel.app"). See docs/SELF_HOST_STATS.md.
+  STATS HOST: rendered from a self-hosted github-readme-stats instance.
+  To change it, replace "github-stats-pi-tawny.vercel.app" in the two URLs
+  below with your Vercel domain. See docs/SELF_HOST_STATS.md.
 -->
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ksksrbiz-arch&show_icons=true&hide_border=true&include_all_commits=true&cache_bust=26691299631" alt="GitHub stats for ksksrbiz-arch">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&hide_border=true&cache_bust=26691299631" alt="Top languages for ksksrbiz-arch">
+  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&hide_border=true&include_all_commits=true&cache_bust=26691299631" alt="GitHub stats for ksksrbiz-arch">
+  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&hide_border=true&cache_bust=26691299631" alt="Top languages for ksksrbiz-arch">
 </p>
 
 ### 🔥 Streak
