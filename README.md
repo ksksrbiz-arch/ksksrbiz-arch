@@ -69,10 +69,35 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
 </p>
 
-## 🔭 Current Focus
+### 🧬 Profile Summary
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ksksrbiz-arch&theme=github_dark" alt="Profile details" width="80%">
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ksksrbiz-arch&theme=github_dark" alt="Repos per language" height="200em">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ksksrbiz-arch&theme=github_dark" alt="Most commit language" height="200em">
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ksksrbiz-arch&theme=github_dark&utcOffset=-7" alt="Productive time" height="200em">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ksksrbiz-arch&theme=github_dark" alt="Stats" height="200em">
+</p>
+
+### 💬 Dev Quote of the Moment
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random dev quote">
+</p>
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="https://1commerce.online/"><img src="https://img.shields.io/badge/Website-1commerce.online-58A6FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
+  <a href="https://1commerce.shop/"><img src="https://img.shields.io/badge/Shop-1commerce.shop-FF9900?style=for-the-badge&logo=shopify&logoColor=white" alt="Shop"></a>
+  <a href="https://www.linkedin.com/in/1commerce-future"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.youtube.com/@The-0neCommerce"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://www.facebook.com/EnterpriseDevNW"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+</p>
 
 <!-- Animated wave footer -->
 <p align="center">
