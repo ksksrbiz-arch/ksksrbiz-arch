@@ -1,3 +1,8 @@
+<!-- Animated Claude pet -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg" alt="Claude animated pet" width="200" height="200">
+</p>
+
 <!-- Animated wave header -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Hi%20there%20%F0%9F%91%8B&fontSize=60&fontAlignY=35&animation=fadeIn&desc=Welcome%20to%20my%20profile&descAlignY=58&descSize=18" alt="header banner" width="100%">

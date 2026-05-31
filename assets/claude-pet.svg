@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Claude animated pet">
+  <style>
+    /* gentle idle bob for the whole character */
+    .pet      { animation: bob 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+    /* squash-n-stretch on the body */
+    .body     { animation: breathe 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+    /* eyes blink */
+    .eye      { animation: blink 4.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    /* waving arm */
+    .arm-wave { animation: wave 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: 90% 90%; }
+    /* slow spin of the Anthropic sunburst */
+    .burst    { animation: spin 14s linear infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    /* twinkling sparkles */
+    .spark    { animation: twinkle 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    .spark.s2 { animation-delay: .8s; }
+    .spark.s3 { animation-delay: 1.6s; }
+    /* soft shadow pulse */
+    .shadow   { animation: shadow 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+
+    @keyframes bob      { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+    @keyframes breathe  { 0%,100% { transform: scale(1,1); } 50% { transform: scale(1.03,0.97); } }
+    @keyframes blink    { 0%,8%,100% { transform: scaleY(1); } 4% { transform: scaleY(0.12); } 92% { transform: scaleY(1); } 96% { transform: scaleY(0.12); } }
+    @keyframes wave     { 0%,100% { transform: rotate(0deg); } 25% { transform: rotate(18deg); } 50% { transform: rotate(-8deg); } 75% { transform: rotate(18deg); } }
+    @keyframes spin     { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes twinkle  { 0%,100% { opacity: .15; transform: scale(.6); } 50% { opacity: 1; transform: scale(1); } }
+    @keyframes shadow   { 0%,100% { transform: scale(1); opacity:.35; } 50% { transform: scale(.82); opacity:.2; } }
+  </style>
+
+  <defs>
+    <radialGradient id="bodyGrad" cx="38%" cy="32%" r="80%">
+      <stop offset="0%"  stop-color="#F4A28C"/>
+      <stop offset="55%" stop-color="#D97757"/>
+      <stop offset="100%" stop-color="#C25B3C"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse class="shadow" cx="120" cy="214" rx="52" ry="11" fill="#000000"/>
+
+  <!-- sparkles -->
+  <g fill="#FFD9A0">
+    <path class="spark s1" d="M40 60 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+    <path class="spark s2" d="M198 50 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+    <path class="spark s3" d="M205 140 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+  </g>
+
+  <g class="pet">
+    <!-- waving arm (behind body) -->
+    <g class="arm-wave">
+      <path d="M171 120 q26 -6 30 -28" stroke="#C25B3C" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <circle cx="201" cy="90" r="9" fill="#D97757"/>
+    </g>
+
+    <!-- left arm -->
+    <path d="M69 122 q-22 4 -26 24" stroke="#C25B3C" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <circle cx="43" cy="148" r="9" fill="#D97757"/>
+
+    <!-- body -->
+    <g class="body">
+      <path d="M120 44
+               c44 0 66 30 66 76
+               c0 44 -26 74 -66 74
+               c-40 0 -66 -30 -66 -74
+               c0 -46 22 -76 66 -76 z" fill="url(#bodyGrad)"/>
+
+      <!-- little feet -->
+      <ellipse cx="98"  cy="196" rx="15" ry="9" fill="#C25B3C"/>
+      <ellipse cx="142" cy="196" rx="15" ry="9" fill="#C25B3C"/>
+
+      <!-- Anthropic-style sunburst on belly -->
+      <g class="burst" fill="#FBEFE3" opacity="0.95">
+        <g transform="translate(120 118)">
+          <g>
+            <rect x="-3.5" y="-30" width="7" height="60" rx="3.5"/>
+            <rect x="-3.5" y="-30" width="7" height="60" rx="3.5" transform="rotate(45)"/>
+            <rect x="-3.5" y="-30" width="7" height="60" rx="3.5" transform="rotate(90)"/>
+            <rect x="-3.5" y="-30" width="7" height="60" rx="3.5" transform="rotate(135)"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- face -->
+      <g transform="translate(0 -2)">
+        <!-- eyes -->
+        <circle class="eye" cx="100" cy="92" r="8.5" fill="#2B1B14"/>
+        <circle class="eye" cx="140" cy="92" r="8.5" fill="#2B1B14"/>
+        <!-- eye shines -->
+        <circle cx="103" cy="89" r="2.6" fill="#fff"/>
+        <circle cx="143" cy="89" r="2.6" fill="#fff"/>
+        <!-- blush -->
+        <ellipse cx="90"  cy="108" rx="8" ry="4.5" fill="#F4A28C" opacity="0.7"/>
+        <ellipse cx="150" cy="108" rx="8" ry="4.5" fill="#F4A28C" opacity="0.7"/>
+        <!-- smile -->
+        <path d="M108 108 q12 12 24 0" stroke="#2B1B14" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
