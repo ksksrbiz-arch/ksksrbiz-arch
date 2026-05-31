@@ -30,6 +30,14 @@
 
 _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
 
+### 🐍 Snake Eating My Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/snake-output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/snake-output/github-snake.svg">
+  <img alt="Snake animation eating the contribution graph" src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/snake-output/github-snake.svg" width="100%">
+</picture>
+
 ### 📈 GitHub Stats (Auto-Updating)
 
 <!--
@@ -56,17 +64,14 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
 
 ### 🛠️ Tech Stack
 
-<!-- Edit this list to match your stack. Badges from shields.io (very reliable). -->
+<!--
+  Tech icons via skillicons.dev. Edit the ?i= list to match your stack.
+  Icon reference: https://skillicons.dev
+-->
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,python,postgres,supabase,tailwind,vercel,docker,git,github&perline=13" alt="Tech stack">
+  </a>
 </p>
 
 ### 🧬 Profile Summary
@@ -96,7 +101,7 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <a href="https://1commerce.shop/"><img src="https://img.shields.io/badge/Shop-1commerce.shop-FF9900?style=for-the-badge&logo=shopify&logoColor=white" alt="Shop"></a>
   <a href="https://www.linkedin.com/in/1commerce-future"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://www.youtube.com/@The-0neCommerce"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
-  <a href="https://www.facebook.com/EnterpriseDevNW"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+  <a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
 </p>
 
 <!-- Animated wave footer -->
