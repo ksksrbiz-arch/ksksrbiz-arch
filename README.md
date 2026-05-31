@@ -1,6 +1,6 @@
-<!-- Animated wave header -->
+<!-- Animated 1COMMERCE rainbow header (self-contained SVG; CSS animates inside it) -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E1814,60:C25B3C,100:D97757&height=200&section=header&text=Keith%20Skaggs&fontColor=F5F0E8&fontSize=58&fontAlignY=36&animation=fadeIn&desc=Building%20with%20Claude%20Code&descAlignY=58&descSize=18&descColor=F4A28C" alt="header banner" width="100%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/header-1commerce.svg?v=1" alt="1COMMERCE" width="100%">
 </p>
 
 <!-- Claude Code terminal — cycles through build / commit / test / deploy scenes -->

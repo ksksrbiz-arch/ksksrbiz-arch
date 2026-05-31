@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="1COMMERCE animated header">
+  <style>
+    /* continuous, smooth rainbow hue-cycle of the gradient background */
+    .rainbow { animation: hue 9s linear infinite; transform-box: fill-box; }
+    /* slow horizontal drift of the gradient for extra motion */
+    .drift   { animation: slide 12s linear infinite; }
+    /* gentle shimmer on the wordmark */
+    .word    { animation: shimmer 6s ease-in-out infinite; }
+    /* twinkle on the sparkle accents */
+    .spark   { animation: twinkle 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    .spark.b { animation-delay: 1.5s; }
+
+    @keyframes hue     { from { filter: hue-rotate(0deg); } to { filter: hue-rotate(360deg); } }
+    @keyframes slide   { from { transform: translateX(0); } to { transform: translateX(-300px); } }
+    @keyframes shimmer { 0%,100% { opacity:.92; } 50% { opacity:1; } }
+    @keyframes twinkle { 0%,100% { opacity:.2; transform: scale(.7);} 50% { opacity:1; transform: scale(1);} }
+  </style>
+
+  <defs>
+    <!-- wide rainbow gradient (extra stops so the horizontal drift loops seamlessly) -->
+    <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00" stop-color="#ff0040"/>
+      <stop offset="0.14" stop-color="#ff8c00"/>
+      <stop offset="0.28" stop-color="#ffe600"/>
+      <stop offset="0.42" stop-color="#36d97a"/>
+      <stop offset="0.56" stop-color="#00b3ff"/>
+      <stop offset="0.70" stop-color="#5b6bff"/>
+      <stop offset="0.84" stop-color="#b14bff"/>
+      <stop offset="1.00" stop-color="#ff0040"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="1200" height="200" rx="0"/></clipPath>
+  </defs>
+
+  <!-- animated rainbow background -->
+  <g clip-path="url(#card)">
+    <g class="rainbow">
+      <rect class="drift" x="-300" y="0" width="1800" height="200" fill="url(#rainbow)"/>
+    </g>
+    <!-- darkening overlay for text legibility -->
+    <rect x="0" y="0" width="1200" height="200" fill="#000000" opacity="0.28"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#ffffff">
+    <path class="spark a" d="M150 56 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z"/>
+    <path class="spark b" d="M1040 120 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+  </g>
+
+  <!-- wordmark -->
+  <g class="word" font-family="'Segoe UI',Helvetica,Arial,sans-serif" text-anchor="middle">
+    <text x="600" y="108" font-size="78" font-weight="800" letter-spacing="10" fill="#FFFFFF"
+          style="paint-order:stroke" stroke="#000000" stroke-opacity="0.18" stroke-width="2">1COMMERCE</text>
+    <text x="600" y="150" font-size="22" font-weight="600" letter-spacing="7" fill="#F5F0E8" opacity="0.95">COMMERCE · SIMPLIFIED</text>
+  </g>
+
+  <!-- coral wave to blend into the coral-themed UI below -->
+  <path fill="#D97757" d="M0,196 C200,236 420,236 620,212 C820,188 1010,176 1200,206 L1200,260 L0,260 Z"/>
+  <path fill="#C25B3C" opacity="0.6" d="M0,214 C220,250 430,246 640,226 C840,208 1020,200 1200,224 L1200,260 L0,260 Z"/>
+</svg>
