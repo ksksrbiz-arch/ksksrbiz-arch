@@ -28,14 +28,6 @@
 
 _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
 
-### 🐍 Snake Eating My Contributions
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/snake-output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/snake-output/github-snake.svg">
-  <img alt="Snake animation eating the contribution graph" src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/snake-output/github-snake.svg" width="100%">
-</picture>
-
 ### 📈 GitHub Stats (Auto-Updating)
 
 <!--
