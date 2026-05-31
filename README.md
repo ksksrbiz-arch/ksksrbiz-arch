@@ -1,25 +1,18 @@
-<!-- Animated wave header -->
+<!-- Animated 1COMMERCE rainbow header (self-contained SVG; CSS animates inside it) -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Hi%20there%20%F0%9F%91%8B&fontSize=60&fontAlignY=35&animation=fadeIn&desc=Welcome%20to%20my%20profile&descAlignY=58&descSize=18" alt="header banner" width="100%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/header-1commerce.svg?v=1" alt="1COMMERCE" width="100%">
 </p>
 
-<!-- Claude Code terminal mascot, side-by-side with the typing tagline -->
-<table align="center"><tr>
-  <td valign="middle" align="center" width="380">
-    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg" alt="Claude Code terminal" width="360">
-  </td>
-  <td valign="middle" align="center" width="420">
-    <a href="https://github.com/ksksrbiz-arch">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=400&height=120&lines=Building+cool+things+%F0%9F%9A%80;Shipping+with+Claude+Code+%E2%9A%A1;Always+learning+something+new+%F0%9F%8C%B1;Open+source+enthusiast+%E2%9C%A8" alt="Typing SVG">
-    </a>
-  </td>
-</tr></table>
+<!-- Claude Code terminal — cycles through build / commit / test / deploy scenes -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg?v=3" alt="Claude Code terminal" width="520">
+</p>
 
 <!-- Profile views + followers -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=Profile%20views&color=58A6FF&style=flat" alt="Profile views">
+  <img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=Profile%20views&color=D97757&style=flat" alt="Profile views">
   <a href="https://github.com/ksksrbiz-arch?tab=followers">
-    <img src="https://img.shields.io/github/followers/ksksrbiz-arch?label=Followers&style=flat&color=58A6FF" alt="Followers">
+    <img src="https://img.shields.io/github/followers/ksksrbiz-arch?label=Followers&style=flat&color=D97757" alt="Followers">
   </a>
 </p>
 
@@ -51,20 +44,20 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   below with your Vercel domain. See docs/SELF_HOST_STATS.md.
 -->
 <p align="center">
-  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&hide_border=true&include_all_commits=true&cache_bust=26691299631" alt="GitHub stats for ksksrbiz-arch">
-  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&hide_border=true&cache_bust=26691299631" alt="Top languages for ksksrbiz-arch">
+  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&include_all_commits=true&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&icon_color=D97757&border_color=D97757&cache_bust=26691299631" alt="GitHub stats for ksksrbiz-arch">
+  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&border_color=D97757&cache_bust=26691299631" alt="Top languages for ksksrbiz-arch">
 </p>
 
 ### 🔥 Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=ksksrbiz-arch&hide_border=true" alt="GitHub streak for ksksrbiz-arch">
+  <img src="https://streak-stats.demolab.com?user=ksksrbiz-arch&background=1E1814&border=D97757&stroke=D97757&ring=D97757&fire=D97757&currStreakNum=E7DFD6&sideNums=E7DFD6&currStreakLabel=D97757&sideLabels=8C8178&dates=8C8178" alt="GitHub streak for ksksrbiz-arch">
 </p>
 
 ### 🌐 Contribution Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ksksrbiz-arch&hide_border=true&area=true&radius=8" alt="Contribution activity graph for ksksrbiz-arch" width="100%">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ksksrbiz-arch&area=true&radius=8&hide_border=true&bg_color=1E1814&color=E7DFD6&line=D97757&point=F4A28C&title_color=D97757" alt="Contribution activity graph for ksksrbiz-arch" width="100%">
 </p>
 
 ### 🛠️ Tech Stack
@@ -96,7 +89,7 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
 ### 💬 Dev Quote of the Moment
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random dev quote">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random dev quote">
 </p>
 
 ## 🤝 Connect With Me
@@ -111,5 +104,5 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
 
 <!-- Animated wave footer -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer" alt="footer banner" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E1814,60:C25B3C,100:D97757&height=120&section=footer&text=Thanks%20for%20visiting!&fontColor=F5F0E8&fontSize=20&fontAlignY=78" alt="footer banner" width="100%">
 </p>
