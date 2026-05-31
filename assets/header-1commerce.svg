@@ -1,17 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="1COMMERCE animated header">
   <style>
-    /* slow horizontal drift of the warm brand gradient */
-    .drift  { animation: slide 14s linear infinite; }
-    /* gentle shimmer on the wordmark */
     .word   { animation: shimmer 6s ease-in-out infinite; }
-    /* twinkle on the sparkle accents */
     .spark  { animation: twinkle 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
     .spark.b { animation-delay: 1.5s; }
-    /* flowing waves drifting in opposite directions */
-    .wave1  { animation: wv1 7s linear infinite; }
-    .wave2  { animation: wv2 11s linear infinite; }
+    /* flowing waves drifting in opposite directions; one full 300px period each loop = seamless */
+    .wave1  { animation: wv1 8s linear infinite; }
+    .wave2  { animation: wv2 12s linear infinite; }
 
-    @keyframes slide   { from { transform: translateX(0); } to { transform: translateX(-300px); } }
     @keyframes shimmer { 0%,100% { opacity:.92; } 50% { opacity:1; } }
     @keyframes twinkle { 0%,100% { opacity:.2; transform: scale(.7);} 50% { opacity:1; transform: scale(1);} }
     @keyframes wv1     { from { transform: translateX(0); } to { transform: translateX(-300px); } }
@@ -19,23 +14,25 @@
   </style>
 
   <defs>
-    <!-- warm on-brand gradient (coral / amber), seamless ends for the drift loop -->
-    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+    <!-- Repeating, symmetric warm brand gradient. One 600u period repeats seamlessly;
+         a SMIL translate of exactly one period gives perfectly fluid, snap-free motion. -->
+    <linearGradient id="brand" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
       <stop offset="0.00" stop-color="#1E1814"/>
-      <stop offset="0.13" stop-color="#7A2E1E"/>
-      <stop offset="0.28" stop-color="#C25B3C"/>
-      <stop offset="0.43" stop-color="#D97757"/>
-      <stop offset="0.55" stop-color="#E8A33D"/>
-      <stop offset="0.70" stop-color="#D97757"/>
-      <stop offset="0.85" stop-color="#C25B3C"/>
+      <stop offset="0.16" stop-color="#7A2E1E"/>
+      <stop offset="0.34" stop-color="#C25B3C"/>
+      <stop offset="0.50" stop-color="#E8A33D"/>
+      <stop offset="0.66" stop-color="#C25B3C"/>
+      <stop offset="0.84" stop-color="#7A2E1E"/>
       <stop offset="1.00" stop-color="#1E1814"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="0 0" to="600 0" dur="11s" repeatCount="indefinite"/>
     </linearGradient>
     <clipPath id="card"><rect x="0" y="0" width="1200" height="200"/></clipPath>
   </defs>
 
   <!-- animated warm brand background -->
   <g clip-path="url(#card)">
-    <rect class="drift" x="-300" y="0" width="1800" height="200" fill="url(#brand)"/>
+    <rect x="0" y="0" width="1200" height="200" fill="url(#brand)"/>
     <!-- subtle darkening for legibility -->
     <rect x="0" y="0" width="1200" height="200" fill="#000000" opacity="0.18"/>
   </g>
@@ -53,7 +50,7 @@
     <text x="600" y="150" font-size="22" font-weight="600" letter-spacing="7" fill="#F5F0E8" opacity="0.95">COMMERCE · SIMPLIFIED</text>
   </g>
 
-  <!-- flowing coral waves (drift in opposite directions); paths are 1800 wide w/ 300px period for seamless looping -->
+  <!-- flowing coral waves (drift in opposite directions); 1800 wide w/ 300px period for seamless looping -->
   <g>
     <path class="wave2" fill="#C25B3C" opacity="0.6"
       d="M-300,214 q75,-18 150,0 q75,18 150,0 q75,-18 150,0 q75,18 150,0 q75,-18 150,0 q75,18 150,0 q75,-18 150,0 q75,18 150,0 q75,-18 150,0 q75,18 150,0 q75,-18 150,0 q75,18 150,0 L1500,260 L-300,260 Z"/>

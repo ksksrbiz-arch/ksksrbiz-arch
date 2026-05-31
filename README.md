@@ -1,6 +1,6 @@
 <!-- Animated 1COMMERCE brand header (self-contained SVG; CSS animates inside it) -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/header-1commerce.svg?v=2" alt="1COMMERCE" width="100%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/header-1commerce.svg?v=3" alt="1COMMERCE" width="100%">
 </p>
 
 <!-- Claude Code terminal — cycles through build / commit / test / deploy scenes -->
@@ -81,7 +81,7 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
 ### 💬 Dev Quote of the Moment
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random dev quote">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox" alt="Random dev quote">
 </p>
 
 ## 🤝 Connect With Me
