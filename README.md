@@ -6,7 +6,7 @@
 <!-- Claude Code terminal mascot, side-by-side with the typing tagline -->
 <table align="center"><tr>
   <td valign="middle" align="center" width="380">
-    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg" alt="Claude Code terminal" width="360">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg?v=2" alt="Claude Code terminal" width="360">
   </td>
   <td valign="middle" align="center" width="420">
     <a href="https://github.com/ksksrbiz-arch">
