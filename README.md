@@ -54,10 +54,19 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ksksrbiz-arch&hide_border=true&area=true&radius=8" alt="Contribution activity graph for ksksrbiz-arch" width="100%">
 </p>
 
-### 🏆 Trophies
+### 🛠️ Tech Stack
 
+<!-- Edit this list to match your stack. Badges from shields.io (very reliable). -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ksksrbiz-arch&no-bg=true&no-frame=true&margin-w=4&row=1" alt="GitHub trophies for ksksrbiz-arch">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
 </p>
 
 ## 🔭 Current Focus
