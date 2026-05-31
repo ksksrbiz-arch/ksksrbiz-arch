@@ -3,17 +3,10 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E1814,60:C25B3C,100:D97757&height=200&section=header&text=Keith%20Skaggs&fontColor=F5F0E8&fontSize=58&fontAlignY=36&animation=fadeIn&desc=Building%20with%20Claude%20Code&descAlignY=58&descSize=18&descColor=F4A28C" alt="header banner" width="100%">
 </p>
 
-<!-- Claude Code terminal mascot, side-by-side with the typing tagline -->
-<table align="center"><tr>
-  <td valign="middle" align="center" width="380">
-    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg?v=2" alt="Claude Code terminal" width="360">
-  </td>
-  <td valign="middle" align="center" width="420">
-    <a href="https://github.com/ksksrbiz-arch">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=400&height=120&lines=%E2%9D%AF+claude+build+--profile;Building+cool+things+%F0%9F%9A%80;Shipping+with+Claude+Code+%E2%9A%A1;Always+learning+something+new+%F0%9F%8C%B1;%E2%9C%93+done+%E2%80%94+exit+code+0" alt="Typing SVG">
-    </a>
-  </td>
-</tr></table>
+<!-- Claude Code terminal — cycles through build / commit / test / deploy scenes -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg?v=3" alt="Claude Code terminal" width="520">
+</p>
 
 <!-- Profile views + followers -->
 <p align="center">
