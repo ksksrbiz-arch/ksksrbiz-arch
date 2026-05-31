@@ -1,19 +1,19 @@
-<!-- Animated Claude pet -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg" alt="Claude animated pet" width="200" height="200">
-</p>
-
 <!-- Animated wave header -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Hi%20there%20%F0%9F%91%8B&fontSize=60&fontAlignY=35&animation=fadeIn&desc=Welcome%20to%20my%20profile&descAlignY=58&descSize=18" alt="header banner" width="100%">
 </p>
 
-<!-- Typing animation -->
-<p align="center">
-  <a href="https://github.com/ksksrbiz-arch">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=520&lines=Building+cool+things+%F0%9F%9A%80;Always+learning+something+new+%F0%9F%8C%B1;Open+source+enthusiast+%E2%9C%A8" alt="Typing SVG">
-  </a>
-</p>
+<!-- Claude Code terminal mascot, side-by-side with the typing tagline -->
+<table align="center"><tr>
+  <td valign="middle" align="center" width="380">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg" alt="Claude Code terminal" width="360">
+  </td>
+  <td valign="middle" align="center" width="420">
+    <a href="https://github.com/ksksrbiz-arch">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=D97757&center=true&vCenter=true&width=400&height=120&lines=Building+cool+things+%F0%9F%9A%80;Shipping+with+Claude+Code+%E2%9A%A1;Always+learning+something+new+%F0%9F%8C%B1;Open+source+enthusiast+%E2%9C%A8" alt="Typing SVG">
+    </a>
+  </td>
+</tr></table>
 
 <!-- Profile views + followers -->
 <p align="center">
