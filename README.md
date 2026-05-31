@@ -46,19 +46,6 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <img src="https://streak-stats.demolab.com?user=ksksrbiz-arch&background=1E1814&border=D97757&stroke=D97757&ring=D97757&fire=D97757&currStreakNum=E7DFD6&sideNums=E7DFD6&currStreakLabel=D97757&sideLabels=8C8178&dates=8C8178" alt="GitHub streak for ksksrbiz-arch">
 </p>
 
-### ⌨️ Currently Coding (WakaTime)
-
-<!--
-  Live coding stats via WakaTime, themed to match and served from the
-  self-hosted github-readme-stats instance. Requires a PUBLIC WakaTime profile:
-  WakaTime → Settings → enable "Display coding activity publicly" AND
-  "Display languages, editors, operating systems publicly".
-  If your WakaTime username differs from the GitHub one, update it below.
--->
-<p align="center">
-  <img src="https://github-stats-pi-tawny.vercel.app/api/wakatime?username=ksksrbiz-arch&layout=compact&langs_count=6&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&icon_color=D97757&border_color=D97757" alt="WakaTime coding stats for ksksrbiz-arch">
-</p>
-
 ### 🌐 Contribution Activity Graph
 
 <p align="center">
