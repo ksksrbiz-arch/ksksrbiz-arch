@@ -2,13 +2,15 @@
 
 The "GitHub Stats" and "Top Languages" cards in the README are rendered by
 [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats).
-By default the README points at the **public** instance
-(`github-readme-stats.vercel.app`), which is shared by millions of users and
-frequently returns `429 Too Many Requests` / `503` errors — that's why the
-cards sometimes show up broken.
+This README already points at a **self-hosted** instance
+(`github-stats-pi-tawny.vercel.app`) so it isn't subject to the rate limits of
+the shared public instance (`github-readme-stats.vercel.app`), which is used by
+millions and frequently returns `429 Too Many Requests` / `503` errors.
 
-Deploying your own free instance on Vercel removes the rate limits entirely.
-It's a one-time, ~5 minute setup.
+The daily `refresh-readme-stats` workflow appends a `cache_bust` param to these
+URLs so the cards re-render with fresh numbers. If you ever move the cards to a
+different host, deploying your own free instance on Vercel is a one-time,
+~5 minute setup — the steps below walk through it.
 
 ## Steps
 

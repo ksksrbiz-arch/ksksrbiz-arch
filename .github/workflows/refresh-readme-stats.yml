@@ -49,7 +49,7 @@ jobs:
               return f"{url}{separator}cache_bust={cache_bust}"
 
           updated = re.sub(
-              r"https://github-readme-stats\.vercel\.app/[^\"<>\s]+",
+              r"https://(?:github-readme-stats\.vercel\.app|github-stats-pi-tawny\.vercel\.app)/[^\"<>\s]+",
               refresh_stats_url,
               content,
           )
