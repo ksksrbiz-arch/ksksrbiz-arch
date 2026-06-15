@@ -8,6 +8,13 @@
   <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg?v=3" alt="Claude Code terminal" width="520">
 </p>
 
+<!-- Animated typing headline -->
+<p align="center">
+  <a href="https://1commerce.online/">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=D97757&center=true&vCenter=true&width=620&lines=Commerce+%C2%B7+Simplified;Storefronts+%E2%86%92+APIs+%E2%86%92+Automation;Full-stack%2C+shipped+with+Claude+Code;Less+plumbing+%E2%80%94+more+selling" alt="Commerce, simplified — full-stack, shipped with Claude Code">
+  </a>
+</p>
+
 <!-- Profile views + followers -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=Profile%20views&color=D97757&style=flat" alt="Profile views">
@@ -16,7 +23,38 @@
   </a>
 </p>
 
-## 📊 Contribution Graph & Live Stats
+## 👋 About
+
+**1COMMERCE — commerce, simplified.** I build full-stack commerce platforms, MCP
+servers, and the AI-driven automation that ties them together — plus the
+occasional browser game for fun.
+
+- 🔭 &nbsp;Building **1COMMERCE / UnifyOne** and the Cathedral Framework
+- ⚙️ &nbsp;Designing **MCP servers** & agentic tooling for commerce
+- 🧰 &nbsp;Full-stack in **TypeScript** (Next.js · Node · Supabase) + **Python**
+- 🤖 &nbsp;Pair-programming with **Claude Code** every day
+- 🌐 &nbsp;[1commerce.online](https://1commerce.online) &nbsp;·&nbsp; 🛍️ [1commerce.shop](https://1commerce.shop)
+- 🌲 &nbsp;Pacific Northwest · UTC-7
+
+## 🧰 Tech Stack
+
+<!--
+  Tech icons via skillicons.dev. Edit the ?i= list to match your stack.
+  Icon reference: https://skillicons.dev
+-->
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,python,postgres,supabase,tailwind,vercel,docker,git,github&perline=13" alt="Tech stack">
+  </a>
+</p>
+
+## 🚀 Featured Builds
+
+- 🛒 &nbsp;**[onecommerce-mcp-server](https://github.com/ksksrbiz-arch/onecommerce-mcp-server)** — Model Context Protocol server for 1COMMERCE / UnifyOne: 18 tools across the Cathedral Framework (stores, products, orders, automations, AI).
+- 📈 &nbsp;**[prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine)** — Prediction-market alpha engine in Python: market ingestion, ML edge scoring, and agentic automation.
+- 🏜️ &nbsp;**[mojave-run](https://github.com/ksksrbiz-arch/mojave-run)** — A wasteland arcade driver built for the browser. Survive the Mojave.
+
+## 📊 GitHub Activity
 
 ### 🎮 Galaga Contribution Graph
 
@@ -28,7 +66,7 @@
 
 _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
 
-### 📈 GitHub Stats (Auto-Updating)
+### 📈 Stats (Auto-Updating)
 
 <!--
   STATS HOST: rendered from a self-hosted github-readme-stats instance.
@@ -52,18 +90,6 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ksksrbiz-arch&area=true&radius=8&hide_border=true&bg_color=1E1814&color=E7DFD6&line=D97757&point=F4A28C&title_color=D97757" alt="Contribution activity graph for ksksrbiz-arch" width="100%">
 </p>
 
-### 🛠️ Tech Stack
-
-<!--
-  Tech icons via skillicons.dev. Edit the ?i= list to match your stack.
-  Icon reference: https://skillicons.dev
--->
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,python,postgres,supabase,tailwind,vercel,docker,git,github&perline=13" alt="Tech stack">
-  </a>
-</p>
-
 ### 🧬 Profile Summary
 
 <p align="center">
@@ -78,7 +104,7 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ksksrbiz-arch&theme=github_dark" alt="Stats" height="200em">
 </p>
 
-### 💬 Dev Quote of the Moment
+## 💬 Dev Quote of the Moment
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox" alt="Random dev quote">
