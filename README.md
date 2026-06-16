@@ -15,6 +15,13 @@
   </a>
 </p>
 
+<!-- Instagram follow CTA -->
+<p align="center">
+  <a href="https://www.instagram.com/1commerce_llc/">
+    <img src="https://img.shields.io/badge/Follow%20on%20Instagram-@1commerce__llc-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=7A2E1E" alt="Follow @1commerce_llc on Instagram">
+  </a>
+</p>
+
 <!-- Profile views + followers -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=Profile%20views&color=D97757&style=flat" alt="Profile views">
@@ -119,10 +126,6 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   <a href="https://www.youtube.com/@0nestakk"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
   <a href="https://www.instagram.com/1commerce_llc/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
   <a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
-</p>
-
-<p align="center">
-  <em>📸 Follow <a href="https://www.instagram.com/1commerce_llc/">@1commerce_llc</a> on Instagram for the latest from 1COMMERCE.</em>
 </p>
 
 <!-- Animated wave footer -->
