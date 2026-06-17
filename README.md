@@ -81,8 +81,8 @@ _Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.i
   below with your Vercel domain. See docs/SELF_HOST_STATS.md.
 -->
 <p align="center">
-  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&include_all_commits=true&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&icon_color=D97757&border_color=D97757&cache_bust=27613046513" alt="GitHub stats for ksksrbiz-arch">
-  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&border_color=D97757&cache_bust=27613046513" alt="Top languages for ksksrbiz-arch">
+  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&include_all_commits=true&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&icon_color=D97757&border_color=D97757&cache_bust=27683558853" alt="GitHub stats for ksksrbiz-arch">
+  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&border_color=D97757&cache_bust=27683558853" alt="Top languages for ksksrbiz-arch">
 </p>
 
 ### 🔥 Streak
