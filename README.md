@@ -57,8 +57,11 @@ occasional browser game for fun.
 
 ## 🚀 Featured Builds
 
+- 🏛️ &nbsp;**[unifyone-netlify-supabase](https://github.com/t7451/unifyone-netlify-supabase)** — **UnifyOne Commerce Platform.** Full-stack, multi-tenant commerce SaaS on Netlify + Supabase — the flagship behind 1COMMERCE.
 - 🛒 &nbsp;**[onecommerce-mcp-server](https://github.com/ksksrbiz-arch/onecommerce-mcp-server)** — Model Context Protocol server for 1COMMERCE / UnifyOne: 18 tools across the Cathedral Framework (stores, products, orders, automations, AI).
-- 📈 &nbsp;**[prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine)** — Prediction-market alpha engine in Python: market ingestion, ML edge scoring, and agentic automation.
+- 🔗 &nbsp;**[Graph](https://github.com/ksksrbiz-arch/Graph)** — Interactive graph visualization built in JavaScript.
+- 📈 &nbsp;**[prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine)** — Sovereign prediction-market alpha engine in Python: Kalshi/Polymarket ingestion, ML edge scoring, and agentic automation.
+- 🥃 &nbsp;**[montucky-moonshine-proposal](https://github.com/ksksrbiz-arch/montucky-moonshine-proposal)** — Premium redesigned storefront proposal for Montucky Moonshine, wired straight to Shopify. ([live demo](https://montucky-moonshine-proposal.netlify.app))
 - 🏜️ &nbsp;**[mojave-run](https://github.com/ksksrbiz-arch/mojave-run)** — A wasteland arcade driver built for the browser. Survive the Mojave.
 
 ## 📊 GitHub Activity
