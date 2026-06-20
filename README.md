@@ -57,8 +57,11 @@ occasional browser game for fun.
 
 ## 🚀 Featured Builds
 
+- 🏛️ &nbsp;**[unifyone-platform](https://github.com/ksksrbiz-arch/unifyone-platform)** — **UnifyOne Commerce Platform.** Full-stack, multi-tenant commerce SaaS on GCP Cloud Run + Vendia + Netlify — the flagship behind 1COMMERCE.
 - 🛒 &nbsp;**[onecommerce-mcp-server](https://github.com/ksksrbiz-arch/onecommerce-mcp-server)** — Model Context Protocol server for 1COMMERCE / UnifyOne: 18 tools across the Cathedral Framework (stores, products, orders, automations, AI).
-- 📈 &nbsp;**[prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine)** — Prediction-market alpha engine in Python: market ingestion, ML edge scoring, and agentic automation.
+- 🧭 &nbsp;**[compass](https://github.com/ksksrbiz-arch/compass)** — AI-powered legal-intelligence workspace for deal analysis — turning contracts and diligence into structured, queryable insight.
+- 📈 &nbsp;**[prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine)** — Sovereign prediction-market alpha engine in Python: Kalshi/Polymarket ingestion, ML edge scoring, and agentic automation.
+- ⚡ &nbsp;**[forged-american](https://github.com/ksksrbiz-arch/forged-american)** — Headless commerce storefront on Next.js 14 + Supabase + Stripe + Netlify — production-ready, end to end.
 - 🏜️ &nbsp;**[mojave-run](https://github.com/ksksrbiz-arch/mojave-run)** — A wasteland arcade driver built for the browser. Survive the Mojave.
 
 ## 📊 GitHub Activity
