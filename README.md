@@ -44,6 +44,9 @@
 <p align="center"><a href="https://1commerce.online/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-website.svg?v=4" alt="Website: 1commerce.online"></a><a href="https://1commerce.shop/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-shop.svg?v=4" alt="Shop: 1commerce.shop"></a><a href="https://www.linkedin.com/in/1commerce-future"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-linkedin.svg?v=4" alt="LinkedIn: 1commerce-future"></a></p>
 <p align="center"><a href="https://www.youtube.com/@0nestakk"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-youtube.svg?v=4" alt="YouTube: @0nestakk"></a><a href="https://www.instagram.com/1commerce_llc/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-instagram.svg?v=4" alt="Instagram: @1commerce_llc"></a><a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-facebook.svg?v=4" alt="Facebook: DevOps.NW.Enterprises"></a></p>
 
+<!-- screensaver: kicks in when you idle at the bottom of the page -->
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-screensaver.svg?v=4" alt="conway.scr — the 1COMMERCE wordmark spelled in live cells, then dissolving into Conway's Game of Life (B3/S23, 85 generations)" width="100%"></p>
+
 <!-- shutdown -->
 <p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-shutdown.svg?v=4" alt="Thanks for visiting — 1COMMERCE OS stays online, new builds ship weekly" width="100%"></p>
 
@@ -101,5 +104,8 @@ The **Research Lab** windows are computed, not drawn:
   SMIL keyframe at its exact generation time.
 - `terrain.app` — a **procedural flyover**: value-noise ridgelines flying
   toward the camera on perspective-eased keyframes, 14 rows deep.
+- `conway.scr` — the screensaver: the **1COMMERCE wordmark seeded as live
+  cells**, held for a beat, then dissolved by B3/S23 over 85 generations —
+  632 cells touched, 53 survive.
 
 </details>
