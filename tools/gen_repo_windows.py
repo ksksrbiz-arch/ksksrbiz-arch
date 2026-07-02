@@ -147,18 +147,16 @@ def main():
         open(os.path.join(ASSETS, fn), "w").write(tile(r))
         print("wrote", fn)
     open(os.path.join(ASSETS, "repos-header.svg"), "w").write(header_bar(len(repos)))
-    # README block
-    block = ['<p align="center">',
-             f'  <img src="{RAW}/repos-header.svg?v=4" alt="repos.d — auto-indexed directory" width="100%">',
-             '</p>']
-    for i in range(0, len(repos), 3):
-        block.append('<p align="center">')
-        for r in repos[i:i+3]:
-            url = f"https://github.com/{r['owner']}/{r['name']}"
-            block.append(f'  <a href="{url}">')
-            block.append(f'    <img src="{RAW}/repo-{r["name"]}.svg?v=4" alt="{r["name"]}" width="32.6%">')
-            block.append('  </a>')
-        block.append('</p>')
+    # README block. IMPORTANT: image rows must be single-line with NO
+    # whitespace between tags — inter-tag newlines render as spaces and
+    # make percentage rows overflow/wrap on mobile.
+    block = [f'<p align="center"><img src="{RAW}/repos-header.svg?v=4" alt="repos.d — auto-indexed directory" width="100%"></p>']
+    for i in range(0, len(repos), 2):
+        row = ''.join(
+            f'<a href="https://github.com/{r["owner"]}/{r["name"]}">'
+            f'<img src="{RAW}/repo-{r["name"]}.svg?v=4" alt="{r["name"]}" width="49.4%"></a>'
+            for r in repos[i:i+2])
+        block.append(f'<p align="center">{row}</p>')
     blocktxt = '\n'.join(block)
     md = open(README).read()
     marked = re.search(r'<!-- REPO-WINDOWS:START -->.*?<!-- REPO-WINDOWS:END -->', md, re.S)
