@@ -16,35 +16,35 @@
   </style>
   <defs><clipPath id="w3"><rect width="380" height="210" rx="12"/></clipPath></defs>
   <g clip-path="url(#w3)">
-    <rect width="380" height="210" fill="#1E1814"/>
-    <rect width="380" height="30" fill="#2A211A"/>
-    <rect y="29" width="380" height="1" fill="#3A2E24"/>
+    <rect width="380" height="210" fill="#161C26"/>
+    <rect width="380" height="30" fill="#1B2230"/>
+    <rect y="29" width="380" height="1" fill="#2B3648"/>
     <circle cx="18" cy="15" r="5" fill="#FF5F57"/><circle cx="35" cy="15" r="5" fill="#FEBC2E"/><circle cx="52" cy="15" r="5" fill="#28C840"/>
-    <text x="190" y="20" font-size="12" fill="#8C8178" text-anchor="middle">Alpha Engine.app</text>
+    <text x="190" y="20" font-size="12" fill="#7C8798" text-anchor="middle">Alpha Engine.app</text>
 
-    <text x="22" y="66" font-size="20" font-weight="800" fill="#F5F0E8">alpha-engine</text>
-    <text x="22" y="90" font-size="12.5" fill="#B5AB9F">Kalshi / Polymarket ingestion,</text>
-    <text x="22" y="108" font-size="12.5" fill="#B5AB9F">ML edge scoring, agentic automation.</text>
-    <rect x="22" y="128" width="76" height="22" rx="11" fill="#2A211A" stroke="#3A2E24"/>
-    <text x="34" y="143" font-size="11" fill="#7FB0D9" font-weight="700">PYTHON</text>
-    <text class="go" x="22" y="186" font-size="13" font-weight="700" fill="#E8A33D">Open project ▸</text>
+    <text x="22" y="66" font-size="20" font-weight="800" fill="#F1F5FB">alpha-engine</text>
+    <text x="22" y="90" font-size="12.5" fill="#9AA6B8">Kalshi / Polymarket ingestion,</text>
+    <text x="22" y="108" font-size="12.5" fill="#9AA6B8">ML edge scoring, agentic automation.</text>
+    <rect x="22" y="128" width="76" height="22" rx="11" fill="#1B2230" stroke="#2B3648"/>
+    <text x="34" y="143" font-size="11" fill="#63B3ED" font-weight="700">PYTHON</text>
+    <text class="go" x="22" y="186" font-size="13" font-weight="700" fill="#F6AD55">Open project ▸</text>
 
     <!-- motif: candlesticks + edge line + signal -->
     <g>
       <g stroke-width="2">
-        <g class="c1"><line x1="240" y1="70" x2="240" y2="130" stroke="#7FB069"/><rect x="234" y="86" width="12" height="30" rx="2" fill="#7FB069"/></g>
-        <g class="c2"><line x1="266" y1="80" x2="266" y2="140" stroke="#C25B3C"/><rect x="260" y="96" width="12" height="28" rx="2" fill="#C25B3C"/></g>
-        <g class="c3"><line x1="292" y1="64" x2="292" y2="126" stroke="#7FB069"/><rect x="286" y="76" width="12" height="34" rx="2" fill="#7FB069"/></g>
-        <g class="c4"><line x1="318" y1="58" x2="318" y2="116" stroke="#7FB069"/><rect x="312" y="68" width="12" height="30" rx="2" fill="#7FB069"/></g>
-        <g class="c5"><line x1="344" y1="48" x2="344" y2="108" stroke="#7FB069"/><rect x="338" y="58" width="12" height="28" rx="2" fill="#7FB069"/></g>
+        <g class="c1"><line x1="240" y1="70" x2="240" y2="130" stroke="#68D391"/><rect x="234" y="86" width="12" height="30" rx="2" fill="#68D391"/></g>
+        <g class="c2"><line x1="266" y1="80" x2="266" y2="140" stroke="#B794F6"/><rect x="260" y="96" width="12" height="28" rx="2" fill="#B794F6"/></g>
+        <g class="c3"><line x1="292" y1="64" x2="292" y2="126" stroke="#68D391"/><rect x="286" y="76" width="12" height="34" rx="2" fill="#68D391"/></g>
+        <g class="c4"><line x1="318" y1="58" x2="318" y2="116" stroke="#68D391"/><rect x="312" y="68" width="12" height="30" rx="2" fill="#68D391"/></g>
+        <g class="c5"><line x1="344" y1="48" x2="344" y2="108" stroke="#68D391"/><rect x="338" y="58" width="12" height="28" rx="2" fill="#68D391"/></g>
       </g>
-      <path class="trend" d="M230 138 C260 130 270 112 296 100 S334 68 356 58" fill="none" stroke="#E8A33D" stroke-width="2.5" stroke-linecap="round"/>
+      <path class="trend" d="M230 138 C260 130 270 112 296 100 S334 68 356 58" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round"/>
       <g class="sig">
-        <rect x="296" y="150" width="64" height="22" rx="11" fill="#7FB069"/>
-        <text x="328" y="165" font-size="11" font-weight="800" fill="#16110D" text-anchor="middle">EDGE +7%</text>
+        <rect x="296" y="150" width="64" height="22" rx="11" fill="#68D391"/>
+        <text x="328" y="165" font-size="11" font-weight="800" fill="#0F131B" text-anchor="middle">EDGE +7%</text>
       </g>
-      <text x="232" y="180" font-size="10" fill="#8C8178" font-family="'SFMono-Regular',Consolas,monospace">kalshi·poly</text>
+      <text x="232" y="180" font-size="10" fill="#7C8798" font-family="'SFMono-Regular',Consolas,monospace">kalshi·poly</text>
     </g>
-    <rect x=".75" y=".75" width="378.5" height="208.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+    <rect x=".75" y=".75" width="378.5" height="208.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>
