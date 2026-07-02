@@ -9,9 +9,9 @@
     .b8{animation-delay:1.76s} .b9{animation-delay:1.98s} .b10{animation-delay:2.2s} .b11{animation-delay:2.42s}
 
     .spark { stroke-dasharray: 520; animation: draw 6s linear infinite; }
-    @keyframes draw { 0% {stroke-dashoffset:520;} 55% {stroke-dashoffset:0;} 85% {stroke-dashoffset:0; opacity:1;} 95% {opacity:0;} 100% {stroke-dashoffset:520; opacity:0;} }
+    @keyframes draw { 0% {stroke-dashoffset:520;} 30% {stroke-dashoffset:0;} 92% {stroke-dashoffset:0; opacity:1;} 98% {opacity:0;} 100% {stroke-dashoffset:520; opacity:0;} }
     .sparkdot { animation: dotfade 6s linear infinite; }
-    @keyframes dotfade { 0%,50% {opacity:0;} 56%,85% {opacity:1;} 95%,100% {opacity:0;} }
+    @keyframes dotfade { 0%,27% {opacity:0;} 32%,92% {opacity:1;} 98%,100% {opacity:0;} }
 
     .p1 { transform-box: fill-box; transform-origin: 0 50%; animation: grow1 5s ease-in-out infinite; }
     .p2 { transform-box: fill-box; transform-origin: 0 50%; animation: grow2 5s ease-in-out infinite; }
