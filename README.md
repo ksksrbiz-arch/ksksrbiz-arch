@@ -60,6 +60,11 @@
   <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-breakout.svg?v=4" alt="arcade.app — self-playing Breakout: an 85-second physics simulation baked into the SVG; every bounce computed, all 40 bricks cleared" width="49.4%">
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-life.svg?v=4" alt="life.app — Conway's Game of Life: a Gosper glider gun, 140 generations simulated cell-by-cell and baked into the SVG" width="49.4%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-terrain.svg?v=4" alt="terrain.app — procedural wireframe terrain flyover: value-noise ridgelines with perspective easing, somewhere over the Mojave" width="49.4%">
+</p>
+
 <!-- dock: tech stack -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-dock.svg?v=4" alt="Dock: JavaScript, TypeScript, Node, React, Next.js, Python, Postgres, Supabase, Tailwind, Vercel, Docker, Git, GitHub" width="100%">
@@ -142,5 +147,10 @@ The **Research Lab** windows are computed, not drawn:
   invariant under the spin.
 - `cortex.app` — a 4×6×6×1 network with signal pulses timed to fire the
   output neuron every forward pass.
+- `life.app` — **Conway's Game of Life** (B3/S23): a Gosper glider gun
+  simulated for 140 generations; every cell birth and death is a discrete
+  SMIL keyframe at its exact generation time.
+- `terrain.app` — a **procedural flyover**: value-noise ridgelines flying
+  toward the camera on perspective-eased keyframes, 14 rows deep.
 
 </details>
