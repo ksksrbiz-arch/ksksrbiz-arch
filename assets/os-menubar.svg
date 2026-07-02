@@ -6,6 +6,9 @@
     @keyframes pulse { 0%,100% {opacity:.9;} 50% {opacity:.4;} }
     .sync { animation: spin 6s linear infinite; transform-box: fill-box; transform-origin: 50% 50%; }
     @keyframes spin { to { transform: rotate(360deg); } }
+    .eq { transform-box: fill-box; transform-origin: 50% 100%; animation: eq 1.1s ease-in-out infinite; }
+    .eq.b { animation-delay: .25s; } .eq.c { animation-delay: .5s; }
+    @keyframes eq { 0%,100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
   </style>
   <defs>
     <clipPath id="bar"><rect width="1200" height="40" rx="10"/></clipPath>
@@ -26,6 +29,11 @@
 
     <!-- right: status cluster -->
     <g font-family="'SFMono-Regular',Consolas,Menlo,monospace" font-size="13">
+      <!-- now playing -->
+      <rect class="eq"   x="778" y="14" width="3.5" height="13" rx="1.5" fill="#B794F6"/>
+      <rect class="eq b" x="784" y="14" width="3.5" height="13" rx="1.5" fill="#4FD1C5"/>
+      <rect class="eq c" x="790" y="14" width="3.5" height="13" rx="1.5" fill="#F6AD55"/>
+      <text x="802" y="25" fill="#7C8798">midnight.fm</text>
       <!-- sync icon -->
       <g class="sync" stroke="#7C8798" stroke-width="1.6" fill="none">
         <path d="M905 14 a7 7 0 1 1 -4 12" stroke-linecap="round"/>
