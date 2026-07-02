@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40" role="img" aria-label="1COMMERCE OS menu bar">
+  <style>
+    .colon { animation: blink 2s steps(1,end) infinite; }
+    @keyframes blink { 0%,49% {opacity:1;} 50%,100% {opacity:.15;} }
+    .wifi { animation: pulse 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+    @keyframes pulse { 0%,100% {opacity:.9;} 50% {opacity:.4;} }
+    .sync { animation: spin 6s linear infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+  <defs>
+    <clipPath id="bar"><rect width="1200" height="40" rx="10"/></clipPath>
+  </defs>
+  <g clip-path="url(#bar)">
+    <rect width="1200" height="40" fill="#1E1814"/>
+    <rect y="39" width="1200" height="1" fill="#3A2E24"/>
+
+    <!-- left: logo + menus -->
+    <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#E7DFD6">
+      <text x="24" y="26" font-weight="800" fill="#D97757" letter-spacing="1">⌘ 1C</text>
+      <text x="78" y="26" font-weight="700" fill="#F5F0E8">Finder</text>
+      <text x="142" y="26" fill="#8C8178">File</text>
+      <text x="184" y="26" fill="#8C8178">Build</text>
+      <text x="236" y="26" fill="#8C8178">Ship</text>
+      <text x="284" y="26" fill="#8C8178">Automate</text>
+    </g>
+
+    <!-- right: status cluster -->
+    <g font-family="'SFMono-Regular',Consolas,Menlo,monospace" font-size="13">
+      <!-- sync icon -->
+      <g class="sync" stroke="#8C8178" stroke-width="1.6" fill="none">
+        <path d="M905 14 a7 7 0 1 1 -4 12" stroke-linecap="round"/>
+        <path d="M900 27 l1 -4 4 2 z" fill="#8C8178" stroke="none"/>
+      </g>
+      <!-- wifi -->
+      <g class="wifi" stroke="#E7DFD6" stroke-width="1.8" fill="none" stroke-linecap="round">
+        <path d="M934 24 a10 10 0 0 1 14 0"/>
+        <path d="M930 19 a16 16 0 0 1 22 0"/>
+        <circle cx="941" cy="28" r="1.6" fill="#E7DFD6" stroke="none"/>
+      </g>
+      <!-- battery: always charged -->
+      <g>
+        <rect x="968" y="14" width="26" height="13" rx="3.5" fill="none" stroke="#8C8178" stroke-width="1.4"/>
+        <rect x="995" y="18" width="3" height="5" rx="1" fill="#8C8178"/>
+        <rect x="970.5" y="16.5" width="21" height="8" rx="2" fill="#28C840"/>
+      </g>
+      <text x="1014" y="25" fill="#8C8178">PNW</text>
+      <text x="1058" y="25" fill="#E7DFD6">UTC<tspan class="colon">−</tspan>7</text>
+      <rect x="1116" y="10" width="62" height="21" rx="10.5" fill="#2A211A" stroke="#3A2E24"/>
+      <text x="1126" y="25" fill="#D97757" font-weight="700">◉ rec</text>
+    </g>
+  </g>
+</svg>

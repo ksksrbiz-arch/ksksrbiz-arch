@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 46" width="250" height="46" role="img" aria-label="YOUTUBE: @0nestakk">
+  <style>
+    .glow { animation: glow 3s ease-in-out infinite; }
+    @keyframes glow { 0%,100% { stroke-opacity:.4; } 50% { stroke-opacity:1; } }
+    .arr { animation: arr 2s ease-in-out infinite; }
+    @keyframes arr { 0%,100% { transform:translateX(0); opacity:.6; } 50% { transform:translateX(3px); opacity:1; } }
+  </style>
+  <rect x="1" y="1" width="248" height="44" rx="22" fill="#1E1814"/>
+  <rect class="glow" x="1" y="1" width="248" height="44" rx="22" fill="none" stroke="#FF0000" stroke-width="1.6"/>
+  <circle cx="23" cy="23" r="14" fill="#FF0000"/>
+  <path d="M19 17.5 l11 5.5 -11 5.5 z" fill="#FFFFFF"/>
+  <text x="46" y="20" font-size="9" letter-spacing="2" fill="#8C8178" font-family="'SFMono-Regular',Consolas,Menlo,monospace">YOUTUBE</text>
+  <text x="46" y="35" font-size="13.5" font-weight="700" fill="#F5F0E8" font-family="'Segoe UI',Helvetica,Arial,sans-serif">@0nestakk</text>
+  <text class="arr" x="226" y="29" font-size="14" fill="#FF0000" font-weight="700" font-family="'Segoe UI',Helvetica,Arial,sans-serif">›</text>
+</svg>

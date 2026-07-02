@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="460" height="380" role="img" aria-label="Activity Monitor: shipping velocity">
+  <!-- Activity Monitor — decorative live-feel telemetry. Self-contained, loops forever. -->
+  <style>
+    text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .bar { transform-box: fill-box; transform-origin: 50% 100%; animation: eq 2.6s ease-in-out infinite; }
+    @keyframes eq { 0%,100% {transform:scaleY(.25);} 50% {transform:scaleY(1);} }
+    .b0{animation-delay:0s} .b1{animation-delay:.22s} .b2{animation-delay:.44s} .b3{animation-delay:.66s}
+    .b4{animation-delay:.88s} .b5{animation-delay:1.1s} .b6{animation-delay:1.32s} .b7{animation-delay:1.54s}
+    .b8{animation-delay:1.76s} .b9{animation-delay:1.98s} .b10{animation-delay:2.2s} .b11{animation-delay:2.42s}
+
+    .spark { stroke-dasharray: 520; animation: draw 6s linear infinite; }
+    @keyframes draw { 0% {stroke-dashoffset:520;} 55% {stroke-dashoffset:0;} 85% {stroke-dashoffset:0; opacity:1;} 95% {opacity:0;} 100% {stroke-dashoffset:520; opacity:0;} }
+    .sparkdot { animation: dotfade 6s linear infinite; }
+    @keyframes dotfade { 0%,50% {opacity:0;} 56%,85% {opacity:1;} 95%,100% {opacity:0;} }
+
+    .p1 { transform-box: fill-box; transform-origin: 0 50%; animation: grow1 5s ease-in-out infinite; }
+    .p2 { transform-box: fill-box; transform-origin: 0 50%; animation: grow2 5s ease-in-out infinite; }
+    .p3 { transform-box: fill-box; transform-origin: 0 50%; animation: grow3 5s ease-in-out infinite; }
+    @keyframes grow1 { 0%,100% {transform:scaleX(.72);} 50% {transform:scaleX(.95);} }
+    @keyframes grow2 { 0%,100% {transform:scaleX(.55);} 50% {transform:scaleX(.4);} }
+    @keyframes grow3 { 0%,100% {transform:scaleX(.2);} 50% {transform:scaleX(.34);} }
+
+    .led { animation: led 2s ease-in-out infinite; }
+    @keyframes led { 0%,100% {opacity:1;} 50% {opacity:.35;} }
+  </style>
+  <defs>
+    <clipPath id="awin"><rect width="460" height="380" rx="12"/></clipPath>
+    <linearGradient id="barg" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7A2E1E"/>
+      <stop offset="1" stop-color="#E8A33D"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#awin)">
+    <rect width="460" height="380" fill="#16110D"/>
+    <rect width="460" height="36" fill="#1E1814"/>
+    <rect y="35" width="460" height="1" fill="#3A2E24"/>
+    <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
+    <circle cx="42" cy="18" r="6" fill="#FEBC2E"/>
+    <circle cx="62" cy="18" r="6" fill="#28C840"/>
+    <text x="230" y="23" font-size="13" fill="#8C8178" text-anchor="middle">Activity Monitor</text>
+
+    <!-- shipping velocity equalizer -->
+    <text x="26" y="66" font-size="12" fill="#8C8178" letter-spacing="2">SHIPPING VELOCITY</text>
+    <g>
+      <rect class="bar b0"  x="26"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b1"  x="60"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b2"  x="94"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b3"  x="128" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b4"  x="162" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b5"  x="196" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b6"  x="230" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b7"  x="264" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b8"  x="298" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b9"  x="332" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b10" x="366" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect class="bar b11" x="400" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+    </g>
+    <rect x="26" y="152" width="408" height="1" fill="#3A2E24"/>
+
+    <!-- commits sparkline -->
+    <text x="26" y="182" font-size="12" fill="#8C8178" letter-spacing="2">COMMIT PULSE</text>
+    <path class="spark" d="M26 240 L60 232 L94 238 L128 214 L162 224 L196 200 L230 212 L264 196 L298 206 L332 188 L366 198 L400 182 L434 190"
+          fill="none" stroke="#D97757" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="sparkdot" cx="434" cy="190" r="4" fill="#E8A33D"/>
+    <rect x="26" y="256" width="408" height="1" fill="#3A2E24"/>
+
+    <!-- processes -->
+    <text x="26" y="286" font-size="12" fill="#8C8178" letter-spacing="2">PROCESSES</text>
+    <g font-size="13">
+      <circle class="led" cx="32" cy="306" r="3.5" fill="#28C840"/>
+      <text x="44" y="311" fill="#E7DFD6">unifyone-platform</text>
+      <rect x="230" y="300" width="180" height="10" rx="5" fill="#2A211A"/>
+      <rect class="p1" x="230" y="300" width="180" height="10" rx="5" fill="#D97757"/>
+
+      <circle class="led" cx="32" cy="330" r="3.5" fill="#28C840" style="animation-delay:.6s"/>
+      <text x="44" y="335" fill="#E7DFD6">mcp-server · 18 tools</text>
+      <rect x="230" y="324" width="180" height="10" rx="5" fill="#2A211A"/>
+      <rect class="p2" x="230" y="324" width="180" height="10" rx="5" fill="#E8A33D"/>
+
+      <circle class="led" cx="32" cy="354" r="3.5" fill="#FEBC2E" style="animation-delay:1.2s"/>
+      <text x="44" y="359" fill="#E7DFD6">side-quests.exe</text>
+      <rect x="230" y="348" width="180" height="10" rx="5" fill="#2A211A"/>
+      <rect class="p3" x="230" y="348" width="180" height="10" rx="5" fill="#8C8178"/>
+    </g>
+
+    <rect x=".75" y=".75" width="458.5" height="378.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+  </g>
+</svg>
