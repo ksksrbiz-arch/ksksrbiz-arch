@@ -47,6 +47,19 @@
   </a>
 </p>
 
+<!-- research lab: divider + four experiment windows -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-rain.svg?v=4" alt="— RESEARCH LAB —" width="100%">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-hologram.svg?v=4" alt="hologram.app — a rotating 3D wireframe globe (orthographic projection) with satellite uplink and flowing trade routes: the planetary commerce network" width="49.4%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-cortex.svg?v=4" alt="cortex.app — a 4×6×6×1 neural decision engine; pulses propagate through the layers until the output neuron fires BUY" width="49.4%">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-lorenz.svg?v=4" alt="chaos.app — a Lorenz attractor numerically integrated with RK4 (sigma=10, rho=28, beta=8/3) drawing itself on loop" width="49.4%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-breakout.svg?v=4" alt="arcade.app — self-playing Breakout: an 85-second physics simulation baked into the SVG; every bounce computed, all 40 bricks cleared" width="49.4%">
+</p>
+
 <!-- dock: tech stack -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-dock.svg?v=4" alt="Dock: JavaScript, TypeScript, Node, React, Next.js, Python, Postgres, Supabase, Tailwind, Vercel, Docker, Git, GitHub" width="100%">
@@ -115,5 +128,19 @@ Every window above — boot screen, terminal, Activity Monitor, app windows,
 dock, shutdown bar — is a **hand-crafted animated SVG** checked into
 [`/assets`](./assets). No GitHub Actions, no generators, no external
 services: the animations are pure CSS/SMIL baked into the files themselves.
+
+The **Research Lab** windows are computed, not drawn:
+
+- `chaos.app` — a real **Lorenz attractor**, numerically integrated with
+  RK4 (σ=10, ρ=28, β=8/3, ~2,100 sample points) and baked into the path data.
+- `arcade.app` — a **self-playing Breakout**: an 85-second physics
+  simulation (wall/paddle/brick collisions, demo-mode aim assist) encoded
+  as SMIL keyframes — every bounce is a computed vertex, every brick dies
+  at its exact collision time.
+- `hologram.app` — a rotating wireframe globe using real **orthographic
+  projection**: meridians sweep `rx = R·|sin(φ+ωt)|` while latitudes stay
+  invariant under the spin.
+- `cortex.app` — a 4×6×6×1 network with signal pulses timed to fire the
+  output neuron every forward pass.
 
 </details>
