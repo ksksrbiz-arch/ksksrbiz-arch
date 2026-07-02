@@ -15,7 +15,7 @@
   <defs>
     <clipPath id="scr"><rect width="1200" height="320" rx="14"/></clipPath>
     <linearGradient id="cellg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F6AD55"/><stop offset="1" stop-color="#B794F6"/>
+      <stop offset="0" stop-color="#4FD1C5"/><stop offset="1" stop-color="#B794F6"/>
     </linearGradient>
     <radialGradient id="vig" cx=".5" cy=".5" r=".72">
       <stop offset=".55" stop-color="#000" stop-opacity="0"/>
