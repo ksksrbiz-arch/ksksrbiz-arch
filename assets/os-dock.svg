@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Dock: tech stack — JavaScript, TypeScript, Node, React, Next.js, Python, Postgres, Supabase, Tailwind, Vercel, Docker, Git, GitHub">
+  <style>
+    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
+    .tile { transform-box: fill-box; transform-origin: 50% 100%; animation: bob 5.2s ease-in-out infinite; }
+    @keyframes bob { 0%,100% {transform:translateY(0) scale(1);} 8% {transform:translateY(-10px) scale(1.06);} 16% {transform:translateY(0) scale(1);} }
+    .d0{animation-delay:0s}.d1{animation-delay:.4s}.d2{animation-delay:.8s}.d3{animation-delay:1.2s}
+    .d4{animation-delay:1.6s}.d5{animation-delay:2s}.d6{animation-delay:2.4s}.d7{animation-delay:2.8s}
+    .d8{animation-delay:3.2s}.d9{animation-delay:3.6s}.d10{animation-delay:4s}.d11{animation-delay:4.4s}.d12{animation-delay:4.8s}
+    .run { animation: run 2.4s ease-in-out infinite; }
+    @keyframes run { 0%,100% {opacity:.9;} 50% {opacity:.3;} }
+  </style>
+  <defs>
+    <linearGradient id="shelf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A211A" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#1E1814" stop-opacity=".98"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shelf -->
+  <rect x="44" y="26" width="1112" height="104" rx="26" fill="url(#shelf)" stroke="#3A2E24" stroke-width="1.5"/>
+
+  <!-- tiles: x starts at 78, tile 60, gap 22 -->
+  <g font-weight="800" text-anchor="middle">
+    <g class="tile d0"><rect x="78" y="40" width="60" height="60" rx="14" fill="#F7DF1E"/><text x="108" y="79" font-size="22" fill="#1E1814">JS</text></g>
+    <g class="tile d1"><rect x="160" y="40" width="60" height="60" rx="14" fill="#3178C6"/><text x="190" y="79" font-size="22" fill="#FFFFFF">TS</text></g>
+    <g class="tile d2"><rect x="242" y="40" width="60" height="60" rx="14" fill="#539E43"/><text x="272" y="76" font-size="17" fill="#FFFFFF">node</text></g>
+    <g class="tile d3">
+      <rect x="324" y="40" width="60" height="60" rx="14" fill="#20232A"/>
+      <g stroke="#61DAFB" stroke-width="2.2" fill="none">
+        <ellipse cx="354" cy="70" rx="18" ry="7.2"/>
+        <ellipse cx="354" cy="70" rx="18" ry="7.2" transform="rotate(60 354 70)"/>
+        <ellipse cx="354" cy="70" rx="18" ry="7.2" transform="rotate(-60 354 70)"/>
+      </g>
+      <circle cx="354" cy="70" r="3.4" fill="#61DAFB"/>
+    </g>
+    <g class="tile d4">
+      <rect x="406" y="40" width="60" height="60" rx="14" fill="#0F0F0F" stroke="#3A2E24"/>
+      <text x="436" y="79" font-size="26" fill="#FFFFFF" font-family="Georgia,serif" font-style="italic">N</text>
+    </g>
+    <g class="tile d5">
+      <rect x="488" y="40" width="60" height="60" rx="14" fill="#3776AB"/>
+      <text x="518" y="79" font-size="22" fill="#FFD43B">Py</text>
+    </g>
+    <g class="tile d6"><rect x="570" y="40" width="60" height="60" rx="14" fill="#336791"/><text x="600" y="79" font-size="22" fill="#FFFFFF">PG</text></g>
+    <g class="tile d7">
+      <rect x="652" y="40" width="60" height="60" rx="14" fill="#1C1C1C" stroke="#3ECF8E" stroke-width="1.5"/>
+      <path d="M685 50 l-16 22 h12 l-2 18 16 -22 h-12 z" fill="#3ECF8E"/>
+    </g>
+    <g class="tile d8">
+      <rect x="734" y="40" width="60" height="60" rx="14" fill="#0B1120"/>
+      <path d="M749 74 c3 -8 8 -12 15 -12 -3 3 -4 6 -2 9 2 2 5 3 9 2 -3 8 -8 12 -15 12 3 -3 4 -6 2 -9 -2 -2 -5 -3 -9 -2 z" fill="#38BDF8"/>
+    </g>
+    <g class="tile d9">
+      <rect x="816" y="40" width="60" height="60" rx="14" fill="#0F0F0F" stroke="#3A2E24"/>
+      <path d="M846 54 l17 30 h-34 z" fill="#FFFFFF"/>
+    </g>
+    <g class="tile d10">
+      <rect x="898" y="40" width="60" height="60" rx="14" fill="#2496ED"/>
+      <g fill="#FFFFFF">
+        <rect x="912" y="66" width="8" height="7"/><rect x="922" y="66" width="8" height="7"/><rect x="932" y="66" width="8" height="7"/>
+        <rect x="922" y="57" width="8" height="7"/><rect x="932" y="57" width="8" height="7"/><rect x="932" y="48" width="8" height="7"/>
+        <path d="M908 76 h38 c-2 8 -9 14 -19 14 -10 0 -17 -6 -19 -14 z"/>
+      </g>
+    </g>
+    <!-- separator -->
+    <rect x="982" y="46" width="2" height="50" rx="1" fill="#3A2E24"/>
+    <g class="tile d11"><rect x="1000" y="40" width="60" height="60" rx="14" fill="#F05032"/><text x="1030" y="79" font-size="20" fill="#FFFFFF">git</text></g>
+    <g class="tile d12">
+      <rect x="1082" y="40" width="60" height="60" rx="14" fill="#24292F"/>
+      <!-- octocat-ish mark -->
+      <path d="M1112 52c-9.4 0-17 7.7-17 17.2 0 7.6 4.9 14 11.6 16.3.9.2 1.2-.4 1.2-.8v-3c-4.7 1-5.7-2-5.7-2-.8-2-1.9-2.5-1.9-2.5-1.5-1.1.1-1.1.1-1.1 1.7.1 2.6 1.8 2.6 1.8 1.5 2.6 4 1.9 5 1.4.2-1.1.6-1.9 1.1-2.3-3.8-.4-7.8-1.9-7.8-8.5 0-1.9.7-3.4 1.8-4.6-.2-.5-.8-2.2.2-4.6 0 0 1.4-.5 4.7 1.8a16 16 0 0 1 8.4 0c3.2-2.3 4.6-1.8 4.6-1.8 1 2.4.4 4.1.2 4.6 1.1 1.2 1.8 2.7 1.8 4.6 0 6.6-4 8-7.8 8.5.6.5 1.2 1.6 1.2 3.2v4.8c0 .5.3 1 1.2.8 6.8-2.3 11.6-8.7 11.6-16.3 0-9.5-7.6-17.2-17-17.2z" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- running dots -->
+  <g fill="#D97757">
+    <circle class="run" cx="190" cy="112" r="3"/>
+    <circle class="run" cx="436" cy="112" r="3" style="animation-delay:.5s"/>
+    <circle class="run" cx="685" cy="112" r="3" style="animation-delay:1s"/>
+    <circle class="run" cx="1112" cy="112" r="3" style="animation-delay:1.5s"/>
+  </g>
+
+  <!-- labels -->
+  <g font-size="10" fill="#8C8178" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+    <text x="108" y="126">js</text><text x="190" y="126">ts</text><text x="272" y="126">node</text>
+    <text x="354" y="126">react</text><text x="436" y="126">next</text><text x="518" y="126">python</text>
+    <text x="600" y="126">postgres</text><text x="685" y="126">supabase</text><text x="764" y="126">tailwind</text>
+    <text x="846" y="126">vercel</text><text x="928" y="126">docker</text><text x="1030" y="126">git</text><text x="1112" y="126">github</text>
+  </g>
+</svg>

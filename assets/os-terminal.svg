@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" width="700" height="380" role="img" aria-label="Terminal window: about 1COMMERCE">
+  <!--
+    about.sh — looping 20s typed terminal session.
+    Typing = bg-colored rect sliding right with steps(); outputs pop in after each command.
+  -->
+  <style>
+    text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .sess { animation: sess 20s linear infinite; }
+    @keyframes sess { 0% {opacity:1;} 94% {opacity:1;} 97% {opacity:0;} 99% {opacity:0;} 100% {opacity:1;} }
+
+    /* typing covers: slide right, steps = char count */
+    .t1 { animation: t1 20s linear infinite; }
+    @keyframes t1 { 0%,2.5% {transform:translateX(0); animation-timing-function:steps(6,end);} 7.5%,100% {transform:translateX(64px);} }
+    .t2 { animation: t2 20s linear infinite; }
+    @keyframes t2 { 0%,13% {transform:translateX(0); animation-timing-function:steps(13,end);} 19%,100% {transform:translateX(128px);} }
+    .t3 { animation: t3 20s linear infinite; }
+    @keyframes t3 { 0%,24.5% {transform:translateX(0); animation-timing-function:steps(12,end);} 30.5%,100% {transform:translateX(118px);} }
+    .t4 { animation: t4 20s linear infinite; }
+    @keyframes t4 { 0%,36% {transform:translateX(0); animation-timing-function:steps(25,end);} 44%,100% {transform:translateX(240px);} }
+
+    /* outputs pop */
+    .o1 { animation: pop 20s steps(1,end) infinite; }
+    @keyframes pop { 0%,9% {opacity:0;} 9.5%,100% {opacity:1;} }
+    .o2 { animation: pop2 20s steps(1,end) infinite; }
+    @keyframes pop2 { 0%,20.5% {opacity:0;} 21%,100% {opacity:1;} }
+    .o3 { animation: pop3 20s steps(1,end) infinite; }
+    @keyframes pop3 { 0%,32% {opacity:0;} 32.5%,100% {opacity:1;} }
+    .o4 { animation: pop4 20s steps(1,end) infinite; }
+    @keyframes pop4 { 0%,45.5% {opacity:0;} 46%,100% {opacity:1;} }
+    .o5 { animation: pop5 20s steps(1,end) infinite; }
+    @keyframes pop5 { 0%,52% {opacity:0;} 52.5%,100% {opacity:1;} }
+
+    .caret { animation: blink 1s steps(1,end) infinite; }
+    @keyframes blink { 0%,49% {opacity:1;} 50%,100% {opacity:0;} }
+
+    .dotpulse { animation: dp 1.4s ease-in-out infinite; }
+    .dotpulse.b { animation-delay:.45s; } .dotpulse.c { animation-delay:.9s; }
+    @keyframes dp { 0%,100% {opacity:.2;} 50% {opacity:1;} }
+  </style>
+  <defs>
+    <clipPath id="win"><rect width="700" height="380" rx="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#win)">
+    <rect width="700" height="380" fill="#16110D"/>
+    <!-- title bar -->
+    <rect width="700" height="36" fill="#1E1814"/>
+    <rect y="35" width="700" height="1" fill="#3A2E24"/>
+    <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
+    <circle cx="42" cy="18" r="6" fill="#FEBC2E"/>
+    <circle cx="62" cy="18" r="6" fill="#28C840"/>
+    <text x="350" y="23" font-size="13" fill="#8C8178" text-anchor="middle">about.sh — zsh — 1commerce</text>
+
+    <g class="sess" font-size="15">
+      <!-- $ whoami -->
+      <text x="28" y="72" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">whoami</tspan></text>
+      <rect class="t1" x="46" y="58" width="70" height="20" fill="#16110D"/>
+      <g class="o1">
+        <text x="28" y="100" fill="#E8A33D" font-weight="700">1COMMERCE <tspan fill="#8C8178" font-weight="400">— commerce, simplified · Pacific Northwest</tspan></text>
+      </g>
+
+      <!-- $ cat stack.txt -->
+      <g class="o1">
+        <text x="28" y="136" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">cat stack.txt</tspan></text>
+      </g>
+      <rect class="t2" x="46" y="122" width="134" height="20" fill="#16110D"/>
+      <g class="o2">
+        <text x="28" y="164" fill="#E7DFD6">TypeScript · Next.js · Node · Supabase · Python · Docker</text>
+      </g>
+
+      <!-- $ ls building/ -->
+      <g class="o2">
+        <text x="28" y="200" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">ls building/</tspan></text>
+      </g>
+      <rect class="t3" x="46" y="186" width="124" height="20" fill="#16110D"/>
+      <g class="o3">
+        <text x="28" y="228" fill="#7FB0D9">unifyone/  <tspan fill="#B08CD9">cathedral-framework/</tspan>  <tspan fill="#7FB069">mcp-servers/</tspan>  <tspan fill="#8C8178">side-quests/</tspan></text>
+      </g>
+
+      <!-- ship command -->
+      <g class="o3">
+        <text x="28" y="264" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">./ship --with claude-code</tspan></text>
+      </g>
+      <rect class="t4" x="46" y="250" width="246" height="20" fill="#16110D"/>
+      <g class="o4">
+        <text x="28" y="292" fill="#8C8178">▸ pairing with claude
+          <tspan class="dotpulse" fill="#D97757">.</tspan><tspan class="dotpulse b" fill="#D97757">.</tspan><tspan class="dotpulse c" fill="#D97757">.</tspan>
+        </text>
+        <text x="28" y="318" fill="#28C840">✓ shipped — less plumbing, more selling</text>
+      </g>
+
+      <!-- fresh prompt + caret -->
+      <g class="o5">
+        <text x="28" y="352" fill="#D97757" font-weight="700">$</text>
+        <rect class="caret" x="46" y="339" width="9" height="16" fill="#E7DFD6"/>
+      </g>
+    </g>
+
+    <rect x=".75" y=".75" width="698.5" height="378.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+  </g>
+</svg>

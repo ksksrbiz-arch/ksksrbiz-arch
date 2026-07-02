@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 210" width="380" height="210" role="img" aria-label="mojave-run — wasteland arcade driver">
+  <style>
+    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
+    .dash { stroke-dasharray: 18 22; animation: road 0.7s linear infinite; }
+    @keyframes road { to { stroke-dashoffset: -40; } }
+    .car { animation: car 2.6s ease-in-out infinite; }
+    @keyframes car { 0%,100% {transform:translateY(0);} 25% {transform:translateY(-2.5px);} 60% {transform:translateY(1.5px);} }
+    .dust { animation: dust 1.1s ease-out infinite; }
+    .dust.b{animation-delay:.4s} .dust.c{animation-delay:.8s}
+    @keyframes dust { 0% {transform:translateX(0); opacity:.8;} 100% {transform:translateX(-22px); opacity:0;} }
+    .heat { animation: heat 3s ease-in-out infinite; }
+    @keyframes heat { 0%,100% {opacity:.25;} 50% {opacity:.6;} }
+    .score { animation: score 1s steps(1,end) infinite; }
+    @keyframes score { 0%,49% {opacity:1;} 50%,100% {opacity:.55;} }
+    .go { animation: go 2.4s ease-in-out infinite; }
+    @keyframes go { 0%,100% {opacity:.6;} 50% {opacity:1;} }
+  </style>
+  <defs>
+    <clipPath id="w6"><rect width="380" height="210" rx="12"/></clipPath>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1710"/><stop offset="1" stop-color="#7A2E1E"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#w6)">
+    <rect width="380" height="210" fill="#1E1814"/>
+    <rect width="380" height="30" fill="#2A211A"/>
+    <rect y="29" width="380" height="1" fill="#3A2E24"/>
+    <circle cx="18" cy="15" r="5" fill="#FF5F57"/><circle cx="35" cy="15" r="5" fill="#FEBC2E"/><circle cx="52" cy="15" r="5" fill="#28C840"/>
+    <text x="190" y="20" font-size="12" fill="#8C8178" text-anchor="middle">Mojave Run.app</text>
+
+    <text x="22" y="66" font-size="20" font-weight="800" fill="#F5F0E8">mojave-run</text>
+    <text x="22" y="90" font-size="12.5" fill="#B5AB9F">A wasteland arcade driver built</text>
+    <text x="22" y="108" font-size="12.5" fill="#B5AB9F">for the browser. Survive the Mojave.</text>
+    <rect x="22" y="128" width="106" height="22" rx="11" fill="#2A211A" stroke="#3A2E24"/>
+    <text x="34" y="143" font-size="11" fill="#E8A33D" font-weight="700">🎮 SIDE-QUEST</text>
+    <text class="go" x="22" y="186" font-size="13" font-weight="700" fill="#E8A33D">Insert coin ▸</text>
+
+    <!-- motif: desert scene, moving road, bouncing car -->
+    <g>
+      <rect x="224" y="46" width="140" height="140" rx="10" fill="url(#dsky)"/>
+      <circle cx="336" cy="78" r="14" fill="#E8A33D"/>
+      <g class="heat"><path d="M232 96 h40 M240 104 h32" stroke="#E8A33D" stroke-width="1.6" stroke-linecap="round" fill="none"/></g>
+      <!-- cactus -->
+      <g fill="#5E7A4A">
+        <rect x="244" y="112" width="7" height="30" rx="3.5"/>
+        <rect x="238" y="118" width="6" height="12" rx="3"/>
+        <rect x="251" y="122" width="6" height="10" rx="3"/>
+      </g>
+      <!-- ground + road -->
+      <rect x="224" y="150" width="140" height="36" fill="#3A2113"/>
+      <path class="dash" d="M228 168 H364" stroke="#E8A33D" stroke-width="4" fill="none"/>
+      <!-- car -->
+      <g class="car">
+        <path d="M290 150 l8 -10 h22 l8 10 z" fill="#C25B3C"/>
+        <rect x="282" y="149" width="52" height="12" rx="5" fill="#D97757"/>
+        <circle cx="296" cy="162" r="5" fill="#16110D" stroke="#8C8178" stroke-width="1.5"/>
+        <circle cx="322" cy="162" r="5" fill="#16110D" stroke="#8C8178" stroke-width="1.5"/>
+      </g>
+      <circle class="dust"   cx="280" cy="160" r="3" fill="#8C8178"/>
+      <circle class="dust b" cx="278" cy="156" r="2.2" fill="#8C8178"/>
+      <circle class="dust c" cx="281" cy="163" r="1.8" fill="#8C8178"/>
+      <text class="score" x="232" y="62" font-size="10" fill="#F5F0E8" font-family="'SFMono-Regular',Consolas,monospace">HI-SCORE 9999</text>
+    </g>
+    <rect x=".75" y=".75" width="378.5" height="208.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+  </g>
+</svg>

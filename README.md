@@ -1,137 +1,119 @@
-<!-- Animated 1COMMERCE brand header (self-contained SVG; CSS animates inside it) -->
+<!-- ============================================================
+     1COMMERCE OS — a GitHub profile disguised as an operating system.
+     Every window below is a hand-crafted, self-contained animated SVG
+     living in /assets. No GitHub Actions, no external generators —
+     the whole desktop ships as plain files in this repo.
+     ============================================================ -->
+
+<!-- menu bar -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/header-1commerce.svg?v=3" alt="1COMMERCE" width="100%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-menubar.svg?v=4" alt="1COMMERCE OS menu bar" width="100%">
 </p>
 
-<!-- Claude Code terminal — cycles through build / commit / test / deploy scenes -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/claude-pet.svg?v=3" alt="Claude Code terminal" width="520">
-</p>
-
-<!-- Animated typing headline -->
+<!-- boot sequence → desktop -->
 <p align="center">
   <a href="https://1commerce.online/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=D97757&center=true&vCenter=true&width=620&lines=Commerce+%C2%B7+Simplified;Storefronts+%E2%86%92+APIs+%E2%86%92+Automation;Full-stack%2C+shipped+with+Claude+Code;Less+plumbing+%E2%80%94+more+selling" alt="Commerce, simplified — full-stack, shipped with Claude Code">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-boot.svg?v=4" alt="1COMMERCE OS boots: BIOS check, then a synthwave desktop with a rising sun — commerce, simplified" width="100%">
   </a>
 </p>
 
-<!-- Instagram follow CTA -->
+<!-- terminal + activity monitor -->
 <p align="center">
-  <a href="https://www.instagram.com/1commerce_llc/">
-    <img src="https://img.shields.io/badge/Follow%20on%20Instagram-@1commerce__llc-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=7A2E1E" alt="Follow @1commerce_llc on Instagram">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-terminal.svg?v=4" alt="Terminal: whoami → 1COMMERCE. Full-stack commerce platforms, MCP servers and AI automation in TypeScript, Next.js, Node, Supabase, Python — shipped daily with Claude Code from the Pacific Northwest" width="59.5%">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-activity.svg?v=4" alt="Activity Monitor: shipping velocity, commit pulse, running processes" width="39%">
+</p>
+
+<!-- applications -->
+<p align="center">
+  <a href="https://github.com/t7451/unifyone-netlify-supabase">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-unifyone.svg?v=4" alt="UnifyOne — multi-tenant commerce SaaS on Netlify + Supabase, the 1COMMERCE flagship" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/onecommerce-mcp-server">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-mcp.svg?v=4" alt="onecommerce-mcp-server — Model Context Protocol server with 18 tools across the Cathedral Framework" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/Graph">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-graph.svg?v=4" alt="Graph — interactive graph visualization in JavaScript" width="32.6%">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/ksksrbiz-arch/prediction-alpha-engine">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-alpha.svg?v=4" alt="prediction-alpha-engine — Kalshi/Polymarket ingestion, ML edge scoring, agentic automation in Python" width="32.6%">
+  </a>
+  <a href="https://montucky-moonshine-proposal.netlify.app">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-moonshine.svg?v=4" alt="montucky-moonshine-proposal — premium storefront redesign wired straight into Shopify (live demo)" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/mojave-run">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-mojave.svg?v=4" alt="mojave-run — a wasteland arcade driver built for the browser" width="32.6%">
   </a>
 </p>
 
-<!-- Profile views + followers -->
+<!-- dock: tech stack -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=Profile%20views&color=D97757&style=flat" alt="Profile views">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-dock.svg?v=4" alt="Dock: JavaScript, TypeScript, Node, React, Next.js, Python, Postgres, Supabase, Tailwind, Vercel, Docker, Git, GitHub" width="100%">
+</p>
+
+<!-- live telemetry (server-rendered — needs no Actions) -->
+<p align="center">
+  <img height="170em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&include_all_commits=true&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&icon_color=D97757&border_color=3A2E24" alt="GitHub stats for ksksrbiz-arch">
+  <img height="170em" src="https://streak-stats.demolab.com?user=ksksrbiz-arch&background=1E1814&border=3A2E24&stroke=D97757&ring=D97757&fire=E8A33D&currStreakNum=E7DFD6&sideNums=E7DFD6&currStreakLabel=D97757&sideLabels=8C8178&dates=8C8178" alt="GitHub streak for ksksrbiz-arch">
+</p>
+
+<!-- connect -->
+<p align="center">
+  <a href="https://1commerce.online/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-website.svg?v=4" alt="Website: 1commerce.online"></a>
+  <a href="https://1commerce.shop/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-shop.svg?v=4" alt="Shop: 1commerce.shop"></a>
+  <a href="https://www.linkedin.com/in/1commerce-future"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-linkedin.svg?v=4" alt="LinkedIn: 1commerce-future"></a>
+</p>
+<p align="center">
+  <a href="https://www.youtube.com/@0nestakk"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-youtube.svg?v=4" alt="YouTube: @0nestakk"></a>
+  <a href="https://www.instagram.com/1commerce_llc/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-instagram.svg?v=4" alt="Instagram: @1commerce_llc"></a>
+  <a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-facebook.svg?v=4" alt="Facebook: DevOps.NW.Enterprises"></a>
+</p>
+
+<!-- shutdown -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-shutdown.svg?v=4" alt="Thanks for visiting — 1COMMERCE OS stays online, new builds ship weekly" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=visitors&color=D97757&style=flat-square" alt="Profile views">
   <a href="https://github.com/ksksrbiz-arch?tab=followers">
-    <img src="https://img.shields.io/github/followers/ksksrbiz-arch?label=Followers&style=flat&color=D97757" alt="Followers">
+    <img src="https://img.shields.io/github/followers/ksksrbiz-arch?label=followers&style=flat-square&color=D97757" alt="Followers">
   </a>
 </p>
 
-## 👋 About
+<details>
+<summary>🖥️ Plain-text mode (for humans without pixels &amp; robots without eyes)</summary>
+
+### About
 
 **1COMMERCE — commerce, simplified.** I build full-stack commerce platforms, MCP
 servers, and the AI-driven automation that ties them together — plus the
 occasional browser game for fun.
 
-- 🔭 &nbsp;Building **1COMMERCE / UnifyOne** and the Cathedral Framework
-- ⚙️ &nbsp;Designing **MCP servers** & agentic tooling for commerce
-- 🧰 &nbsp;Full-stack in **TypeScript** (Next.js · Node · Supabase) + **Python**
-- 🤖 &nbsp;Pair-programming with **Claude Code** every day
-- 🌐 &nbsp;[1commerce.online](https://1commerce.online) &nbsp;·&nbsp; 🛍️ [1commerce.shop](https://1commerce.shop)
-- 🌲 &nbsp;Pacific Northwest · UTC-7
+- 🔭 Building **1COMMERCE / UnifyOne** and the Cathedral Framework
+- ⚙️ Designing **MCP servers** & agentic tooling for commerce
+- 🧰 Full-stack in **TypeScript** (Next.js · Node · Supabase) + **Python**
+- 🤖 Pair-programming with **Claude Code** every day
+- 🌐 [1commerce.online](https://1commerce.online) · 🛍️ [1commerce.shop](https://1commerce.shop)
+- 🌲 Pacific Northwest · UTC−7
 
-## 🧰 Tech Stack
+### Featured builds
 
-<!--
-  Tech icons via skillicons.dev. Edit the ?i= list to match your stack.
-  Icon reference: https://skillicons.dev
--->
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,nodejs,react,nextjs,python,postgres,supabase,tailwind,vercel,docker,git,github&perline=13" alt="Tech stack">
-  </a>
-</p>
+| Project | What it is |
+| --- | --- |
+| [unifyone-netlify-supabase](https://github.com/t7451/unifyone-netlify-supabase) | Multi-tenant commerce SaaS on Netlify + Supabase — the flagship |
+| [onecommerce-mcp-server](https://github.com/ksksrbiz-arch/onecommerce-mcp-server) | MCP server: 18 tools across the Cathedral Framework |
+| [Graph](https://github.com/ksksrbiz-arch/Graph) | Interactive graph visualization in JavaScript |
+| [prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine) | Prediction-market alpha engine in Python (Kalshi/Polymarket) |
+| [montucky-moonshine-proposal](https://github.com/ksksrbiz-arch/montucky-moonshine-proposal) | Shopify storefront redesign — [live demo](https://montucky-moonshine-proposal.netlify.app) |
+| [mojave-run](https://github.com/ksksrbiz-arch/mojave-run) | Wasteland arcade driver for the browser |
 
-## 🚀 Featured Builds
+### How this page works
 
-- 🏛️ &nbsp;**[unifyone-netlify-supabase](https://github.com/t7451/unifyone-netlify-supabase)** — **UnifyOne Commerce Platform.** Full-stack, multi-tenant commerce SaaS on Netlify + Supabase — the flagship behind 1COMMERCE.
-- 🛒 &nbsp;**[onecommerce-mcp-server](https://github.com/ksksrbiz-arch/onecommerce-mcp-server)** — Model Context Protocol server for 1COMMERCE / UnifyOne: 18 tools across the Cathedral Framework (stores, products, orders, automations, AI).
-- 🔗 &nbsp;**[Graph](https://github.com/ksksrbiz-arch/Graph)** — Interactive graph visualization built in JavaScript.
-- 📈 &nbsp;**[prediction-alpha-engine](https://github.com/ksksrbiz-arch/prediction-alpha-engine)** — Sovereign prediction-market alpha engine in Python: Kalshi/Polymarket ingestion, ML edge scoring, and agentic automation.
-- 🥃 &nbsp;**[montucky-moonshine-proposal](https://github.com/ksksrbiz-arch/montucky-moonshine-proposal)** — Premium redesigned storefront proposal for Montucky Moonshine, wired straight to Shopify. ([live demo](https://montucky-moonshine-proposal.netlify.app))
-- 🏜️ &nbsp;**[mojave-run](https://github.com/ksksrbiz-arch/mojave-run)** — A wasteland arcade driver built for the browser. Survive the Mojave.
+Every window above — boot screen, terminal, Activity Monitor, app windows,
+dock, shutdown bar — is a **hand-crafted animated SVG** checked into
+[`/assets`](./assets). No GitHub Actions, no generators, no external
+services: the animations are pure CSS/SMIL baked into the files themselves.
 
-## 📊 GitHub Activity
-
-### 🎮 Galaga Contribution Graph
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/output/galaga-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/output/galaga-contribution-graph.svg">
-  <img alt="Galaga contribution graph" src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/output/galaga-contribution-graph.svg">
-</picture>
-
-_Generated with [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
-
-### 📈 Stats (Auto-Updating)
-
-<!--
-  STATS HOST: rendered from a self-hosted github-readme-stats instance.
-  To change it, replace "github-stats-pi-tawny.vercel.app" in the two URLs
-  below with your Vercel domain. See docs/SELF_HOST_STATS.md.
--->
-<p align="center">
-  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&include_all_commits=true&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&icon_color=D97757&border_color=D97757&cache_bust=28016601129" alt="GitHub stats for ksksrbiz-arch">
-  <img height="180em" src="https://github-stats-pi-tawny.vercel.app/api/top-langs/?username=ksksrbiz-arch&layout=compact&langs_count=8&bg_color=1E1814&title_color=D97757&text_color=E7DFD6&border_color=D97757&cache_bust=28016601129" alt="Top languages for ksksrbiz-arch">
-</p>
-
-### 🔥 Streak
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=ksksrbiz-arch&background=1E1814&border=D97757&stroke=D97757&ring=D97757&fire=D97757&currStreakNum=E7DFD6&sideNums=E7DFD6&currStreakLabel=D97757&sideLabels=8C8178&dates=8C8178" alt="GitHub streak for ksksrbiz-arch">
-</p>
-
-### 🌐 Contribution Activity Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ksksrbiz-arch&area=true&radius=8&hide_border=true&bg_color=1E1814&color=E7DFD6&line=D97757&point=F4A28C&title_color=D97757" alt="Contribution activity graph for ksksrbiz-arch" width="100%">
-</p>
-
-### 🧬 Profile Summary
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ksksrbiz-arch&theme=github_dark" alt="Profile details" width="80%">
-</p>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ksksrbiz-arch&theme=github_dark" alt="Repos per language" height="200em">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ksksrbiz-arch&theme=github_dark" alt="Most commit language" height="200em">
-</p>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ksksrbiz-arch&theme=github_dark&utcOffset=-7" alt="Productive time" height="200em">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ksksrbiz-arch&theme=github_dark" alt="Stats" height="200em">
-</p>
-
-## 💬 Dev Quote of the Moment
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox" alt="Random dev quote">
-</p>
-
-## 🤝 Connect With Me
-
-<p align="center">
-  <a href="https://1commerce.online/"><img src="https://img.shields.io/badge/Website-1commerce.online-58A6FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
-  <a href="https://1commerce.shop/"><img src="https://img.shields.io/badge/Shop-1commerce.shop-FF9900?style=for-the-badge&logo=shopify&logoColor=white" alt="Shop"></a>
-  <a href="https://www.linkedin.com/in/1commerce-future"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://www.youtube.com/@0nestakk"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
-  <a href="https://www.instagram.com/1commerce_llc/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-  <a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
-</p>
-
-<!-- Animated wave footer -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E1814,60:C25B3C,100:D97757&height=120&section=footer&text=Thanks%20for%20visiting!&fontColor=F5F0E8&fontSize=20&fontAlignY=78" alt="footer banner" width="100%">
-</p>
+</details>
