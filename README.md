@@ -47,6 +47,40 @@
   </a>
 </p>
 
+<!-- repos.d: auto-generated directory tiles (managed by tools/gen_repo_windows.py) -->
+<!-- REPO-WINDOWS:START -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repos-header.svg?v=4" alt="repos.d — auto-indexed directory" width="100%">
+</p>
+<p align="center">
+  <a href="https://github.com/t7451/unifyone-netlify-supabase">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-unifyone-netlify-supabase.svg?v=4" alt="unifyone-netlify-supabase" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/onecommerce-mcp-server">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-onecommerce-mcp-server.svg?v=4" alt="onecommerce-mcp-server" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/prediction-alpha-engine">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-prediction-alpha-engine.svg?v=4" alt="prediction-alpha-engine" width="32.6%">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/ksksrbiz-arch/Graph">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-Graph.svg?v=4" alt="Graph" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/montucky-moonshine-proposal">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-montucky-moonshine-proposal.svg?v=4" alt="montucky-moonshine-proposal" width="32.6%">
+  </a>
+  <a href="https://github.com/ksksrbiz-arch/mojave-run">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-mojave-run.svg?v=4" alt="mojave-run" width="32.6%">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/ksksrbiz-arch/ksksrbiz-arch">
+    <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repo-ksksrbiz-arch.svg?v=4" alt="ksksrbiz-arch" width="32.6%">
+  </a>
+</p>
+<!-- REPO-WINDOWS:END -->
+
 <!-- research lab: divider + four experiment windows -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-rain.svg?v=4" alt="— RESEARCH LAB —" width="100%">
