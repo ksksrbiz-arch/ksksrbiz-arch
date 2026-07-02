@@ -1,0 +1,15 @@
+{
+  "_comment": "Seed/fallback repo list for gen_repo_windows.py. When the GitHub API is reachable the script refreshes this data automatically; entries here are used when offline. 'owner' defaults to the profile user.",
+  "user": "ksksrbiz-arch",
+  "extra": [
+    { "owner": "t7451", "name": "unifyone-netlify-supabase", "description": "UnifyOne Commerce Platform — multi-tenant commerce SaaS on Netlify + Supabase", "language": "TypeScript", "stargazers_count": null }
+  ],
+  "repos": [
+    { "name": "onecommerce-mcp-server", "description": "MCP server for 1COMMERCE / UnifyOne — 18 tools across the Cathedral Framework", "language": "TypeScript", "stargazers_count": null },
+    { "name": "prediction-alpha-engine", "description": "Prediction-market alpha engine — Kalshi/Polymarket ingestion, ML edge scoring", "language": "Python", "stargazers_count": null },
+    { "name": "Graph", "description": "Interactive graph visualization in JavaScript", "language": "JavaScript", "stargazers_count": null },
+    { "name": "montucky-moonshine-proposal", "description": "Premium storefront redesign wired straight into Shopify", "language": "HTML", "stargazers_count": null },
+    { "name": "mojave-run", "description": "A wasteland arcade driver built for the browser", "language": "JavaScript", "stargazers_count": null },
+    { "name": "ksksrbiz-arch", "description": "1COMMERCE OS — this profile: an operating system built from animated SVGs", "language": "SVG", "stargazers_count": null }
+  ]
+}

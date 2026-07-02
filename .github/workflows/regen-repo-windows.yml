@@ -1,0 +1,30 @@
+# Regenerates the auto-indexed repo windows (assets/repo-*.svg + the
+# REPO-WINDOWS block in README.md) from the live repo list.
+#
+# MANUAL TRIGGER ONLY — no schedule, so it costs nothing while Actions
+# billing is unavailable. When billing is fixed you can add a cron block,
+# or just run it from the Actions tab whenever you create a repo.
+name: Regenerate repo windows
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate windows
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/gen_repo_windows.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/repo-*.svg assets/repos-header.svg README.md
+          git diff --cached --quiet || git commit -m "chore: regenerate repo windows"
+          git push
