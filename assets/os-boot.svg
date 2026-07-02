@@ -1,228 +1,324 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="1COMMERCE OS boot sequence">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="1COMMERCE OS boots: BIOS check, brand splash, then a live desktop session">
   <!--
-    1COMMERCE OS — boot hero, v5.2 cinematic pass.
-    22s master loop: BIOS log (0–5.5s) → desktop: rising sun behind ridgelines,
-    perspective grid, light-sweep wordmark, shooting stars, embers, patrol ship
-    (5.5–20.5s) → fade to black → loop. Self-contained CSS + SMIL.
+    1COMMERCE OS — boot hero, v5.5: three acts on a 30s master loop.
+    Act I   0–5.4s    BIOS self-test
+    Act II  5.4–13.2s brand splash: rising sun, ridgelines, wordmark sweep
+    Act III 14.1–28s  live desktop: cursor double-clicks a folder, Finder
+                      opens, terminal launches from the dock and deploys,
+                      notification toast slides in
+    Self-contained CSS + SMIL. 1% of the master timeline = 0.3s.
   -->
   <style>
-    .bios      { animation: biosPhase 22s linear infinite; }
-    .desktop   { animation: deskPhase 22s linear infinite; }
-    .blackout  { animation: blackPhase 22s linear infinite; }
-    @keyframes biosPhase  { 0% {opacity:1;} 23% {opacity:1;} 26% {opacity:0;} 100% {opacity:0;} }
-    @keyframes deskPhase  { 0% {opacity:0;} 24% {opacity:0;} 28% {opacity:1;} 100% {opacity:1;} }
-    @keyframes blackPhase { 0% {opacity:1;} 2% {opacity:0;} 92% {opacity:0;} 97% {opacity:1;} 100% {opacity:1;} }
+    .bios    { animation: biosPhase 30s linear infinite; }
+    .banner  { animation: bannerPhase 30s linear infinite; }
+    .deskui  { animation: deskPhase 30s linear infinite; }
+    .blackout{ animation: blackPhase 30s linear infinite; }
+    @keyframes biosPhase   { 0% {opacity:1;} 18% {opacity:1;} 20% {opacity:0;} 100% {opacity:0;} }
+    @keyframes bannerPhase { 0% {opacity:0;} 18.5% {opacity:0;} 21% {opacity:1;} 44% {opacity:1;} 47% {opacity:0;} 100% {opacity:0;} }
+    @keyframes deskPhase   { 0% {opacity:0;} 46% {opacity:0;} 49% {opacity:1;} 100% {opacity:1;} }
+    @keyframes blackPhase  { 0% {opacity:1;} 1.5% {opacity:0;} 93% {opacity:0;} 97% {opacity:1;} 100% {opacity:1;} }
 
-    .l1 { animation: pop 22s steps(1,end) infinite; }
-    .l2 { animation: pop 22s steps(1,end) infinite; animation-delay: .8s; }
-    .l3 { animation: pop 22s steps(1,end) infinite; animation-delay: 1.6s; }
-    .l4 { animation: pop 22s steps(1,end) infinite; animation-delay: 2.4s; }
-    .l5 { animation: pop 22s steps(1,end) infinite; animation-delay: 3.2s; }
-    .l6 { animation: pop 22s steps(1,end) infinite; animation-delay: 4.1s; }
+    /* ---- Act I: BIOS ---- */
+    .l1 { animation: pop 30s steps(1,end) infinite; }
+    .l2 { animation: pop 30s steps(1,end) infinite; animation-delay: .8s; }
+    .l3 { animation: pop 30s steps(1,end) infinite; animation-delay: 1.6s; }
+    .l4 { animation: pop 30s steps(1,end) infinite; animation-delay: 2.4s; }
+    .l5 { animation: pop 30s steps(1,end) infinite; animation-delay: 3.2s; }
+    .l6 { animation: pop 30s steps(1,end) infinite; animation-delay: 4.1s; }
     @keyframes pop { 0% {opacity:0;} 1% {opacity:1;} 100% {opacity:1;} }
-    .ok { animation: pop 22s steps(1,end) infinite; }
+    .ok { animation: pop 30s steps(1,end) infinite; }
     .ok2 { animation-delay: 1.1s; } .ok3 { animation-delay: 1.9s; }
     .ok4 { animation-delay: 2.7s; } .ok5 { animation-delay: 3.5s; }
     .caret { animation: blink 1s steps(1,end) infinite; }
     @keyframes blink { 0%,49% {opacity:1;} 50%,100% {opacity:0;} }
-    .boot-bar { animation: bootbar 22s linear infinite; transform-origin: 0 50%; }
-    @keyframes bootbar { 0% {transform:scaleX(0);} 22% {transform:scaleX(1);} 100% {transform:scaleX(1);} }
+    .boot-bar { animation: bootbar 30s linear infinite; transform-origin: 0 50%; }
+    @keyframes bootbar { 0% {transform:scaleX(0);} 16% {transform:scaleX(1);} 100% {transform:scaleX(1);} }
 
-    .sunrise { animation: sunrise 22s ease-out infinite; }
-    @keyframes sunrise { 0%,24% {transform:translateY(175px);} 42% {transform:translateY(0);} 100% {transform:translateY(0);} }
+    /* ---- Act II: splash ---- */
+    .sunrise { animation: sunrise 30s ease-out infinite; }
+    @keyframes sunrise { 0%,19% {transform:translateY(175px);} 30% {transform:translateY(0);} 100% {transform:translateY(0);} }
     .corona { animation: corona 5s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
     @keyframes corona { 0%,100% {opacity:.5; transform:scale(1);} 50% {opacity:.95; transform:scale(1.06);} }
-
-    .word { animation: wordin 22s ease-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
-    @keyframes wordin { 0%,26% {opacity:0; transform:scale(.92);} 35% {opacity:1; transform:scale(1);} 100% {opacity:1; transform:scale(1);} }
-    .tag  { animation: tagin 22s ease-out infinite; }
-    @keyframes tagin { 0%,32% {opacity:0;} 41% {opacity:1;} 100% {opacity:1;} }
-
+    .word { animation: wordin 30s ease-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    @keyframes wordin { 0%,20% {opacity:0; transform:scale(.92);} 27% {opacity:1; transform:scale(1);} 100% {opacity:1; transform:scale(1);} }
+    .tag  { animation: tagin 30s ease-out infinite; }
+    @keyframes tagin { 0%,24% {opacity:0;} 31% {opacity:1;} 100% {opacity:1;} }
     .gridmove { animation: gm 1.1s linear infinite; }
     @keyframes gm { from {transform:translateY(0);} to {transform:translateY(26px);} }
     .glowpulse { animation: gp 4s ease-in-out infinite; }
     @keyframes gp { 0%,100% {opacity:.5;} 50% {opacity:1;} }
-
     .star  { animation: twk 3.2s ease-in-out infinite; }
     .star.b { animation-delay: 1.1s; } .star.c { animation-delay: 2.2s; }
     @keyframes twk { 0%,100% {opacity:.15;} 50% {opacity:.9;} }
-
     .shoot { animation: shoot 9s linear infinite; }
     @keyframes shoot { 0%,74% {opacity:0; transform:translate(0,0);} 76% {opacity:1;}
                        82% {opacity:0; transform:translate(-260px,90px);} 100% {opacity:0; transform:translate(-260px,90px);} }
-    .shoot2 { animation: shoot2 13s linear infinite; }
-    @keyframes shoot2 { 0%,38% {opacity:0; transform:translate(0,0);} 40% {opacity:.9;}
-                        46% {opacity:0; transform:translate(220px,70px);} 100% {opacity:0; transform:translate(220px,70px);} }
-
     .ember { animation: ember 6s ease-out infinite; }
     .ember.b { animation-delay: 2s; } .ember.c { animation-delay: 4s; }
-    .ember.d { animation-delay: 1s; } .ember.e { animation-delay: 3.4s; }
     @keyframes ember { 0% {transform:translateY(0); opacity:0;} 12% {opacity:.9;} 100% {transform:translateY(-130px); opacity:0;} }
-
-    .ship { animation: ship 14s linear infinite; }
-    @keyframes ship { 0% {transform:translateX(-80px);} 100% {transform:translateX(1330px);} }
+    .shipx { animation: shipx 14s linear infinite; }
+    @keyframes shipx { 0% {transform:translateX(-80px);} 100% {transform:translateX(1330px);} }
     .shipbob { animation: shipbob 2.2s ease-in-out infinite; }
     @keyframes shipbob { 0%,100% {transform:translateY(0);} 50% {transform:translateY(-5px);} }
-
     .scan { animation: scan 7s linear infinite; }
     @keyframes scan { from {transform:translateY(-40px);} to {transform:translateY(440px);} }
+
+    /* ---- Act III: desktop session ---- */
+    .cursor { animation: cursor 30s linear infinite; }
+    @keyframes cursor {
+      0%,48%   { transform:translate(720px,320px); opacity:0; }
+      49.5%    { transform:translate(720px,320px); opacity:1; }
+      53%      { transform:translate(96px,148px); }
+      60.5%    { transform:translate(96px,148px); }
+      64%      { transform:translate(586px,392px); }
+      66.5%    { transform:translate(586px,392px); }
+      71%      { transform:translate(820px,240px); }
+      80%      { transform:translate(940px,330px); }
+      93%      { transform:translate(940px,330px); opacity:1; }
+      94%,100% { opacity:0; }
+    }
+    .iconflash { animation: iconflash 30s steps(1,end) infinite; }
+    @keyframes iconflash { 0%,53.4% {opacity:0;} 53.8% {opacity:1;} 54.2% {opacity:0;}
+                           54.6% {opacity:1;} 56% {opacity:1;} 100% {opacity:1;} }
+    .finder { animation: finder 30s ease-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    @keyframes finder { 0%,55.5% {opacity:0; transform:scale(.7);} 57% {opacity:1; transform:scale(1);} 100% {opacity:1; transform:scale(1);} }
+    .rowsel { animation: rowsel 30s steps(1,end) infinite; }
+    @keyframes rowsel { 0%,59.5% {opacity:0;} 60% {opacity:1;} 100% {opacity:1;} }
+    .dockbounce { animation: dockbounce 30s ease-in-out infinite; }
+    @keyframes dockbounce { 0%,64% {transform:translateY(0);} 64.6% {transform:translateY(-10px);}
+                            65.2% {transform:translateY(0);} 65.7% {transform:translateY(-5px);} 66.2%,100% {transform:translateY(0);} }
+    .termwin { animation: termwin 30s ease-out infinite; transform-box: fill-box; transform-origin: 60% 100%; }
+    @keyframes termwin { 0%,65.5% {opacity:0; transform:scale(.6);} 67% {opacity:1; transform:scale(1);} 100% {opacity:1; transform:scale(1);} }
+    .ttype { animation: ttype 30s linear infinite; }
+    @keyframes ttype { 0%,68% {transform:translateX(0); animation-timing-function:steps(13,end);} 72% {transform:translateX(116px);} 100% {transform:translateX(116px);} }
+    .tout { animation: tout 30s steps(1,end) infinite; }
+    @keyframes tout { 0%,73% {opacity:0;} 73.5% {opacity:1;} 100% {opacity:1;} }
+    .toast { animation: toast 30s ease-in-out infinite; }
+    @keyframes toast { 0%,75% {transform:translateX(360px);} 77% {transform:translateX(0);}
+                       86% {transform:translateX(0);} 88%,100% {transform:translateX(360px);} }
+    .uiclock { animation: blink 2s steps(1,end) infinite; }
+    .wifi2 { animation: gp 3s ease-in-out infinite; }
   </style>
 
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0"  stop-color="#0B0805"/>
-      <stop offset=".5" stop-color="#1E1510"/>
-      <stop offset=".82" stop-color="#4A2415"/>
-      <stop offset="1"  stop-color="#6E3018"/>
+      <stop offset="0" stop-color="#0B0805"/><stop offset=".5" stop-color="#1E1510"/>
+      <stop offset=".82" stop-color="#4A2415"/><stop offset="1" stop-color="#6E3018"/>
     </linearGradient>
     <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0"   stop-color="#F5C64F"/>
-      <stop offset=".45" stop-color="#E8894F"/>
-      <stop offset="1"   stop-color="#8A3520"/>
+      <stop offset="0" stop-color="#F5C64F"/><stop offset=".45" stop-color="#E8894F"/><stop offset="1" stop-color="#8A3520"/>
     </linearGradient>
     <linearGradient id="wordgrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFF8EC"/>
-      <stop offset=".55" stop-color="#F3CCA4"/>
-      <stop offset="1" stop-color="#DD7E58"/>
+      <stop offset="0" stop-color="#FFF8EC"/><stop offset=".55" stop-color="#F3CCA4"/><stop offset="1" stop-color="#DD7E58"/>
     </linearGradient>
     <linearGradient id="sweep" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0" spreadMethod="repeat">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset=".46" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".85"/>
-      <stop offset=".54" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".46" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset=".54" stop-color="#FFFFFF" stop-opacity="0"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
       <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="900 0" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
     <radialGradient id="sunglow" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#E8894F" stop-opacity=".6"/>
-      <stop offset="1" stop-color="#E8894F" stop-opacity="0"/>
+      <stop offset="0" stop-color="#E8894F" stop-opacity=".6"/><stop offset="1" stop-color="#E8894F" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="gridfade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#D97757" stop-opacity="0"/>
-      <stop offset="1" stop-color="#D97757" stop-opacity=".9"/>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171009"/><stop offset=".75" stop-color="#241510"/><stop offset="1" stop-color="#3B1E12"/>
     </linearGradient>
     <clipPath id="frame"><rect width="1200" height="430" rx="14"/></clipPath>
     <clipPath id="ground"><rect x="0" y="268" width="1200" height="162"/></clipPath>
     <clipPath id="sunclip"><circle cx="600" cy="252" r="104"/></clipPath>
     <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
-    <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2"/></filter>
   </defs>
 
   <g clip-path="url(#frame)">
-    <!-- =============== DESKTOP SCENE =============== -->
-    <g class="desktop">
+    <!-- ================= ACT II : SPLASH ================= -->
+    <g class="banner">
       <rect width="1200" height="430" fill="url(#sky)"/>
-
-      <!-- stars -->
       <g fill="#F5F0E8">
         <circle class="star"   cx="120" cy="60"  r="1.6"/><circle class="star b" cx="300" cy="110" r="1.2"/>
         <circle class="star c" cx="450" cy="45"  r="1.8"/><circle class="star"   cx="760" cy="70"  r="1.3"/>
         <circle class="star b" cx="920" cy="40"  r="1.7"/><circle class="star c" cx="1080" cy="95" r="1.4"/>
         <circle class="star"   cx="1020" cy="150" r="1.1"/><circle class="star b" cx="200"  cy="160" r="1.2"/>
-        <circle class="star c" cx="560" cy="35" r="1.2"/><circle class="star" cx="680" cy="120" r="1"/>
-        <circle class="star b" cx="60" cy="120" r="1.4"/><circle class="star c" cx="1150" cy="55" r="1.3"/>
+        <circle class="star c" cx="560" cy="35" r="1.2"/><circle class="star b" cx="60" cy="120" r="1.4"/>
       </g>
-
-      <!-- shooting stars -->
       <g class="shoot"><line x1="1010" y1="52" x2="1075" y2="30" stroke="#F5F0E8" stroke-width="2" stroke-linecap="round" opacity=".9"/></g>
-      <g class="shoot2"><line x1="150" y1="40" x2="95" y2="22" stroke="#E8A33D" stroke-width="1.6" stroke-linecap="round" opacity=".8"/></g>
-
-      <!-- rising sun -->
       <g class="sunrise">
         <circle class="corona" cx="600" cy="252" r="200" fill="url(#sunglow)"/>
         <g clip-path="url(#sunclip)">
           <circle cx="600" cy="252" r="104" fill="url(#sunset)"/>
           <g fill="#1E1510">
-            <rect x="480" y="222" width="240" height="5"/>
-            <rect x="480" y="238" width="240" height="7"/>
-            <rect x="480" y="256" width="240" height="10"/>
-            <rect x="480" y="278" width="240" height="13"/>
+            <rect x="480" y="222" width="240" height="5"/><rect x="480" y="238" width="240" height="7"/>
+            <rect x="480" y="256" width="240" height="10"/><rect x="480" y="278" width="240" height="13"/>
           </g>
         </g>
       </g>
-
-      <!-- mountain ridgelines (echo of terrain.app) -->
       <path d="M0 258 L60 240 L130 252 L200 232 L266 248 L330 226 L400 246 L470 234 L540 250 L610 238 L690 252 L760 230 L830 248 L900 236 L980 252 L1050 234 L1120 248 L1200 238 L1200 268 L0 268 Z"
             fill="#221610" stroke="#B85F3F" stroke-width="1" stroke-opacity=".5"/>
       <path d="M0 268 L80 252 L150 262 L230 246 L300 260 L380 244 L450 262 L530 250 L600 264 L680 248 L750 262 L830 250 L910 264 L980 250 L1060 262 L1130 252 L1200 262 L1200 268 L0 268 Z"
             fill="#160F0A" stroke="#D97757" stroke-width="1.2" stroke-opacity=".8"/>
-
-      <!-- patrol ship -->
-      <g class="ship" opacity=".9">
+      <g class="shipx" opacity=".9">
         <g class="shipbob">
           <path d="M0 96 l26 7 -26 7 6 -7 z" fill="#F5F0E8"/>
           <line x1="-34" y1="103" x2="-4" y2="103" stroke="#E8A33D" stroke-width="1.6" stroke-dasharray="5 6" opacity=".7"/>
         </g>
       </g>
-
-      <!-- horizon glow -->
       <rect x="0" y="263" width="1200" height="9" fill="#E8894F" opacity=".65" filter="url(#soft)" class="glowpulse"/>
-
-      <!-- perspective grid -->
       <g clip-path="url(#ground)">
         <rect x="0" y="268" width="1200" height="162" fill="#120C08"/>
         <g stroke="#D97757" stroke-opacity=".5" stroke-width="1.4">
-          <path d="M600 268 L600 430"/>
-          <path d="M600 268 L440 430"/><path d="M600 268 L760 430"/>
-          <path d="M600 268 L240 430"/><path d="M600 268 L960 430"/>
-          <path d="M600 268 L-60 430"/><path d="M600 268 L1260 430"/>
-          <path d="M600 268 L-480 430"/><path d="M600 268 L1680 430"/>
+          <path d="M600 268 L600 430"/><path d="M600 268 L440 430"/><path d="M600 268 L760 430"/>
+          <path d="M600 268 L240 430"/><path d="M600 268 L960 430"/><path d="M600 268 L-60 430"/>
+          <path d="M600 268 L1260 430"/><path d="M600 268 L-480 430"/><path d="M600 268 L1680 430"/>
         </g>
         <g class="gridmove" stroke="#D97757" stroke-opacity=".55" stroke-width="1.8">
-          <path d="M0 272 H1200"/><path d="M0 280 H1200"/>
-          <path d="M0 292 H1200"/><path d="M0 308 H1200"/>
-          <path d="M0 328 H1200"/><path d="M0 352 H1200"/>
-          <path d="M0 380 H1200"/><path d="M0 412 H1200"/>
+          <path d="M0 272 H1200"/><path d="M0 280 H1200"/><path d="M0 292 H1200"/><path d="M0 308 H1200"/>
+          <path d="M0 328 H1200"/><path d="M0 352 H1200"/><path d="M0 380 H1200"/><path d="M0 412 H1200"/>
         </g>
-        <!-- rising embers -->
         <g fill="#E8A33D">
-          <circle class="ember"   cx="240" cy="420" r="2.2"/>
-          <circle class="ember b" cx="480" cy="428" r="1.8"/>
-          <circle class="ember c" cx="730" cy="424" r="2.4"/>
-          <circle class="ember d" cx="950" cy="430" r="1.9"/>
-          <circle class="ember e" cx="1120" cy="422" r="1.6"/>
+          <circle class="ember"   cx="240" cy="420" r="2.2"/><circle class="ember b" cx="480" cy="428" r="1.8"/>
+          <circle class="ember c" cx="730" cy="424" r="2.4"/><circle class="ember b" cx="950" cy="430" r="1.9"/>
         </g>
       </g>
-
-      <!-- wordmark with light sweep -->
       <g text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
         <g class="word">
-          <text x="600" y="192" font-size="88" font-weight="800" letter-spacing="8"
-                fill="#E8894F" opacity=".65" filter="url(#soft)">1COMMERCE OS</text>
-          <text x="600" y="192" font-size="88" font-weight="800" letter-spacing="8"
-                fill="url(#wordgrad)" stroke="#5E2415" stroke-width="1.2" paint-order="stroke">1COMMERCE OS</text>
-          <text x="600" y="192" font-size="88" font-weight="800" letter-spacing="8"
-                fill="url(#sweep)">1COMMERCE OS</text>
+          <text x="600" y="192" font-size="88" font-weight="800" letter-spacing="8" fill="#E8894F" opacity=".65" filter="url(#soft)">1COMMERCE OS</text>
+          <text x="600" y="192" font-size="88" font-weight="800" letter-spacing="8" fill="url(#wordgrad)" stroke="#5E2415" stroke-width="1.2" paint-order="stroke">1COMMERCE OS</text>
+          <text x="600" y="192" font-size="88" font-weight="800" letter-spacing="8" fill="url(#sweep)">1COMMERCE OS</text>
         </g>
         <g class="tag">
           <line x1="290" y1="228" x2="385" y2="228" stroke="#E8A33D" stroke-width="1" opacity=".7"/>
           <line x1="815" y1="228" x2="910" y2="228" stroke="#E8A33D" stroke-width="1" opacity=".7"/>
-          <text x="600" y="235" font-size="20" font-weight="700" letter-spacing="7" fill="#FFF3E0"
-                filter="url(#soft2)" opacity=".55">COMMERCE · SIMPLIFIED</text>
           <text x="600" y="235" font-size="20" font-weight="700" letter-spacing="7" fill="#FFF3E0">COMMERCE · SIMPLIFIED</text>
         </g>
       </g>
-
-      <!-- chips -->
-      <g class="tag" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
-        <rect x="1002" y="384" width="176" height="28" rx="14" fill="#1E1510" stroke="#D97757" stroke-opacity=".55"/>
-        <circle cx="1022" cy="398" r="4" fill="#28C840"/>
-        <text x="1034" y="403" font-size="13" fill="#F5F0E8">system online</text>
-        <rect x="22" y="384" width="150" height="28" rx="14" fill="#1E1510" stroke="#D97757" stroke-opacity=".55"/>
-        <text x="40" y="403" font-size="13" fill="#C9B9A8">v5.2 · fable</text>
-      </g>
-
-      <!-- scanline sweep -->
       <rect class="scan" x="0" y="0" width="1200" height="26" fill="#F5F0E8" opacity=".035"/>
     </g>
 
-    <!-- =============== BIOS PHASE =============== -->
+    <!-- ================= ACT III : DESKTOP SESSION ================= -->
+    <g class="deskui" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+      <rect width="1200" height="430" fill="url(#wall)"/>
+      <!-- wallpaper watermark: dim sun + grid echo -->
+      <circle cx="600" cy="430" r="300" fill="url(#sunglow)" opacity=".35"/>
+      <text x="600" y="290" font-size="200" font-weight="800" fill="#D97757" opacity=".05" text-anchor="middle">1C</text>
+
+      <!-- menu bar -->
+      <rect width="1200" height="28" fill="#1E1814" opacity=".96"/>
+      <rect y="27" width="1200" height="1" fill="#3A2E24"/>
+      <g font-size="12.5" fill="#E7DFD6">
+        <text x="18" y="19" font-weight="800" fill="#D97757">⌘ 1C</text>
+        <text x="64" y="19" font-weight="700" fill="#F5F0E8">Finder</text>
+        <text x="118" y="19" fill="#8C8178">File</text><text x="150" y="19" fill="#8C8178">Build</text>
+        <text x="190" y="19" fill="#8C8178">Ship</text><text x="226" y="19" fill="#8C8178">Automate</text>
+      </g>
+      <g font-family="'SFMono-Regular',Consolas,Menlo,monospace" font-size="12" fill="#8C8178">
+        <circle class="wifi2" cx="1080" cy="14" r="4" fill="#28C840" stroke="none"/>
+        <text x="1092" y="18">online</text>
+        <text x="1150" y="18" fill="#E7DFD6">00<tspan class="uiclock">:</tspan>15</text>
+      </g>
+
+      <!-- desktop icons -->
+      <g font-size="11.5" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+        <rect class="iconflash" x="56" y="52" width="76" height="74" rx="8" fill="#D97757" opacity="0" fill-opacity=".25" stroke="#D97757"/>
+        <g>
+          <path d="M72 70 h20 l6 7 h26 a5 5 0 0 1 5 5 v24 a5 5 0 0 1 -5 5 h-52 a5 5 0 0 1 -5 -5 v-31 a5 5 0 0 1 5 -5 z" fill="#E8A33D"/>
+          <text x="94" y="122" fill="#E7DFD6">unifyone</text>
+        </g>
+        <g>
+          <path d="M72 150 h20 l6 7 h26 a5 5 0 0 1 5 5 v24 a5 5 0 0 1 -5 5 h-52 a5 5 0 0 1 -5 -5 v-31 a5 5 0 0 1 5 -5 z" fill="#C25B3C"/>
+          <text x="94" y="202" fill="#E7DFD6">mcp-servers</text>
+        </g>
+        <g>
+          <path d="M72 230 h20 l6 7 h26 a5 5 0 0 1 5 5 v24 a5 5 0 0 1 -5 5 h-52 a5 5 0 0 1 -5 -5 v-31 a5 5 0 0 1 5 -5 z" fill="#7A5B49"/>
+          <text x="94" y="282" fill="#E7DFD6">cathedral</text>
+        </g>
+      </g>
+
+      <!-- Finder window (opens on double-click) -->
+      <g class="finder">
+        <rect x="200" y="66" width="560" height="270" rx="10" fill="#1E1814" stroke="#3A2E24" stroke-width="1.5"/>
+        <rect x="200" y="66" width="560" height="30" rx="10" fill="#2A211A"/>
+        <rect x="200" y="86" width="560" height="10" fill="#2A211A"/>
+        <rect x="200" y="95" width="560" height="1" fill="#3A2E24"/>
+        <circle cx="218" cy="81" r="5" fill="#FF5F57"/><circle cx="235" cy="81" r="5" fill="#FEBC2E"/><circle cx="252" cy="81" r="5" fill="#28C840"/>
+        <text x="480" y="85" font-size="12" fill="#8C8178" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">unifyone — ~/projects</text>
+        <!-- sidebar -->
+        <rect x="200" y="96" width="120" height="240" fill="#191410"/>
+        <g font-size="11.5" fill="#8C8178" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+          <text x="216" y="120" fill="#D97757">▾ favorites</text>
+          <text x="224" y="142">projects</text><text x="224" y="162">stores</text><text x="224" y="182">agents</text>
+        </g>
+        <!-- rows -->
+        <rect class="rowsel" x="330" y="134" width="420" height="26" rx="5" fill="#D97757" fill-opacity=".22" stroke="#D97757" stroke-opacity=".6"/>
+        <g font-size="13" fill="#E7DFD6" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+          <text x="342" y="124">📁 <tspan x="368">cathedral.framework</tspan><tspan x="660" fill="#8C8178" font-size="11">dir</tspan></text>
+          <text x="342" y="152">🛒 <tspan x="368">storefront.tsx</tspan><tspan x="660" fill="#8C8178" font-size="11">14 kB</tspan></text>
+          <text x="342" y="180">🗄 <tspan x="368">orders.db</tspan><tspan x="660" fill="#8C8178" font-size="11">2.1 GB</tspan></text>
+          <text x="342" y="208">🤖 <tspan x="368">agents.config</tspan><tspan x="660" fill="#8C8178" font-size="11">4 kB</tspan></text>
+          <text x="342" y="236">🚀 <tspan x="368">ship.sh</tspan><tspan x="660" fill="#8C8178" font-size="11">exec</tspan></text>
+        </g>
+        <rect x="200" y="310" width="560" height="26" rx="10" fill="#191410"/>
+        <text x="216" y="327" font-size="11" fill="#8C8178" font-family="'SFMono-Regular',Consolas,Menlo,monospace">5 items · 2.1 GB available for commerce</text>
+      </g>
+
+      <!-- Terminal window (launches from dock) -->
+      <g class="termwin">
+        <rect x="700" y="150" width="420" height="200" rx="10" fill="#16110D" stroke="#3A2E24" stroke-width="1.5"/>
+        <rect x="700" y="150" width="420" height="28" rx="10" fill="#1E1814"/>
+        <rect x="700" y="168" width="420" height="10" fill="#1E1814"/>
+        <rect x="700" y="177" width="420" height="1" fill="#3A2E24"/>
+        <circle cx="717" cy="164" r="5" fill="#FF5F57"/><circle cx="734" cy="164" r="5" fill="#FEBC2E"/><circle cx="751" cy="164" r="5" fill="#28C840"/>
+        <text x="910" y="168" font-size="11.5" fill="#8C8178" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">ship — zsh</text>
+        <g font-size="14" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+          <text x="718" y="208" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">./ship --prod</tspan></text>
+          <rect class="ttype" x="734" y="195" width="122" height="18" fill="#16110D"/>
+          <g class="tout">
+            <text x="718" y="238" fill="#8C8178">▸ building · testing · deploying</text>
+            <text x="718" y="266" fill="#28C840">✓ live in production — 0 errors</text>
+            <text x="718" y="296" fill="#D97757" font-weight="700">$</text>
+            <rect class="caret" x="736" y="283" width="8" height="15" fill="#E7DFD6"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- notification toast -->
+      <g class="toast">
+        <rect x="850" y="44" width="330" height="54" rx="12" fill="#1E1814" stroke="#28C840" stroke-opacity=".7" stroke-width="1.5"/>
+        <circle cx="878" cy="71" r="14" fill="#28C840"/>
+        <path d="M871 71 l5 5 9 -10" stroke="#0E0A08" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <text x="902" y="66" font-size="13" font-weight="700" fill="#F5F0E8">Deploy complete</text>
+        <text x="902" y="84" font-size="11.5" fill="#8C8178">unifyone → production · just now</text>
+      </g>
+
+      <!-- dock -->
+      <g>
+        <rect x="440" y="380" width="320" height="42" rx="14" fill="#1E1814" opacity=".94" stroke="#3A2E24"/>
+        <g font-size="14" text-anchor="middle" font-weight="800">
+          <rect x="454" y="388" width="26" height="26" rx="7" fill="#D97757"/><text x="467" y="406" fill="#1E1814">1C</text>
+          <rect x="492" y="388" width="26" height="26" rx="7" fill="#3178C6"/><text x="505" y="406" fill="#fff" font-size="12">TS</text>
+          <rect x="530" y="388" width="26" height="26" rx="7" fill="#3ECF8E"/><path d="M545 392 l-8 11 h6 l-1 9 8 -11 h-6 z" fill="#0E0A08"/>
+          <g class="dockbounce">
+            <rect x="568" y="388" width="26" height="26" rx="7" fill="#16110D" stroke="#E8A33D"/>
+            <text x="581" y="407" fill="#E8A33D" font-size="13" font-family="'SFMono-Regular',Consolas,monospace">&gt;_</text>
+          </g>
+          <rect x="606" y="388" width="26" height="26" rx="7" fill="#E8A33D"/><text x="619" y="406" fill="#1E1814" font-size="13">🛒</text>
+          <rect x="644" y="388" width="26" height="26" rx="7" fill="#7A5B49"/><text x="657" y="406" fill="#F5F0E8" font-size="13">⛪</text>
+          <rect x="682" y="388" width="26" height="26" rx="7" fill="#24292F"/><text x="695" y="406" fill="#fff" font-size="13">🐙</text>
+          <rect x="720" y="388" width="26" height="26" rx="7" fill="#C25B3C"/><text x="733" y="406" fill="#F5F0E8" font-size="13">♥</text>
+        </g>
+        <circle cx="581" cy="426" r="2.5" fill="#D97757"/>
+        <circle cx="467" cy="426" r="2.5" fill="#D97757"/>
+      </g>
+
+      <!-- cursor -->
+      <g class="cursor">
+        <path d="M0 0 L0 16 L4.6 12.6 L8 19.4 L10.6 18.1 L7.2 11.4 L12.6 11 Z" fill="#F5F0E8" stroke="#1E1814" stroke-width="1.2"/>
+      </g>
+    </g>
+
+    <!-- ================= ACT I : BIOS ================= -->
     <g class="bios">
       <rect width="1200" height="430" fill="#0E0A08"/>
       <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="17" fill="#E7DFD6">
-        <g class="l1">
-          <text x="70" y="88" fill="#D97757" font-weight="700">1COMMERCE BIOS — v5.2 FABLE EDITION</text>
-        </g>
+        <g class="l1"><text x="70" y="88" fill="#D97757" font-weight="700">1COMMERCE BIOS — v5.5 FABLE EDITION</text></g>
         <g class="l2">
           <text x="70" y="128">Memory check ......................... <tspan fill="#8C8178">128TB</tspan></text>
           <text x="560" y="128" class="ok ok2" fill="#28C840" font-weight="700">[ OK ]</text>
