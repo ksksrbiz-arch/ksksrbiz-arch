@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 360" width="590" height="360" role="img" aria-label="hologram.app — rotating wireframe globe: the planetary commerce network">
+  <!--
+    Holographic globe. Y-axis rotation via orthographic projection:
+    meridians project to ellipses whose rx sweeps R·|sin(φ+ωt)| — four
+    meridians 45° apart give a continuous spin. Latitudes are invariant
+    under the rotation, so they're static ellipses. Whole globe tilted 18°.
+  -->
+  <style>
+    text { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-7px); } }
+    .flick { animation: flick 4.7s steps(1,end) infinite; }
+    @keyframes flick { 0%,92% {opacity:1;} 93% {opacity:.55;} 94%,96% {opacity:1;} 97% {opacity:.7;} 98%,100% {opacity:1;} }
+    .route { stroke-dasharray: 5 7; animation: rt 1.3s linear infinite; }
+    @keyframes rt { to { stroke-dashoffset: -12; } }
+    .ping { animation: ping 2.6s ease-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    .ping.b { animation-delay: .9s; } .ping.c { animation-delay: 1.7s; }
+    @keyframes ping { 0% {opacity:.8; transform:scale(.4);} 70%,100% {opacity:0; transform:scale(2.2);} }
+    .cone { animation: cone 3s ease-in-out infinite; }
+    @keyframes cone { 0%,100% {opacity:.16;} 50% {opacity:.3;} }
+    .scanb { animation: scanb 3.4s linear infinite; }
+    @keyframes scanb { from {transform:translateY(-100px);} to {transform:translateY(110px);} }
+  </style>
+  <defs>
+    <clipPath id="hg"><rect width="590" height="360" rx="12"/></clipPath>
+    <clipPath id="ball"><circle cx="0" cy="0" r="96"/></clipPath>
+    <linearGradient id="conegrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#D97757" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#D97757" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#hg)">
+    <rect width="590" height="360" fill="#16110D"/>
+    <rect width="590" height="36" fill="#1E1814"/>
+    <rect y="35" width="590" height="1" fill="#3A2E24"/>
+    <circle cx="22" cy="18" r="6" fill="#FF5F57"/><circle cx="42" cy="18" r="6" fill="#FEBC2E"/><circle cx="62" cy="18" r="6" fill="#28C840"/>
+    <text x="295" y="23" font-size="13" fill="#8C8178" text-anchor="middle">hologram.app — planetary commerce net</text>
+
+    <!-- projector base + cone -->
+    <ellipse cx="295" cy="332" rx="60" ry="9" fill="#2A211A" stroke="#3A2E24"/>
+    <ellipse cx="295" cy="330" rx="26" ry="5" fill="#D97757" opacity=".8"/>
+    <polygon class="cone" points="272,330 318,330 388,120 202,120" fill="url(#conegrad)"/>
+
+    <!-- globe (tilted 18°, floating) -->
+    <g class="float">
+    <g class="flick" transform="translate(295,185)">
+      <g transform="rotate(-18)">
+        <!-- disk -->
+        <circle r="96" fill="#D97757" fill-opacity=".05" stroke="#D97757" stroke-opacity=".9" stroke-width="1.8"/>
+        <!-- latitudes (invariant under Y-spin) -->
+        <g fill="none" stroke="#D97757" stroke-opacity=".45" stroke-width="1.2">
+          <ellipse rx="96" ry="26"/>
+          <ellipse cy="-52" rx="79" ry="20"/>
+          <ellipse cy="52"  rx="79" ry="20"/>
+          <ellipse cy="-81" rx="49" ry="12"/>
+          <ellipse cy="81"  rx="49" ry="12"/>
+        </g>
+        <!-- meridians: rx sweeps R|sin(φ+ωt)|, 4 phases -->
+        <g fill="none" stroke="#E8A33D" stroke-width="1.2">
+          <ellipse rx="96" ry="96" stroke-opacity=".55">
+            <animate attributeName="rx" values="96;68;2;68;96" keyTimes="0;.25;.5;.75;1" dur="7s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" values=".55;.3;.15;.3;.55" dur="7s" repeatCount="indefinite"/>
+          </ellipse>
+          <ellipse rx="68" ry="96" stroke-opacity=".4">
+            <animate attributeName="rx" values="68;2;68;96;68" keyTimes="0;.25;.5;.75;1" dur="7s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" values=".3;.15;.3;.55;.3" dur="7s" repeatCount="indefinite"/>
+          </ellipse>
+          <ellipse rx="2" ry="96" stroke-opacity=".2">
+            <animate attributeName="rx" values="2;68;96;68;2" keyTimes="0;.25;.5;.75;1" dur="7s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" values=".15;.3;.55;.3;.15" dur="7s" repeatCount="indefinite"/>
+          </ellipse>
+          <ellipse rx="68" ry="96" stroke-opacity=".4">
+            <animate attributeName="rx" values="68;96;68;2;68" keyTimes="0;.25;.5;.75;1" dur="7s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" values=".3;.55;.3;.15;.3" dur="7s" repeatCount="indefinite"/>
+          </ellipse>
+        </g>
+        <!-- scan band clipped to the sphere -->
+        <g clip-path="url(#ball)">
+          <rect class="scanb" x="-96" y="-10" width="192" height="16" fill="#F5F0E8" opacity=".06"/>
+        </g>
+        <!-- city nodes + pings -->
+        <g fill="#F5F0E8">
+          <circle cx="-38" cy="-44" r="3"/>
+          <circle cx="44" cy="-12" r="3"/>
+          <circle cx="-12" cy="46" r="3"/>
+        </g>
+        <circle class="ping"   cx="-38" cy="-44" r="6" fill="none" stroke="#F5F0E8" stroke-width="1.5"/>
+        <circle class="ping b" cx="44"  cy="-12" r="6" fill="none" stroke="#F5F0E8" stroke-width="1.5"/>
+        <circle class="ping c" cx="-12" cy="46"  r="6" fill="none" stroke="#F5F0E8" stroke-width="1.5"/>
+        <!-- trade routes -->
+        <g fill="none" stroke="#E8A33D" stroke-width="1.4">
+          <path class="route" d="M-38 -44 Q10 -70 44 -12"/>
+          <path class="route" d="M44 -12 Q30 40 -12 46" style="animation-delay:.4s"/>
+          <path class="route" d="M-12 46 Q-60 10 -38 -44" style="animation-delay:.8s"/>
+        </g>
+      </g>
+      <!-- satellite orbit (wider than globe, same tilt) -->
+      <g transform="rotate(-18)">
+        <ellipse rx="138" ry="34" fill="none" stroke="#8C8178" stroke-opacity=".35" stroke-width="1" stroke-dasharray="3 5"/>
+        <g>
+          <animateMotion dur="6s" repeatCount="indefinite" path="M138 0 A138 34 0 1 0 -138 0 A138 34 0 1 0 138 0"/>
+          <rect x="-5" y="-3" width="10" height="6" rx="1.5" fill="#F5F0E8"/>
+          <rect x="-11" y="-1.5" width="4" height="3" fill="#D97757"/>
+          <rect x="7" y="-1.5" width="4" height="3" fill="#D97757"/>
+        </g>
+      </g>
+    </g>
+    </g>
+
+    <g font-size="11" fill="#8C8178">
+      <text x="24" y="60">rotation: orthographic · rx = R·|sin(φ+ωt)|</text>
+      <text x="566" y="60" text-anchor="end" fill="#D97757">42 regions · 1 platform</text>
+      <text x="24" y="344">holo-link stable</text>
+      <text x="566" y="344" text-anchor="end">sat uplink: 6s orbit</text>
+    </g>
+
+    <rect x=".75" y=".75" width="588.5" height="358.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 360" width="590" height="360" role="img" aria-label="cortex.app — a neural decision engine; pulses flow through the layers and the output fires BUY">
+  <style>
+    .nd { animation: nodeglow 2.2s ease-in-out infinite; }
+    @keyframes nodeglow { 0%,100% { stroke-opacity:.45; } 50% { stroke-opacity:1; } }
+    .fire { animation: fire 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    @keyframes fire { 0%,72% { opacity:0; transform:scale(.8); } 82%,92% { opacity:1; transform:scale(1); } 100% { opacity:0; transform:scale(1.15); } }
+    .halo { animation: halo 2.2s ease-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    @keyframes halo { 0%,78% { opacity:0; transform:scale(.6); } 84% { opacity:.7; transform:scale(1); } 100% { opacity:0; transform:scale(1.8); } }
+    .loss { animation: loss 4.4s ease-in-out infinite; }
+    @keyframes loss { 0%,100% { opacity:.5; } 50% { opacity:1; } }
+  </style>
+  <defs><clipPath id="cx"><rect width="590" height="360" rx="12"/></clipPath></defs>
+  <g clip-path="url(#cx)">
+    <rect width="590" height="360" fill="#16110D"/>
+    <rect width="590" height="36" fill="#1E1814"/>
+    <rect y="35" width="590" height="1" fill="#3A2E24"/>
+    <circle cx="22" cy="18" r="6" fill="#FF5F57"/><circle cx="42" cy="18" r="6" fill="#FEBC2E"/><circle cx="62" cy="18" r="6" fill="#28C840"/>
+    <text x="295.0" y="23" font-size="13" fill="#8C8178" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">cortex.app — decision engine</text>
+
+    <g stroke="#7A5B49" stroke-opacity=".22" stroke-width="1">
+      <line x1="95" y1="90" x2="240" y2="66"/>
+      <line x1="95" y1="90" x2="240" y2="112"/>
+      <line x1="95" y1="90" x2="240" y2="158"/>
+      <line x1="95" y1="90" x2="240" y2="204"/>
+      <line x1="95" y1="90" x2="240" y2="250"/>
+      <line x1="95" y1="90" x2="240" y2="296"/>
+      <line x1="95" y1="146" x2="240" y2="66"/>
+      <line x1="95" y1="146" x2="240" y2="112"/>
+      <line x1="95" y1="146" x2="240" y2="158"/>
+      <line x1="95" y1="146" x2="240" y2="204"/>
+      <line x1="95" y1="146" x2="240" y2="250"/>
+      <line x1="95" y1="146" x2="240" y2="296"/>
+      <line x1="95" y1="202" x2="240" y2="66"/>
+      <line x1="95" y1="202" x2="240" y2="112"/>
+      <line x1="95" y1="202" x2="240" y2="158"/>
+      <line x1="95" y1="202" x2="240" y2="204"/>
+      <line x1="95" y1="202" x2="240" y2="250"/>
+      <line x1="95" y1="202" x2="240" y2="296"/>
+      <line x1="95" y1="258" x2="240" y2="66"/>
+      <line x1="95" y1="258" x2="240" y2="112"/>
+      <line x1="95" y1="258" x2="240" y2="158"/>
+      <line x1="95" y1="258" x2="240" y2="204"/>
+      <line x1="95" y1="258" x2="240" y2="250"/>
+      <line x1="95" y1="258" x2="240" y2="296"/>
+      <line x1="240" y1="66" x2="385" y2="66"/>
+      <line x1="240" y1="66" x2="385" y2="112"/>
+      <line x1="240" y1="66" x2="385" y2="158"/>
+      <line x1="240" y1="66" x2="385" y2="204"/>
+      <line x1="240" y1="66" x2="385" y2="250"/>
+      <line x1="240" y1="66" x2="385" y2="296"/>
+      <line x1="240" y1="112" x2="385" y2="66"/>
+      <line x1="240" y1="112" x2="385" y2="112"/>
+      <line x1="240" y1="112" x2="385" y2="158"/>
+      <line x1="240" y1="112" x2="385" y2="204"/>
+      <line x1="240" y1="112" x2="385" y2="250"/>
+      <line x1="240" y1="112" x2="385" y2="296"/>
+      <line x1="240" y1="158" x2="385" y2="66"/>
+      <line x1="240" y1="158" x2="385" y2="112"/>
+      <line x1="240" y1="158" x2="385" y2="158"/>
+      <line x1="240" y1="158" x2="385" y2="204"/>
+      <line x1="240" y1="158" x2="385" y2="250"/>
+      <line x1="240" y1="158" x2="385" y2="296"/>
+      <line x1="240" y1="204" x2="385" y2="66"/>
+      <line x1="240" y1="204" x2="385" y2="112"/>
+      <line x1="240" y1="204" x2="385" y2="158"/>
+      <line x1="240" y1="204" x2="385" y2="204"/>
+      <line x1="240" y1="204" x2="385" y2="250"/>
+      <line x1="240" y1="204" x2="385" y2="296"/>
+      <line x1="240" y1="250" x2="385" y2="66"/>
+      <line x1="240" y1="250" x2="385" y2="112"/>
+      <line x1="240" y1="250" x2="385" y2="158"/>
+      <line x1="240" y1="250" x2="385" y2="204"/>
+      <line x1="240" y1="250" x2="385" y2="250"/>
+      <line x1="240" y1="250" x2="385" y2="296"/>
+      <line x1="240" y1="296" x2="385" y2="66"/>
+      <line x1="240" y1="296" x2="385" y2="112"/>
+      <line x1="240" y1="296" x2="385" y2="158"/>
+      <line x1="240" y1="296" x2="385" y2="204"/>
+      <line x1="240" y1="296" x2="385" y2="250"/>
+      <line x1="240" y1="296" x2="385" y2="296"/>
+      <line x1="385" y1="66" x2="510" y2="181"/>
+      <line x1="385" y1="112" x2="510" y2="181"/>
+      <line x1="385" y1="158" x2="510" y2="181"/>
+      <line x1="385" y1="204" x2="510" y2="181"/>
+      <line x1="385" y1="250" x2="510" y2="181"/>
+      <line x1="385" y1="296" x2="510" y2="181"/>
+    </g>
+    <g>
+      <circle cx="95" cy="90" r="10" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.0s"/><circle cx="95" cy="146" r="10" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.13s"/><circle cx="95" cy="202" r="10" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.26s"/><circle cx="95" cy="258" r="10" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.39s"/><circle cx="240" cy="66" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.55s"/><circle cx="240" cy="112" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.68s"/><circle cx="240" cy="158" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.81s"/><circle cx="240" cy="204" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:0.94s"/><circle cx="240" cy="250" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.07s"/><circle cx="240" cy="296" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.2s"/><circle cx="385" cy="66" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.1s"/><circle cx="385" cy="112" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.23s"/><circle cx="385" cy="158" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.36s"/><circle cx="385" cy="204" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.49s"/><circle cx="385" cy="250" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.62s"/><circle cx="385" cy="296" r="9" fill="#2A211A" stroke="#7A5B49" stroke-width="1.6" class="nd" style="animation-delay:1.75s"/><circle cx="510" cy="181" r="14" fill="#D97757" stroke="#E8A33D" stroke-width="1.6" class="nd" style="animation-delay:1.65s"/>
+    </g>
+    <g>
+      <circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="0.0s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="0.0s" repeatCount="indefinite" path="M95 90 L240 112 L385 250 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="0.38s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="0.38s" repeatCount="indefinite" path="M95 146 L240 250 L385 112 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="0.76s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="0.76s" repeatCount="indefinite" path="M95 202 L240 158 L385 250 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="1.14s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="1.14s" repeatCount="indefinite" path="M95 258 L240 204 L385 296 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="1.52s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="1.52s" repeatCount="indefinite" path="M95 90 L240 250 L385 66 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="1.9s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="1.9s" repeatCount="indefinite" path="M95 146 L240 250 L385 66 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="2.28s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="2.28s" repeatCount="indefinite" path="M95 202 L240 204 L385 158 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="2.66s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="2.66s" repeatCount="indefinite" path="M95 258 L240 250 L385 112 L510 181"/>
+      </circle><circle r="3.2" fill="#E8A33D" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="2.2s" begin="3.04s" repeatCount="indefinite"/>
+        <animateMotion dur="2.2s" begin="3.04s" repeatCount="indefinite" path="M95 90 L240 112 L385 296 L510 181"/>
+      </circle>
+    </g>
+    <circle class="halo" cx="510" cy="181" r="20" fill="none" stroke="#E8A33D" stroke-width="2"/>
+    <g class="fire" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+      <rect x="532" y="166" width="50" height="28" rx="7" fill="#28C840"/>
+      <text x="557" y="185" font-size="13" font-weight="800" fill="#0E0A08" text-anchor="middle">BUY</text>
+    </g>
+    <g font-family="'SFMono-Regular',Consolas,Menlo,monospace" font-size="11" fill="#8C8178">
+      <text x="62" y="94" text-anchor="end">price</text>
+      <text x="62" y="150" text-anchor="end">demand</text>
+      <text x="62" y="206" text-anchor="end">trend</text>
+      <text x="62" y="262" text-anchor="end">vibes</text>
+      <text x="24" y="344">4×6×6×1 · forward pass ≈ 2.2s</text>
+      <text class="loss" x="566" y="344" text-anchor="end" fill="#D97757">epoch ∞ · loss ↓ 0.0042</text>
+    </g>
+    <rect x=".75" y=".75" width="588.5" height="358.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+  </g>
+</svg>
