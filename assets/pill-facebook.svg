@@ -5,11 +5,11 @@
     .arr { animation: arr 2s ease-in-out infinite; }
     @keyframes arr { 0%,100% { transform:translateX(0); opacity:.6; } 50% { transform:translateX(3px); opacity:1; } }
   </style>
-  <rect x="1" y="1" width="248" height="44" rx="22" fill="#1E1814"/>
+  <rect x="1" y="1" width="248" height="44" rx="22" fill="#161C26"/>
   <rect class="glow" x="1" y="1" width="248" height="44" rx="22" fill="none" stroke="#1877F2" stroke-width="1.6"/>
   <circle cx="23" cy="23" r="14" fill="#1877F2"/>
   <text x="24" y="30" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif">f</text>
-  <text x="46" y="20" font-size="9" letter-spacing="2" fill="#8C8178" font-family="'SFMono-Regular',Consolas,Menlo,monospace">FACEBOOK</text>
-  <text x="46" y="35" font-size="13.5" font-weight="700" fill="#F5F0E8" font-family="'Segoe UI',Helvetica,Arial,sans-serif">DevOps.NW</text>
+  <text x="46" y="20" font-size="9" letter-spacing="2" fill="#7C8798" font-family="'SFMono-Regular',Consolas,Menlo,monospace">FACEBOOK</text>
+  <text x="46" y="35" font-size="13.5" font-weight="700" fill="#F1F5FB" font-family="'Segoe UI',Helvetica,Arial,sans-serif">DevOps.NW</text>
   <text class="arr" x="226" y="29" font-size="14" fill="#1877F2" font-weight="700" font-family="'Segoe UI',Helvetica,Arial,sans-serif">›</text>
 </svg>

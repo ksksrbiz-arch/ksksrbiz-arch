@@ -42,60 +42,60 @@
   </defs>
 
   <g clip-path="url(#win)">
-    <rect width="700" height="380" fill="#16110D"/>
+    <rect width="700" height="380" fill="#0F131B"/>
     <!-- title bar -->
-    <rect width="700" height="36" fill="#1E1814"/>
-    <rect y="35" width="700" height="1" fill="#3A2E24"/>
+    <rect width="700" height="36" fill="#161C26"/>
+    <rect y="35" width="700" height="1" fill="#2B3648"/>
     <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
     <circle cx="42" cy="18" r="6" fill="#FEBC2E"/>
     <circle cx="62" cy="18" r="6" fill="#28C840"/>
-    <text x="350" y="23" font-size="13" fill="#8C8178" text-anchor="middle">about.sh — zsh — 1commerce</text>
+    <text x="350" y="23" font-size="13" fill="#7C8798" text-anchor="middle">about.sh — zsh — 1commerce</text>
 
     <g class="sess" font-size="15">
       <!-- $ whoami -->
-      <text x="28" y="72" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">whoami</tspan></text>
-      <rect class="t1" x="46" y="58" width="70" height="20" fill="#16110D"/>
+      <text x="28" y="72" fill="#4FD1C5" font-weight="700">$ <tspan fill="#E2E8F0" font-weight="400">whoami</tspan></text>
+      <rect class="t1" x="46" y="58" width="70" height="20" fill="#0F131B"/>
       <g class="o1">
-        <text x="28" y="100" fill="#E8A33D" font-weight="700">1COMMERCE <tspan fill="#8C8178" font-weight="400">— commerce, simplified · Pacific Northwest</tspan></text>
+        <text x="28" y="100" fill="#F6AD55" font-weight="700">1COMMERCE <tspan fill="#7C8798" font-weight="400">— commerce, simplified · Pacific Northwest</tspan></text>
       </g>
 
       <!-- $ cat stack.txt -->
       <g class="o1">
-        <text x="28" y="136" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">cat stack.txt</tspan></text>
+        <text x="28" y="136" fill="#4FD1C5" font-weight="700">$ <tspan fill="#E2E8F0" font-weight="400">cat stack.txt</tspan></text>
       </g>
-      <rect class="t2" x="46" y="122" width="134" height="20" fill="#16110D"/>
+      <rect class="t2" x="46" y="122" width="134" height="20" fill="#0F131B"/>
       <g class="o2">
-        <text x="28" y="164" fill="#E7DFD6">TypeScript · Next.js · Node · Supabase · Python · Docker</text>
+        <text x="28" y="164" fill="#E2E8F0">TypeScript · Next.js · Node · Supabase · Python · Docker</text>
       </g>
 
       <!-- $ ls building/ -->
       <g class="o2">
-        <text x="28" y="200" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">ls building/</tspan></text>
+        <text x="28" y="200" fill="#4FD1C5" font-weight="700">$ <tspan fill="#E2E8F0" font-weight="400">ls building/</tspan></text>
       </g>
-      <rect class="t3" x="46" y="186" width="124" height="20" fill="#16110D"/>
+      <rect class="t3" x="46" y="186" width="124" height="20" fill="#0F131B"/>
       <g class="o3">
-        <text x="28" y="228" fill="#7FB0D9">unifyone/  <tspan fill="#B08CD9">cathedral-framework/</tspan>  <tspan fill="#7FB069">mcp-servers/</tspan>  <tspan fill="#8C8178">side-quests/</tspan></text>
+        <text x="28" y="228" fill="#63B3ED">unifyone/  <tspan fill="#B794F6">cathedral-framework/</tspan>  <tspan fill="#68D391">mcp-servers/</tspan>  <tspan fill="#7C8798">side-quests/</tspan></text>
       </g>
 
       <!-- ship command -->
       <g class="o3">
-        <text x="28" y="264" fill="#D97757" font-weight="700">$ <tspan fill="#E7DFD6" font-weight="400">./ship --with claude-code</tspan></text>
+        <text x="28" y="264" fill="#4FD1C5" font-weight="700">$ <tspan fill="#E2E8F0" font-weight="400">./ship --with claude-code</tspan></text>
       </g>
-      <rect class="t4" x="46" y="250" width="246" height="20" fill="#16110D"/>
+      <rect class="t4" x="46" y="250" width="246" height="20" fill="#0F131B"/>
       <g class="o4">
-        <text x="28" y="292" fill="#8C8178">▸ pairing with claude
-          <tspan class="dotpulse" fill="#D97757">.</tspan><tspan class="dotpulse b" fill="#D97757">.</tspan><tspan class="dotpulse c" fill="#D97757">.</tspan>
+        <text x="28" y="292" fill="#7C8798">▸ pairing with claude
+          <tspan class="dotpulse" fill="#4FD1C5">.</tspan><tspan class="dotpulse b" fill="#4FD1C5">.</tspan><tspan class="dotpulse c" fill="#4FD1C5">.</tspan>
         </text>
         <text x="28" y="318" fill="#28C840">✓ shipped — less plumbing, more selling</text>
       </g>
 
       <!-- fresh prompt + caret -->
       <g class="o5">
-        <text x="28" y="352" fill="#D97757" font-weight="700">$</text>
-        <rect class="caret" x="46" y="339" width="9" height="16" fill="#E7DFD6"/>
+        <text x="28" y="352" fill="#4FD1C5" font-weight="700">$</text>
+        <rect class="caret" x="46" y="339" width="9" height="16" fill="#E2E8F0"/>
       </g>
     </g>
 
-    <rect x=".75" y=".75" width="698.5" height="378.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+    <rect x=".75" y=".75" width="698.5" height="378.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>

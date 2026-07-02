@@ -26,22 +26,22 @@
   <defs>
     <clipPath id="awin"><rect width="460" height="380" rx="12"/></clipPath>
     <linearGradient id="barg" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#7A2E1E"/>
-      <stop offset="1" stop-color="#E8A33D"/>
+      <stop offset="0" stop-color="#1E2A4A"/>
+      <stop offset="1" stop-color="#F6AD55"/>
     </linearGradient>
   </defs>
 
   <g clip-path="url(#awin)">
-    <rect width="460" height="380" fill="#16110D"/>
-    <rect width="460" height="36" fill="#1E1814"/>
-    <rect y="35" width="460" height="1" fill="#3A2E24"/>
+    <rect width="460" height="380" fill="#0F131B"/>
+    <rect width="460" height="36" fill="#161C26"/>
+    <rect y="35" width="460" height="1" fill="#2B3648"/>
     <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
     <circle cx="42" cy="18" r="6" fill="#FEBC2E"/>
     <circle cx="62" cy="18" r="6" fill="#28C840"/>
-    <text x="230" y="23" font-size="13" fill="#8C8178" text-anchor="middle">Activity Monitor</text>
+    <text x="230" y="23" font-size="13" fill="#7C8798" text-anchor="middle">Activity Monitor</text>
 
     <!-- shipping velocity equalizer -->
-    <text x="26" y="66" font-size="12" fill="#8C8178" letter-spacing="2">SHIPPING VELOCITY</text>
+    <text x="26" y="66" font-size="12" fill="#7C8798" letter-spacing="2">SHIPPING VELOCITY</text>
     <g>
       <rect class="bar b0"  x="26"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
       <rect class="bar b1"  x="60"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
@@ -56,34 +56,34 @@
       <rect class="bar b10" x="366" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
       <rect class="bar b11" x="400" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
     </g>
-    <rect x="26" y="152" width="408" height="1" fill="#3A2E24"/>
+    <rect x="26" y="152" width="408" height="1" fill="#2B3648"/>
 
     <!-- commits sparkline -->
-    <text x="26" y="182" font-size="12" fill="#8C8178" letter-spacing="2">COMMIT PULSE</text>
+    <text x="26" y="182" font-size="12" fill="#7C8798" letter-spacing="2">COMMIT PULSE</text>
     <path class="spark" d="M26 240 L60 232 L94 238 L128 214 L162 224 L196 200 L230 212 L264 196 L298 206 L332 188 L366 198 L400 182 L434 190"
-          fill="none" stroke="#D97757" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle class="sparkdot" cx="434" cy="190" r="4" fill="#E8A33D"/>
-    <rect x="26" y="256" width="408" height="1" fill="#3A2E24"/>
+          fill="none" stroke="#4FD1C5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="sparkdot" cx="434" cy="190" r="4" fill="#F6AD55"/>
+    <rect x="26" y="256" width="408" height="1" fill="#2B3648"/>
 
     <!-- processes -->
-    <text x="26" y="286" font-size="12" fill="#8C8178" letter-spacing="2">PROCESSES</text>
+    <text x="26" y="286" font-size="12" fill="#7C8798" letter-spacing="2">PROCESSES</text>
     <g font-size="13">
       <circle class="led" cx="32" cy="306" r="3.5" fill="#28C840"/>
-      <text x="44" y="311" fill="#E7DFD6">unifyone-platform</text>
-      <rect x="230" y="300" width="180" height="10" rx="5" fill="#2A211A"/>
-      <rect class="p1" x="230" y="300" width="180" height="10" rx="5" fill="#D97757"/>
+      <text x="44" y="311" fill="#E2E8F0">unifyone-platform</text>
+      <rect x="230" y="300" width="180" height="10" rx="5" fill="#1B2230"/>
+      <rect class="p1" x="230" y="300" width="180" height="10" rx="5" fill="#4FD1C5"/>
 
       <circle class="led" cx="32" cy="330" r="3.5" fill="#28C840" style="animation-delay:.6s"/>
-      <text x="44" y="335" fill="#E7DFD6">mcp-server · 18 tools</text>
-      <rect x="230" y="324" width="180" height="10" rx="5" fill="#2A211A"/>
-      <rect class="p2" x="230" y="324" width="180" height="10" rx="5" fill="#E8A33D"/>
+      <text x="44" y="335" fill="#E2E8F0">mcp-server · 18 tools</text>
+      <rect x="230" y="324" width="180" height="10" rx="5" fill="#1B2230"/>
+      <rect class="p2" x="230" y="324" width="180" height="10" rx="5" fill="#F6AD55"/>
 
       <circle class="led" cx="32" cy="354" r="3.5" fill="#FEBC2E" style="animation-delay:1.2s"/>
-      <text x="44" y="359" fill="#E7DFD6">side-quests.exe</text>
-      <rect x="230" y="348" width="180" height="10" rx="5" fill="#2A211A"/>
-      <rect class="p3" x="230" y="348" width="180" height="10" rx="5" fill="#8C8178"/>
+      <text x="44" y="359" fill="#E2E8F0">side-quests.exe</text>
+      <rect x="230" y="348" width="180" height="10" rx="5" fill="#1B2230"/>
+      <rect class="p3" x="230" y="348" width="180" height="10" rx="5" fill="#7C8798"/>
     </g>
 
-    <rect x=".75" y=".75" width="458.5" height="378.5" rx="12" fill="none" stroke="#3A2E24" stroke-width="1.5"/>
+    <rect x=".75" y=".75" width="458.5" height="378.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>
