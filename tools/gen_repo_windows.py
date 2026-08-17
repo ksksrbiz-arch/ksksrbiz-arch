@@ -42,6 +42,14 @@ LANG = {
 }
 
 def load_repos():
+    """Return (user, repos) for the profile.
+
+    Tries the live GitHub API first (authenticated via GITHUB_TOKEN when set),
+    skipping forks and archived repos. Falls back to the committed seed list in
+    tools/repos.json when the API is unreachable, so the generator still works
+    offline. Entries from the seed's "extra" list (repos owned by someone else)
+    are prepended, each tagged with its owner.
+    """
     seed = json.load(open(SEED))
     user = seed["user"]
     repos = None
@@ -65,6 +73,13 @@ def load_repos():
     return user, out
 
 def fm_window(user, repos):
+    """Render the ~/repos file-manager window as a standalone SVG string.
+
+    Lays out a title bar, a toolbar with path crumbs and a search field, a
+    sidebar of smart folders (one per language, counted from `repos`), one row
+    per repo, and a status bar. Window height scales with the repo count, so
+    the caller never has to size it.
+    """
     W = 1200
     TB, TOOL, HDR, ROW, FOOT = 34, 46, 26, 52, 32
     n = len(repos)
@@ -167,6 +182,12 @@ def fm_window(user, repos):
 '''
 
 def main():
+    """Write assets/repos-fm.svg and refresh the README's REPO-WINDOWS block.
+
+    The README block is emitted as a single line with no whitespace between
+    tags: newlines between inline <img>/<a> tags render as spaces on GitHub and
+    would make percentage-width rows wrap on narrow screens.
+    """
     user, repos = load_repos()
     svg = fm_window(user, repos)
     open(os.path.join(ASSETS, "repos-fm.svg"), "w").write(svg)
@@ -174,7 +195,7 @@ def main():
     # README block — single-line, whitespace-free (mobile-safe)
     payload = ('<!-- REPO-WINDOWS:START -->\n'
                f'<p align="center"><a href="https://github.com/{user}?tab=repositories">'
-               f'<img src="{RAW}/repos-fm.svg?v=5" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>\n'
+               f'<img src="{RAW}/repos-fm.svg?v=6" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>\n'
                '<!-- REPO-WINDOWS:END -->')
     md = open(README).read()
     marked = re.search(r'<!-- REPO-WINDOWS:START -->.*?<!-- REPO-WINDOWS:END -->', md, re.S)
