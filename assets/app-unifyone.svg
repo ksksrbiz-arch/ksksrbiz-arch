@@ -1,48 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 210" width="380" height="210" role="img" aria-label="UnifyOne — multi-tenant commerce platform">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="UnifyOne — multi-tenant commerce dashboard: GMV chart, live KPIs and tenant storefronts">
   <style>
     text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
-    .hub { animation: hub 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
-    @keyframes hub { 0%,100% {transform:scale(1);} 50% {transform:scale(1.12);} }
-    .lnk { stroke-dasharray: 6 6; animation: flow 1.2s linear infinite; }
-    @keyframes flow { to { stroke-dashoffset: -12; } }
-    .tn { animation: tn 3s ease-in-out infinite; }
-    .tn.b {animation-delay:.7s} .tn.c {animation-delay:1.4s} .tn.d {animation-delay:2.1s}
-    @keyframes tn { 0%,100% {opacity:.55;} 50% {opacity:1;} }
-    .go { animation: go 2.4s ease-in-out infinite; }
-    @keyframes go { 0%,100% {opacity:.6;} 50% {opacity:1;} }
+    .mono { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .bar { transform-box:fill-box; transform-origin:50% 100%; animation:gr 3.4s ease-out infinite; }
+    .b1{animation-delay:.0s}.b2{animation-delay:.1s}.b3{animation-delay:.2s}.b4{animation-delay:.3s}
+    .b5{animation-delay:.4s}.b6{animation-delay:.5s}.b7{animation-delay:.6s}
+    @keyframes gr { 0% {transform:scaleY(.05);} 22%,88% {transform:scaleY(1);} 100% {transform:scaleY(.05);} }
+    .led { animation:led 2.2s ease-in-out infinite; }
+    @keyframes led { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .k1 { animation:kf 3.4s steps(1,end) infinite; }
+    .k2 { animation:kf2 3.4s steps(1,end) infinite; }
+    @keyframes kf  { 0%,40%{opacity:1} 41%,100%{opacity:0} }
+    @keyframes kf2 { 0%,40%{opacity:0} 41%,100%{opacity:1} }
+    .go { animation:go 2.6s ease-in-out infinite; }
+    @keyframes go { 0%,100%{opacity:.6} 50%{opacity:1} }
   </style>
-  <defs><clipPath id="w1"><rect width="380" height="210" rx="12"/></clipPath></defs>
-  <g clip-path="url(#w1)">
-    <rect width="380" height="210" fill="#161C26"/>
-    <rect width="380" height="30" fill="#1B2230"/>
-    <rect y="29" width="380" height="1" fill="#2B3648"/>
-    <circle cx="18" cy="15" r="5" fill="#FF5F57"/><circle cx="35" cy="15" r="5" fill="#FEBC2E"/><circle cx="52" cy="15" r="5" fill="#28C840"/>
-    <text x="190" y="20" font-size="12" fill="#7C8798" text-anchor="middle">UnifyOne.app</text>
+  <defs>
+    <clipPath id="u"><rect width="380" height="240" rx="12"/></clipPath>
+    <linearGradient id="ub" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2E6B75"/><stop offset="1" stop-color="#4FD1C5"/></linearGradient>
+  </defs>
+  <g clip-path="url(#u)">
+    <rect width="380" height="240" fill="#0F131B"/>
+    <rect width="380" height="24" fill="#1B2230"/><rect y="23" width="380" height="1" fill="#2B3648"/>
+    <circle cx="14" cy="12" r="4" fill="#FF5F57"/><circle cx="28" cy="12" r="4" fill="#FEBC2E"/><circle cx="42" cy="12" r="4" fill="#28C840"/>
+    <text x="190" y="16" class="mono" font-size="10.5" fill="#7C8798" text-anchor="middle">UnifyOne — control plane</text>
 
-    <text x="22" y="66" font-size="20" font-weight="800" fill="#F1F5FB">UnifyOne</text>
-    <text x="22" y="90" font-size="12.5" fill="#9AA6B8">Multi-tenant commerce SaaS on</text>
-    <text x="22" y="108" font-size="12.5" fill="#9AA6B8">Netlify + Supabase — the flagship.</text>
-    <rect x="22" y="128" width="86" height="22" rx="11" fill="#1B2230" stroke="#2B3648"/>
-    <text x="34" y="143" font-size="11" fill="#4FD1C5" font-weight="700">FLAGSHIP</text>
-    <text class="go" x="22" y="186" font-size="13" font-weight="700" fill="#F6AD55">Open project ▸</text>
+    <text x="18" y="45" class="mono" font-size="9.5" fill="#4C5870" letter-spacing="1.4">GMV · LAST 7 DAYS</text>
+    <circle class="led" cx="330" cy="41" r="3.5" fill="#68D391"/>
+    <text x="342" y="45" class="mono" font-size="9.5" fill="#68D391">live</text>
 
-    <!-- motif: tenants orbiting one platform hub -->
-    <g stroke="#46536B" stroke-width="1.5" fill="none">
-      <path class="lnk" d="M292 120 L250 66"/>
-      <path class="lnk" d="M292 120 L340 70"/>
-      <path class="lnk" d="M292 120 L246 168"/>
-      <path class="lnk" d="M292 120 L342 166"/>
+    <g>
+      <rect class="bar b1" x="18"  y="56" width="30" height="52" rx="3" fill="url(#ub)"/>
+      <rect class="bar b2" x="56"  y="56" width="30" height="52" rx="3" fill="url(#ub)"/>
+      <rect class="bar b3" x="94"  y="56" width="30" height="52" rx="3" fill="url(#ub)"/>
+      <rect class="bar b4" x="132" y="56" width="30" height="52" rx="3" fill="url(#ub)"/>
+      <rect class="bar b5" x="170" y="56" width="30" height="52" rx="3" fill="url(#ub)"/>
+      <rect class="bar b6" x="208" y="56" width="30" height="52" rx="3" fill="url(#ub)"/>
+      <rect class="bar b7" x="246" y="56" width="30" height="52" rx="3" fill="#4FD1C5"/>
+      <rect x="290" y="52" width="72" height="56" rx="8" fill="#161C26" stroke="#2B3648"/>
+      <text x="326" y="74" class="mono" font-size="16" font-weight="800" fill="#F1F5FB" text-anchor="middle">
+        <tspan class="k1">$48.2k</tspan><tspan class="k2" x="326">$51.7k</tspan>
+      </text>
+      <text x="326" y="92" class="mono" font-size="9" fill="#68D391" text-anchor="middle">▲ 12.4% wow</text>
     </g>
-    <g class="hub">
-      <circle cx="292" cy="120" r="22" fill="#FF8B6A"/>
-      <text x="292" y="126" font-size="14" font-weight="800" fill="#161C26" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">1C</text>
+
+    <rect x="18" y="120" width="344" height="1" fill="#2B3648"/>
+    <text x="18" y="138" class="mono" font-size="9.5" fill="#4C5870" letter-spacing="1.4">TENANT STOREFRONTS</text>
+
+    <g class="mono" font-size="11">
+      <rect x="18" y="146" width="344" height="24" rx="6" fill="#161C26"/>
+      <circle class="led" cx="32" cy="158" r="3.5" fill="#68D391"/>
+      <text x="46" y="162" fill="#E2E8F0">montucky-moonshine</text>
+      <text x="352" y="162" fill="#F6AD55" text-anchor="end">142 orders</text>
+
+      <rect x="18" y="174" width="344" height="24" rx="6" fill="#161C26" fill-opacity=".55"/>
+      <circle class="led" cx="32" cy="186" r="3.5" fill="#68D391" style="animation-delay:.7s"/>
+      <text x="46" y="190" fill="#E2E8F0">1commerce.shop</text>
+      <text x="352" y="190" fill="#F6AD55" text-anchor="end">318 orders</text>
     </g>
-    <g font-family="'SFMono-Regular',Consolas,monospace" font-size="13" text-anchor="middle">
-      <g class="tn"><rect x="232" y="50" width="36" height="24" rx="6" fill="#1B2230" stroke="#2B3648"/><text x="250" y="66" fill="#E2E8F0">🛍</text></g>
-      <g class="tn b"><rect x="322" y="54" width="36" height="24" rx="6" fill="#1B2230" stroke="#2B3648"/><text x="340" y="70" fill="#E2E8F0">🛒</text></g>
-      <g class="tn c"><rect x="228" y="152" width="36" height="24" rx="6" fill="#1B2230" stroke="#2B3648"/><text x="246" y="168" fill="#E2E8F0">📦</text></g>
-      <g class="tn d"><rect x="324" y="150" width="36" height="24" rx="6" fill="#1B2230" stroke="#2B3648"/><text x="342" y="166" fill="#E2E8F0">💳</text></g>
-    </g>
-    <rect x=".75" y=".75" width="378.5" height="208.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+
+    <rect y="206" width="380" height="34" fill="#161C26"/><rect y="206" width="380" height="1" fill="#2B3648"/>
+    <circle cx="26" cy="223" r="9" fill="#FF8B6A"/>
+    <text x="26" y="227" class="mono" font-size="8.5" font-weight="800" fill="#161C26" text-anchor="middle">1C</text>
+    <text x="42" y="221" font-size="12.5" font-weight="700" fill="#F1F5FB">unifyone</text>
+    <text x="42" y="233" class="mono" font-size="9" fill="#7C8798">multi-tenant SaaS · flagship</text>
+    <text class="go" x="362" y="228" font-size="11.5" font-weight="700" fill="#4FD1C5" text-anchor="end">open ▸</text>
+    <rect x=".75" y=".75" width="378.5" height="238.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>

@@ -1,48 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 210" width="380" height="210" role="img" aria-label="Graph — interactive graph visualization">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="Graph — interactive force-directed graph visualization running in the browser">
   <style>
-    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
-    .n { transform-box: fill-box; transform-origin: 50% 50%; animation: nd 4s ease-in-out infinite; }
-    .n.b{animation-delay:.8s} .n.c{animation-delay:1.6s} .n.d{animation-delay:2.4s} .n.e{animation-delay:3.2s}
-    @keyframes nd { 0%,100% {transform:scale(1);} 50% {transform:scale(1.35);} }
-    .edge { stroke-dasharray: 4 5; animation: ef 1.4s linear infinite; }
-    @keyframes ef { to { stroke-dashoffset: -9; } }
-    .drift { animation: drift 7s ease-in-out infinite; }
-    @keyframes drift { 0%,100% {transform:translate(0,0);} 50% {transform:translate(0,-6px);} }
-    .go { animation: go 2.4s ease-in-out infinite; }
-    @keyframes go { 0%,100% {opacity:.6;} 50% {opacity:1;} }
+    text { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .n { transform-box:fill-box; transform-origin:50% 50%; animation:nd 4.2s ease-in-out infinite; }
+    .n2{animation-delay:.5s}.n3{animation-delay:1s}.n4{animation-delay:1.5s}
+    .n5{animation-delay:2s}.n6{animation-delay:2.5s}.n7{animation-delay:3s}
+    @keyframes nd { 0%,100%{transform:scale(1)} 50%{transform:scale(1.3)} }
+    .e { stroke-dasharray:4 5; animation:ef 1.5s linear infinite; }
+    @keyframes ef { to { stroke-dashoffset:-9 } }
+    .sim { animation:sim 9s ease-in-out infinite; }
+    @keyframes sim { 0%,100%{transform:translate(0,0) rotate(0deg)} 50%{transform:translate(0,-5px) rotate(3deg)} }
+    .go { animation:go 2.6s ease-in-out infinite; }
+    @keyframes go { 0%,100%{opacity:.6} 50%{opacity:1} }
+    .tick { animation:tk 1s steps(1,end) infinite; }
+    @keyframes tk { 0%,49%{opacity:1} 50%,100%{opacity:.4} }
   </style>
-  <defs><clipPath id="w4"><rect width="380" height="210" rx="12"/></clipPath></defs>
-  <g clip-path="url(#w4)">
-    <rect width="380" height="210" fill="#161C26"/>
-    <rect width="380" height="30" fill="#1B2230"/>
-    <rect y="29" width="380" height="1" fill="#2B3648"/>
-    <circle cx="18" cy="15" r="5" fill="#FF5F57"/><circle cx="35" cy="15" r="5" fill="#FEBC2E"/><circle cx="52" cy="15" r="5" fill="#28C840"/>
-    <text x="190" y="20" font-size="12" fill="#7C8798" text-anchor="middle">Graph.app</text>
+  <defs><clipPath id="g"><rect width="380" height="240" rx="12"/></clipPath></defs>
+  <g clip-path="url(#g)">
+    <rect width="380" height="240" fill="#0F131B"/>
+    <rect width="380" height="24" fill="#1B2230"/><rect y="23" width="380" height="1" fill="#2B3648"/>
+    <circle cx="14" cy="12" r="4" fill="#FF5F57"/><circle cx="28" cy="12" r="4" fill="#FEBC2E"/><circle cx="42" cy="12" r="4" fill="#28C840"/>
+    <text x="190" y="16" font-size="10.5" fill="#7C8798" text-anchor="middle">Graph — force simulation</text>
 
-    <text x="22" y="66" font-size="20" font-weight="800" fill="#F1F5FB">Graph</text>
-    <text x="22" y="90" font-size="12.5" fill="#9AA6B8">Interactive graph visualization,</text>
-    <text x="22" y="108" font-size="12.5" fill="#9AA6B8">force-directed and hand-rolled in JS.</text>
-    <rect x="22" y="128" width="98" height="22" rx="11" fill="#1B2230" stroke="#2B3648"/>
-    <text x="34" y="143" font-size="11" fill="#F6E05E" font-weight="700">JAVASCRIPT</text>
-    <text class="go" x="22" y="186" font-size="13" font-weight="700" fill="#F6AD55">Open project ▸</text>
-
-    <!-- motif: floating force graph -->
-    <g class="drift">
-      <g stroke="#46536B" stroke-width="1.5" fill="none">
-        <path class="edge" d="M258 82 L308 66"/>
-        <path class="edge" d="M258 82 L242 134"/>
-        <path class="edge" d="M308 66 L336 118"/>
-        <path class="edge" d="M242 134 L296 152"/>
-        <path class="edge" d="M296 152 L336 118"/>
-        <path class="edge" d="M258 82 L336 118"/>
-        <path class="edge" d="M308 66 L296 152"/>
-      </g>
-      <circle class="n"   cx="258" cy="82"  r="9" fill="#4FD1C5"/>
-      <circle class="n b" cx="308" cy="66"  r="7" fill="#F6AD55"/>
-      <circle class="n c" cx="336" cy="118" r="8" fill="#B794F6"/>
-      <circle class="n d" cx="296" cy="152" r="7" fill="#F6AD55"/>
-      <circle class="n e" cx="242" cy="134" r="6" fill="#F1F5FB"/>
+    <g stroke="#2B3648" stroke-width=".8">
+      <path d="M0 60 H380 M0 100 H380 M0 140 H380 M0 180 H380"/>
+      <path d="M60 24 V206 M120 24 V206 M180 24 V206 M240 24 V206 M300 24 V206"/>
     </g>
-    <rect x=".75" y=".75" width="378.5" height="208.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+
+    <g transform="translate(190,115)"><g class="sim">
+      <g stroke="#46536B" stroke-width="1.4" fill="none">
+        <path class="e" d="M-62 -42 L4 -58"/><path class="e" d="M4 -58 L64 -30"/>
+        <path class="e" d="M-62 -42 L-38 22"/><path class="e" d="M-38 22 L26 46"/>
+        <path class="e" d="M26 46 L72 6"/><path class="e" d="M64 -30 L72 6"/>
+        <path class="e" d="M4 -58 L-38 22"/><path class="e" d="M-62 -42 L26 46"/>
+        <path class="e" d="M64 -30 L-38 22"/><path class="e" d="M-90 26 L-38 22"/>
+        <path class="e" d="M-90 26 L-62 -42"/><path class="e" d="M26 46 L-2 74"/>
+      </g>
+      <circle class="n"    cx="-62" cy="-42" r="11" fill="#4FD1C5"/>
+      <circle class="n n2" cx="4"   cy="-58" r="8"  fill="#F6AD55"/>
+      <circle class="n n3" cx="64"  cy="-30" r="9"  fill="#B794F6"/>
+      <circle class="n n4" cx="-38" cy="22"  r="12" fill="#4FD1C5"/>
+      <circle class="n n5" cx="26"  cy="46"  r="8"  fill="#68D391"/>
+      <circle class="n n6" cx="72"  cy="6"   r="7"  fill="#F6AD55"/>
+      <circle class="n n7" cx="-90" cy="26"  r="6"  fill="#F1F5FB"/>
+      <circle class="n n3" cx="-2"  cy="74"  r="6"  fill="#B794F6"/>
+    </g></g>
+
+    <g font-size="9.5">
+      <text x="18" y="43" fill="#4C5870" letter-spacing="1.4">FORCE-DIRECTED</text>
+      <text x="362" y="43" fill="#4FD1C5" text-anchor="end">128 nodes · 341 edges</text>
+      <text x="18" y="198" fill="#7C8798">charge −30 · link 60</text>
+      <text x="362" y="198" fill="#4C5870" text-anchor="end">alpha <tspan class="tick" fill="#68D391">0.043</tspan></text>
+    </g>
+
+    <rect y="206" width="380" height="34" fill="#161C26"/><rect y="206" width="380" height="1" fill="#2B3648"/>
+    <rect x="17" y="214" width="18" height="18" rx="5" fill="#F6E05E"/>
+    <text x="26" y="227" font-size="9.5" font-weight="800" fill="#161C26" text-anchor="middle">JS</text>
+    <text x="42" y="221" font-size="12.5" font-weight="700" fill="#F1F5FB" font-family="'Segoe UI',Helvetica,Arial,sans-serif">Graph</text>
+    <text x="42" y="233" font-size="9" fill="#7C8798">interactive visualization · hand-rolled JS</text>
+    <text class="go" x="362" y="228" font-size="11.5" font-weight="700" fill="#4FD1C5" text-anchor="end">open ▸</text>
+    <rect x=".75" y=".75" width="378.5" height="238.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>

@@ -1,66 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 210" width="380" height="210" role="img" aria-label="mojave-run — wasteland arcade driver">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="mojave-run — wasteland arcade driver running: car dodging obstacles on a scrolling desert highway with a live score">
   <style>
-    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
-    .dash { stroke-dasharray: 18 22; animation: road 0.7s linear infinite; }
-    @keyframes road { to { stroke-dashoffset: -40; } }
-    .car { animation: car 2.6s ease-in-out infinite; }
-    @keyframes car { 0%,100% {transform:translateY(0);} 25% {transform:translateY(-2.5px);} 60% {transform:translateY(1.5px);} }
-    .dust { animation: dust 1.1s ease-out infinite; }
-    .dust.b{animation-delay:.4s} .dust.c{animation-delay:.8s}
-    @keyframes dust { 0% {transform:translateX(0); opacity:.8;} 100% {transform:translateX(-22px); opacity:0;} }
-    .heat { animation: heat 3s ease-in-out infinite; }
-    @keyframes heat { 0%,100% {opacity:.25;} 50% {opacity:.6;} }
-    .score { animation: score 1s steps(1,end) infinite; }
-    @keyframes score { 0%,49% {opacity:1;} 50%,100% {opacity:.55;} }
-    .go { animation: go 2.4s ease-in-out infinite; }
-    @keyframes go { 0%,100% {opacity:.6;} 50% {opacity:1;} }
+    text { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .road { animation:rd .45s linear infinite; }
+    @keyframes rd { to { stroke-dashoffset:-40 } }
+    .dune { animation:dn 14s linear infinite; }
+    @keyframes dn { from{transform:translateX(0)} to{transform:translateX(-190px)} }
+    .cac { animation:cc 3.6s linear infinite; }
+    .cac2{animation-delay:1.8s}
+    @keyframes cc { 0%{transform:translateX(0);opacity:0} 4%{opacity:1} 96%{opacity:1} 100%{transform:translateX(-340px);opacity:0} }
+    .ob1 { animation:o1 5.4s linear infinite; }
+    .ob2 { animation:o2 5.4s linear infinite; }
+    @keyframes o1 { 0%{transform:translateX(0);opacity:0} 3%{opacity:1} 97%{opacity:1} 100%{transform:translateX(-350px);opacity:0} }
+    @keyframes o2 { 0%,50%{transform:translateX(0);opacity:0} 53%{opacity:1} 97%{opacity:1} 100%{transform:translateX(-350px);opacity:0} }
+    .lane { animation:ln 5.4s steps(1,end) infinite; }
+    @keyframes ln { 0%,26%{transform:translateY(0)} 30%,74%{transform:translateY(-26px)} 78%,100%{transform:translateY(0)} }
+    .bob { animation:bb 1.1s ease-in-out infinite; }
+    @keyframes bb { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-1.6px)} }
+    .dust { animation:ds 1s ease-out infinite; }
+    .dust2{animation-delay:.33s}.dust3{animation-delay:.66s}
+    @keyframes ds { 0%{transform:translateX(0);opacity:.7} 100%{transform:translateX(-26px);opacity:0} }
+    .s1{animation:sa 5.4s steps(1,end) infinite}
+    .s2{animation:sb 5.4s steps(1,end) infinite}
+    .s3{animation:sc 5.4s steps(1,end) infinite}
+    @keyframes sa { 0%,32%{opacity:1} 33%,100%{opacity:0} }
+    @keyframes sb { 0%,32%{opacity:0} 33%,65%{opacity:1} 66%,100%{opacity:0} }
+    @keyframes sc { 0%,65%{opacity:0} 66%,100%{opacity:1} }
+    .go { animation:go 2.6s ease-in-out infinite; }
+    @keyframes go { 0%,100%{opacity:.6} 50%{opacity:1} }
   </style>
   <defs>
-    <clipPath id="w6"><rect width="380" height="210" rx="12"/></clipPath>
-    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#141B2E"/><stop offset="1" stop-color="#1E2A4A"/>
-    </linearGradient>
+    <clipPath id="j"><rect width="380" height="240" rx="12"/></clipPath>
+    <clipPath id="field"><rect y="24" width="380" height="182"/></clipPath>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141B2E"/><stop offset="1" stop-color="#5B2E4A"/></linearGradient>
   </defs>
-  <g clip-path="url(#w6)">
-    <rect width="380" height="210" fill="#161C26"/>
-    <rect width="380" height="30" fill="#1B2230"/>
-    <rect y="29" width="380" height="1" fill="#2B3648"/>
-    <circle cx="18" cy="15" r="5" fill="#FF5F57"/><circle cx="35" cy="15" r="5" fill="#FEBC2E"/><circle cx="52" cy="15" r="5" fill="#28C840"/>
-    <text x="190" y="20" font-size="12" fill="#7C8798" text-anchor="middle">Mojave Run.app</text>
-
-    <text x="22" y="66" font-size="20" font-weight="800" fill="#F1F5FB">mojave-run</text>
-    <text x="22" y="90" font-size="12.5" fill="#9AA6B8">A wasteland arcade driver built</text>
-    <text x="22" y="108" font-size="12.5" fill="#9AA6B8">for the browser. Survive the Mojave.</text>
-    <rect x="22" y="128" width="106" height="22" rx="11" fill="#1B2230" stroke="#2B3648"/>
-    <text x="34" y="143" font-size="11" fill="#F6AD55" font-weight="700">🎮 SIDE-QUEST</text>
-    <text class="go" x="22" y="186" font-size="13" font-weight="700" fill="#F6AD55">Insert coin ▸</text>
-
-    <!-- motif: desert scene, moving road, bouncing car -->
-    <g>
-      <rect x="224" y="46" width="140" height="140" rx="10" fill="url(#dsky)"/>
-      <circle cx="336" cy="78" r="14" fill="#F6AD55"/>
-      <g class="heat"><path d="M232 96 h40 M240 104 h32" stroke="#F6AD55" stroke-width="1.6" stroke-linecap="round" fill="none"/></g>
-      <!-- cactus -->
-      <g fill="#4F9E7B">
-        <rect x="244" y="112" width="7" height="30" rx="3.5"/>
-        <rect x="238" y="118" width="6" height="12" rx="3"/>
-        <rect x="251" y="122" width="6" height="10" rx="3"/>
+  <g clip-path="url(#j)">
+    <rect width="380" height="240" fill="#0F131B"/>
+    <g clip-path="url(#field)">
+      <rect y="24" width="380" height="182" fill="url(#dsky)"/>
+      <circle cx="286" cy="92" r="26" fill="#F6AD55"/>
+      <rect x="256" y="86" width="60" height="3" fill="#141B2E" opacity=".65"/>
+      <rect x="256" y="94" width="60" height="4" fill="#141B2E" opacity=".65"/>
+      <g class="dune" opacity=".55">
+        <path d="M0 118 L44 100 L92 116 L140 98 L190 118 L234 100 L282 116 L330 98 L380 118 L380 132 L0 132 Z" fill="#3B2540"/>
+        <path d="M190 118 L234 100 L282 116 L330 98 L380 118 L424 100 L472 116 L520 98 L570 118 L570 132 L190 132 Z" fill="#3B2540"/>
       </g>
-      <!-- ground + road -->
-      <rect x="224" y="150" width="140" height="36" fill="#202A44"/>
-      <path class="dash" d="M228 168 H364" stroke="#F6AD55" stroke-width="4" fill="none"/>
-      <!-- car -->
-      <g class="car">
-        <path d="M290 150 l8 -10 h22 l8 10 z" fill="#B794F6"/>
-        <rect x="282" y="149" width="52" height="12" rx="5" fill="#4FD1C5"/>
-        <circle cx="296" cy="162" r="5" fill="#0F131B" stroke="#7C8798" stroke-width="1.5"/>
-        <circle cx="322" cy="162" r="5" fill="#0F131B" stroke="#7C8798" stroke-width="1.5"/>
+      <g class="cac" fill="#4F9E7B">
+        <rect x="384" y="112" width="6" height="22" rx="3"/><rect x="379" y="118" width="5" height="9" rx="2.5"/>
       </g>
-      <circle class="dust"   cx="280" cy="160" r="3" fill="#7C8798"/>
-      <circle class="dust b" cx="278" cy="156" r="2.2" fill="#7C8798"/>
-      <circle class="dust c" cx="281" cy="163" r="1.8" fill="#7C8798"/>
-      <text class="score" x="232" y="62" font-size="10" fill="#F1F5FB" font-family="'SFMono-Regular',Consolas,monospace">HI-SCORE 9999</text>
+      <g class="cac cac2" fill="#4F9E7B">
+        <rect x="384" y="116" width="6" height="18" rx="3"/><rect x="390" y="121" width="5" height="8" rx="2.5"/>
+      </g>
+
+      <rect y="132" width="380" height="74" fill="#2B1E38"/>
+      <path class="road" d="M0 152 H380" stroke="#F6AD55" stroke-width="3.5" stroke-dasharray="22 18" fill="none" opacity=".8"/>
+      <path class="road" d="M0 186 H380" stroke="#F6AD55" stroke-width="3.5" stroke-dasharray="22 18" fill="none" opacity=".8" style="animation-delay:.2s"/>
+
+      <g class="ob1"><rect x="384" y="164" width="30" height="16" rx="4" fill="#7C8798"/><rect x="390" y="158" width="18" height="8" rx="2" fill="#4C5870"/></g>
+      <g class="ob2"><path d="M384 136 h30 l-5 16 h-20 z" fill="#8B5E3C"/><circle cx="399" cy="133" r="6" fill="#4F9E7B"/></g>
+
+      <g class="lane">
+        <g class="bob" transform="translate(0,26)">
+          <path d="M96 140 l8 -10 h22 l8 10 z" fill="#B794F6"/>
+          <rect x="88" y="139" width="54" height="12" rx="5" fill="#4FD1C5"/>
+          <rect x="100" y="132" width="22" height="7" rx="2" fill="#0F131B" opacity=".55"/>
+          <circle cx="102" cy="152" r="5" fill="#0F131B" stroke="#9AA6B8" stroke-width="1.4"/>
+          <circle cx="128" cy="152" r="5" fill="#0F131B" stroke="#9AA6B8" stroke-width="1.4"/>
+          <circle class="dust"  cx="84" cy="150" r="3" fill="#7C8798"/>
+          <circle class="dust dust2" cx="82" cy="145" r="2.2" fill="#7C8798"/>
+          <circle class="dust dust3" cx="85" cy="153" r="1.8" fill="#7C8798"/>
+        </g>
+      </g>
     </g>
-    <rect x=".75" y=".75" width="378.5" height="208.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+
+    <rect width="380" height="24" fill="#1B2230"/><rect y="23" width="380" height="1" fill="#2B3648"/>
+    <circle cx="14" cy="12" r="4" fill="#FF5F57"/><circle cx="28" cy="12" r="4" fill="#FEBC2E"/><circle cx="42" cy="12" r="4" fill="#28C840"/>
+    <text x="190" y="16" font-size="10.5" fill="#7C8798" text-anchor="middle">mojave-run — 60 fps</text>
+
+    <g font-size="11" font-weight="700">
+      <text x="18" y="46" fill="#F1F5FB">SCORE <tspan fill="#F6AD55"><tspan class="s1">04120</tspan><tspan class="s2" x="66">07340</tspan><tspan class="s3" x="66">09980</tspan></tspan></text>
+      <text x="362" y="46" fill="#FC8181" text-anchor="end">♥ ♥ ♥</text>
+    </g>
+    <text x="362" y="200" font-size="9" fill="#F1F5FB" text-anchor="end" opacity=".7">survive the mojave</text>
+
+    <rect y="206" width="380" height="34" fill="#161C26"/><rect y="206" width="380" height="1" fill="#2B3648"/>
+    <rect x="17" y="214" width="18" height="18" rx="5" fill="#F6E05E"/>
+    <text x="26" y="227" font-size="9.5" font-weight="800" fill="#161C26" text-anchor="middle">JS</text>
+    <text x="42" y="221" font-size="12.5" font-weight="700" fill="#F1F5FB" font-family="'Segoe UI',Helvetica,Arial,sans-serif">mojave-run</text>
+    <text x="42" y="233" font-size="9" fill="#7C8798">browser arcade driver · side-quest</text>
+    <text class="go" x="362" y="228" font-size="11.5" font-weight="700" fill="#4FD1C5" text-anchor="end">insert coin ▸</text>
+    <rect x=".75" y=".75" width="378.5" height="238.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>

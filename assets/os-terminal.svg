@@ -65,7 +65,7 @@
         <rect x="24" y="142" width="150" height="150" rx="14" fill="#121826" stroke="url(#lg1c)" stroke-width="2"/>
         <g class="logo1c">
           <text x="99" y="216" font-size="52" font-weight="800" fill="url(#lg1c)" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif">1C</text>
-          <text x="99" y="248" font-size="11" fill="#7C8798" text-anchor="middle" letter-spacing="3">OS v6.2</text>
+          <text x="99" y="248" font-size="11" fill="#7C8798" text-anchor="middle" letter-spacing="3">OS v7.0</text>
         </g>
         <g stroke="#2B3648" stroke-width="1">
           <path d="M40 260 h118"/>
@@ -76,7 +76,7 @@
         <g font-size="13.5">
           <text x="200" y="160" fill="#4FD1C5" font-weight="700">keith<tspan fill="#7C8798">@</tspan><tspan fill="#B794F6" font-weight="700">1commerce</tspan></text>
           <text x="200" y="178" fill="#2B3648">─────────────────────────────</text>
-          <text x="200" y="200" fill="#F6AD55" font-weight="700">OS<tspan x="288" fill="#F1F5FB" font-weight="400">1COMMERCE OS v6.2 (midnight)</tspan></text>
+          <text x="200" y="200" fill="#F6AD55" font-weight="700">OS<tspan x="288" fill="#F1F5FB" font-weight="400">1COMMERCE OS v7.0 (midnight)</tspan></text>
           <text x="200" y="222" fill="#F6AD55" font-weight="700">Host<tspan x="288" fill="#F1F5FB" font-weight="400">Pacific Northwest · UTC−7</tspan></text>
           <text x="200" y="244" fill="#F6AD55" font-weight="700">Kernel<tspan x="288" fill="#F1F5FB" font-weight="400">cathedral.framework</tspan></text>
           <text x="200" y="266" fill="#F6AD55" font-weight="700">Shell<tspan x="288" fill="#F1F5FB" font-weight="400">claude-code (daily driver)</tspan></text>
