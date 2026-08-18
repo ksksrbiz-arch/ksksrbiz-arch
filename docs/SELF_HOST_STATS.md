@@ -7,7 +7,7 @@ This README already points at a **self-hosted** instance
 the shared public instance (`github-readme-stats.vercel.app`), which is used by
 millions and frequently returns `429 Too Many Requests` / `503` errors.
 
-The daily `refresh-readme-stats` workflow appends a `cache_bust` param to these
+The daily manual refresh (the scheduled workflow was removed in v6.2) appends a `cache_bust` param to these
 URLs so the cards re-render with fresh numbers. If you ever move the cards to a
 different host, deploying your own free instance on Vercel is a one-time,
 ~5 minute setup — the steps below walk through it.

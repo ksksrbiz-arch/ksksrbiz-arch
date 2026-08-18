@@ -1,89 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="460" height="380" role="img" aria-label="Activity Monitor: shipping velocity">
-  <!-- Activity Monitor — decorative live-feel telemetry. Self-contained, loops forever. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="460" height="380" role="img" aria-label="Ops panel for the managed client sites: montuckymoonshine.com on Shopify, tobereadshop.com on Next.js and precisioncorebuilders.com on React, all live over HTTPS. Care plan covers SSL renewal, nightly backups, dependency and content updates, and uptime monitoring.">
   <style>
-    text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-    .bar { transform-box: fill-box; transform-origin: 50% 100%; animation: eq 2.6s ease-in-out infinite; }
-    @keyframes eq { 0%,100% {transform:scaleY(.25);} 50% {transform:scaleY(1);} }
-    .b0{animation-delay:0s} .b1{animation-delay:.22s} .b2{animation-delay:.44s} .b3{animation-delay:.66s}
-    .b4{animation-delay:.88s} .b5{animation-delay:1.1s} .b6{animation-delay:1.32s} .b7{animation-delay:1.54s}
-    .b8{animation-delay:1.76s} .b9{animation-delay:1.98s} .b10{animation-delay:2.2s} .b11{animation-delay:2.42s}
-
-    .spark { stroke-dasharray: 520; animation: draw 6s linear infinite; }
-    @keyframes draw { 0% {stroke-dashoffset:520;} 30% {stroke-dashoffset:0;} 92% {stroke-dashoffset:0; opacity:1;} 98% {opacity:0;} 100% {stroke-dashoffset:520; opacity:0;} }
-    .sparkdot { animation: dotfade 6s linear infinite; }
-    @keyframes dotfade { 0%,27% {opacity:0;} 32%,92% {opacity:1;} 98%,100% {opacity:0;} }
-
-    .p1 { transform-box: fill-box; transform-origin: 0 50%; animation: grow1 5s ease-in-out infinite; }
-    .p2 { transform-box: fill-box; transform-origin: 0 50%; animation: grow2 5s ease-in-out infinite; }
-    .p3 { transform-box: fill-box; transform-origin: 0 50%; animation: grow3 5s ease-in-out infinite; }
-    @keyframes grow1 { 0%,100% {transform:scaleX(.72);} 50% {transform:scaleX(.95);} }
-    @keyframes grow2 { 0%,100% {transform:scaleX(.55);} 50% {transform:scaleX(.4);} }
-    @keyframes grow3 { 0%,100% {transform:scaleX(.2);} 50% {transform:scaleX(.34);} }
-
-    .led { animation: led 2s ease-in-out infinite; }
-    @keyframes led { 0%,100% {opacity:1;} 50% {opacity:.35;} }
+    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .led { animation:led 2.6s ease-in-out infinite; }
+    .l2{animation-delay:.35s}.l3{animation-delay:.7s}
+    @keyframes led { 0%,100%{opacity:1} 50%{opacity:.25} }
+    .sweep { animation:sw 6s ease-in-out infinite; }
+    @keyframes sw { 0%,100%{opacity:0} 8%{opacity:.5} 50%{opacity:.5} 60%{opacity:0} }
+    .chk { animation:ck 5.2s ease-in-out infinite; }
+    .c2{animation-delay:.4s}.c3{animation-delay:.8s}.c4{animation-delay:1.2s}
+    @keyframes ck { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .shield { transform-box:fill-box; transform-origin:50% 50%; animation:sh 4s ease-in-out infinite; }
+    @keyframes sh { 0%,100%{opacity:.75} 50%{opacity:1} }
   </style>
-  <defs>
-    <clipPath id="awin"><rect width="460" height="380" rx="12"/></clipPath>
-    <linearGradient id="barg" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#1E2A4A"/>
-      <stop offset="1" stop-color="#F6AD55"/>
-    </linearGradient>
-  </defs>
-
-  <g clip-path="url(#awin)">
+  <defs><clipPath id="ac"><rect width="460" height="380" rx="14"/></clipPath></defs>
+  <g clip-path="url(#ac)">
     <rect width="460" height="380" fill="#0F131B"/>
-    <rect width="460" height="36" fill="#161C26"/>
-    <rect y="35" width="460" height="1" fill="#2B3648"/>
-    <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
-    <circle cx="42" cy="18" r="6" fill="#FEBC2E"/>
-    <circle cx="62" cy="18" r="6" fill="#28C840"/>
-    <text x="230" y="23" font-size="13" fill="#7C8798" text-anchor="middle">Activity Monitor</text>
+    <rect width="460" height="34" fill="#1B2230"/><rect y="33" width="460" height="1" fill="#2B3648"/>
+    <circle cx="22" cy="17" r="6" fill="#FF5F57"/><circle cx="42" cy="17" r="6" fill="#FEBC2E"/><circle cx="62" cy="17" r="6" fill="#28C840"/>
+    <text x="230" y="22" class="mono" font-size="13" fill="#7C8798" text-anchor="middle">ops — managed sites</text>
 
-    <!-- shipping velocity equalizer -->
-    <text x="26" y="66" font-size="12" fill="#7C8798" letter-spacing="2">SHIPPING VELOCITY</text>
+    <text x="22" y="60" class="mono" font-size="10" fill="#4C5870" letter-spacing="1.6">UNDER MANAGEMENT</text>
+    <g class="shield">
+      <path d="M436 50 l10 4 v7 c0 6 -4 10 -10 12 -6 -2 -10 -6 -10 -12 v-7 z" fill="#68D391" fill-opacity=".16" stroke="#68D391" stroke-width="1.4"/>
+      <path d="M432 60 l3 3 6 -7" fill="none" stroke="#68D391" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- site rows -->
     <g>
-      <rect class="bar b0"  x="26"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b1"  x="60"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b2"  x="94"  y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b3"  x="128" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b4"  x="162" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b5"  x="196" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b6"  x="230" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b7"  x="264" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b8"  x="298" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b9"  x="332" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b10" x="366" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
-      <rect class="bar b11" x="400" y="80" width="22" height="70" rx="3" fill="url(#barg)"/>
+      <rect x="22" y="72" width="416" height="44" rx="9" fill="#161C26"/>
+      <rect class="sweep" x="22" y="72" width="416" height="44" rx="9" fill="#4FD1C5" fill-opacity=".07"/>
+      <circle class="led" cx="40" cy="94" r="4.5" fill="#68D391"/>
+      <text x="56" y="90" class="mono" font-size="11.5" fill="#F1F5FB">montuckymoonshine.com</text>
+      <text x="56" y="106" class="mono" font-size="9.5" fill="#4C5870">craft spirits · retail</text>
+      <rect x="336" y="83" width="58" height="19" rx="9.5" fill="#68D391" fill-opacity=".13" stroke="#68D391" stroke-opacity=".45"/>
+      <text x="365" y="96" class="mono" font-size="9.5" fill="#68D391" text-anchor="middle">Shopify</text>
+      <text x="428" y="97" class="mono" font-size="10" fill="#68D391" text-anchor="end">✓</text>
+
+      <rect x="22" y="122" width="416" height="44" rx="9" fill="#161C26" fill-opacity=".6"/>
+      <circle class="led l2" cx="40" cy="144" r="4.5" fill="#68D391"/>
+      <text x="56" y="140" class="mono" font-size="11.5" fill="#F1F5FB">tobereadshop.com</text>
+      <text x="56" y="156" class="mono" font-size="9.5" fill="#4C5870">used bookstore · Milwaukie, OR</text>
+      <rect x="336" y="133" width="58" height="19" rx="9.5" fill="#63B3ED" fill-opacity=".13" stroke="#63B3ED" stroke-opacity=".45"/>
+      <text x="365" y="146" class="mono" font-size="9.5" fill="#63B3ED" text-anchor="middle">Next.js</text>
+      <text x="428" y="147" class="mono" font-size="10" fill="#68D391" text-anchor="end">✓</text>
+
+      <rect x="22" y="172" width="416" height="44" rx="9" fill="#161C26"/>
+      <circle class="led l3" cx="40" cy="194" r="4.5" fill="#68D391"/>
+      <text x="56" y="190" class="mono" font-size="11.5" fill="#F1F5FB">precisioncorebuilders.com</text>
+      <text x="56" y="206" class="mono" font-size="9.5" fill="#4C5870">custom homes · Eugene, OR</text>
+      <rect x="336" y="183" width="58" height="19" rx="9.5" fill="#B794F6" fill-opacity=".13" stroke="#B794F6" stroke-opacity=".45"/>
+      <text x="365" y="196" class="mono" font-size="9.5" fill="#B794F6" text-anchor="middle">React</text>
+      <text x="428" y="197" class="mono" font-size="10" fill="#68D391" text-anchor="end">✓</text>
     </g>
-    <rect x="26" y="152" width="408" height="1" fill="#2B3648"/>
+    <text x="22" y="234" class="mono" font-size="9.5" fill="#4C5870">✓ = HTTPS with HSTS · all three live</text>
 
-    <!-- commits sparkline -->
-    <text x="26" y="182" font-size="12" fill="#7C8798" letter-spacing="2">COMMIT PULSE</text>
-    <path class="spark" d="M26 240 L60 232 L94 238 L128 214 L162 224 L196 200 L230 212 L264 196 L298 206 L332 188 L366 198 L400 182 L434 190"
-          fill="none" stroke="#4FD1C5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle class="sparkdot" cx="434" cy="190" r="4" fill="#F6AD55"/>
-    <rect x="26" y="256" width="408" height="1" fill="#2B3648"/>
+    <rect x="22" y="248" width="416" height="1" fill="#2B3648"/>
 
-    <!-- processes -->
-    <text x="26" y="286" font-size="12" fill="#7C8798" letter-spacing="2">PROCESSES</text>
-    <g font-size="13">
-      <circle class="led" cx="32" cy="306" r="3.5" fill="#28C840"/>
-      <text x="44" y="311" fill="#E2E8F0">unifyone-platform</text>
-      <rect x="230" y="300" width="180" height="10" rx="5" fill="#1B2230"/>
-      <rect class="p1" x="230" y="300" width="180" height="10" rx="5" fill="#4FD1C5"/>
-
-      <circle class="led" cx="32" cy="330" r="3.5" fill="#28C840" style="animation-delay:.6s"/>
-      <text x="44" y="335" fill="#E2E8F0">mcp-server · 18 tools</text>
-      <rect x="230" y="324" width="180" height="10" rx="5" fill="#1B2230"/>
-      <rect class="p2" x="230" y="324" width="180" height="10" rx="5" fill="#F6AD55"/>
-
-      <circle class="led" cx="32" cy="354" r="3.5" fill="#FEBC2E" style="animation-delay:1.2s"/>
-      <text x="44" y="359" fill="#E2E8F0">side-quests.exe</text>
-      <rect x="230" y="348" width="180" height="10" rx="5" fill="#1B2230"/>
-      <rect class="p3" x="230" y="348" width="180" height="10" rx="5" fill="#7C8798"/>
+    <text x="22" y="272" class="mono" font-size="10" fill="#4C5870" letter-spacing="1.6">THE CARE PLAN COVERS</text>
+    <g font-size="12" fill="#E2E8F0">
+      <g class="chk">   <path d="M24 290 l4 4 8 -9" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"/><text x="48" y="295">SSL certificates, renewed</text></g>
+      <g class="chk c2"><path d="M24 314 l4 4 8 -9" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"/><text x="48" y="319">Nightly backups</text></g>
+      <g class="chk c3"><path d="M244 290 l4 4 8 -9" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"/><text x="268" y="295">Updates &amp; fixes</text></g>
+      <g class="chk c4"><path d="M244 314 l4 4 8 -9" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"/><text x="268" y="319">Uptime monitoring</text></g>
     </g>
 
-    <rect x=".75" y=".75" width="458.5" height="378.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+    <rect y="346" width="460" height="34" fill="#1B2230"/><rect y="346" width="460" height="1" fill="#2B3648"/>
+    <text x="22" y="368" class="mono" font-size="11" fill="#7C8798">3 sites · built &amp; hosted here</text>
+    <text x="438" y="368" class="mono" font-size="11" font-weight="700" fill="#4FD1C5" text-anchor="end">add yours ▸</text>
+    <rect x=".75" y=".75" width="458.5" height="378.5" rx="14" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>

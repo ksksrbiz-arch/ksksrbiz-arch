@@ -25,6 +25,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/repo-*.svg assets/repos-header.svg README.md
+          git add assets/repos-fm.svg README.md
           git diff --cached --quiet || git commit -m "chore: regenerate repo windows"
           git push

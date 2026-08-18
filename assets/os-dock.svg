@@ -38,29 +38,28 @@
       <text x="436" y="79" font-size="26" fill="#FFFFFF" font-family="Georgia,serif" font-style="italic">N</text>
     </g>
     <g class="tile d5">
-      <rect x="488" y="40" width="60" height="60" rx="14" fill="#3776AB"/>
-      <text x="518" y="79" font-size="22" fill="#FFD43B">Py</text>
+      <rect x="488" y="40" width="60" height="60" rx="14" fill="#0B1120"/>
+      <path d="M503 74 c3 -8 8 -12 15 -12 -3 3 -4 6 -2 9 2 2 5 3 9 2 -3 8 -8 12 -15 12 3 -3 4 -6 2 -9 -2 -2 -5 -3 -9 -2 z" fill="#38BDF8"/>
     </g>
-    <g class="tile d6"><rect x="570" y="40" width="60" height="60" rx="14" fill="#336791"/><text x="600" y="79" font-size="22" fill="#FFFFFF">PG</text></g>
+    <g class="tile d6">
+      <rect x="570" y="40" width="60" height="60" rx="14" fill="#5E8E3E"/>
+      <path d="M592 56 h20 l-3 20 h-14 z" fill="#FFFFFF"/><path d="M596 56 v-3 a4 4 0 0 1 8 0 v3" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    </g>
     <g class="tile d7">
       <rect x="652" y="40" width="60" height="60" rx="14" fill="#1C1C1C" stroke="#3ECF8E" stroke-width="1.5"/>
       <path d="M685 50 l-16 22 h12 l-2 18 16 -22 h-12 z" fill="#3ECF8E"/>
     </g>
     <g class="tile d8">
-      <rect x="734" y="40" width="60" height="60" rx="14" fill="#0B1120"/>
-      <path d="M749 74 c3 -8 8 -12 15 -12 -3 3 -4 6 -2 9 2 2 5 3 9 2 -3 8 -8 12 -15 12 3 -3 4 -6 2 -9 -2 -2 -5 -3 -9 -2 z" fill="#38BDF8"/>
+      <rect x="734" y="40" width="60" height="60" rx="14" fill="#0E1E25"/>
+      <path d="M746 70 l18 -18 18 18 -18 8 z" fill="#32E6E2"/>
     </g>
     <g class="tile d9">
       <rect x="816" y="40" width="60" height="60" rx="14" fill="#0F0F0F" stroke="#2B3648"/>
       <path d="M846 54 l17 30 h-34 z" fill="#FFFFFF"/>
     </g>
     <g class="tile d10">
-      <rect x="898" y="40" width="60" height="60" rx="14" fill="#2496ED"/>
-      <g fill="#FFFFFF">
-        <rect x="912" y="66" width="8" height="7"/><rect x="922" y="66" width="8" height="7"/><rect x="932" y="66" width="8" height="7"/>
-        <rect x="922" y="57" width="8" height="7"/><rect x="932" y="57" width="8" height="7"/><rect x="932" y="48" width="8" height="7"/>
-        <path d="M908 76 h38 c-2 8 -9 14 -19 14 -10 0 -17 -6 -19 -14 z"/>
-      </g>
+      <rect x="898" y="40" width="60" height="60" rx="14" fill="#1B1B1B"/>
+      <path d="M912 76 c0 -8 6 -13 14 -13 3 -7 11 -10 17 -6 5 3 7 9 5 14 4 1 6 4 6 8 z" fill="#F6821F"/>
     </g>
     <!-- separator -->
     <rect x="982" y="46" width="2" height="50" rx="1" fill="#2B3648"/>
@@ -83,8 +82,8 @@
   <!-- labels -->
   <g font-size="10" fill="#7C8798" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
     <text x="108" y="126">js</text><text x="190" y="126">ts</text><text x="272" y="126">node</text>
-    <text x="354" y="126">react</text><text x="436" y="126">next</text><text x="518" y="126">python</text>
-    <text x="600" y="126">postgres</text><text x="685" y="126">supabase</text><text x="764" y="126">tailwind</text>
-    <text x="846" y="126">vercel</text><text x="928" y="126">docker</text><text x="1030" y="126">git</text><text x="1112" y="126">github</text>
+    <text x="354" y="126">react</text><text x="436" y="126">next</text><text x="518" y="126">tailwind</text>
+    <text x="600" y="126">shopify</text><text x="685" y="126">supabase</text><text x="764" y="126">netlify</text>
+    <text x="846" y="126">vercel</text><text x="928" y="126">cloudflare</text><text x="1030" y="126">git</text><text x="1112" y="126">github</text>
   </g>
 </svg>
