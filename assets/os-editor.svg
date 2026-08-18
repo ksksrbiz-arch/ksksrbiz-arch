@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 344" width="1200" height="344" role="img" aria-label="editor.app — Cathedral Framework source: an MCP tool definition in TypeScript, typing itself out">
+  <!--
+    editor.app — code editor window. Real MCP tool-definition source from the
+    Cathedral Framework, syntax highlighted. The run() body types out on a 16s
+    loop (cover rects sliding right with steps()), cursor tracks the last line.
+  -->
+  <style>
+    text { font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace; font-size:13px; }
+    .kw { fill:#B794F6 } .str { fill:#68D391 } .fn { fill:#63B3ED } .ty { fill:#4FD1C5 }
+    .num { fill:#F6AD55 } .cm { fill:#4C5870 } .pl { fill:#E2E8F0 } .op { fill:#7C8798 }
+    .ln { fill:#3C4658; font-size:12px }
+    /* typing: each cover rect wipes right, revealing its line */
+    .ty1 { animation: w1 16s linear infinite; }
+    .ty2 { animation: w2 16s linear infinite; }
+    .ty3 { animation: w3 16s linear infinite; }
+    .ty4 { animation: w4 16s linear infinite; }
+    .ty5 { animation: w5 16s linear infinite; }
+    @keyframes w1 { 0%,14% {transform:translateX(0); animation-timing-function:steps(30,end);} 26%,100% {transform:translateX(238px);} }
+    @keyframes w2 { 0%,26% {transform:translateX(0); animation-timing-function:steps(34,end);} 39%,100% {transform:translateX(270px);} }
+    @keyframes w3 { 0%,39% {transform:translateX(0); animation-timing-function:steps(31,end);} 51%,100% {transform:translateX(246px);} }
+    @keyframes w4 { 0%,51% {transform:translateX(0); animation-timing-function:steps(24,end);} 61%,100% {transform:translateX(191px);} }
+    @keyframes w5 { 0%,61% {transform:translateX(0); animation-timing-function:steps(38,end);} 74%,100% {transform:translateX(302px);} }
+    .cur { animation: cur 16s linear infinite; }
+    @keyframes cur {
+      0%,14%   { transform:translate(150px,0px); }
+      26%      { transform:translate(388px,0px); }
+      26.01%,39% { transform:translate(420px,19px); }
+      39.01%,51% { transform:translate(396px,38px); }
+      51.01%,61% { transform:translate(341px,57px); }
+      61.01%,74% { transform:translate(452px,76px); }
+      74.01%,100% { transform:translate(150px,95px); }
+    }
+    .blink { animation: blink 1.06s steps(1,end) infinite; }
+    @keyframes blink { 0%,49% {opacity:1;} 50%,100% {opacity:0;} }
+    .save { animation: save 16s steps(1,end) infinite; }
+    @keyframes save { 0%,74% {opacity:1;} 76%,100% {opacity:0;} }
+    .saved { animation: saved 16s steps(1,end) infinite; }
+    @keyframes saved { 0%,74% {opacity:0;} 76%,96% {opacity:1;} 97%,100% {opacity:0;} }
+    .probe { animation: probe 4s ease-in-out infinite; }
+    @keyframes probe { 0%,100% {opacity:.55;} 50% {opacity:1;} }
+  </style>
+  <defs><clipPath id="ed"><rect width="1200" height="344" rx="14"/></clipPath></defs>
+
+  <g clip-path="url(#ed)">
+    <rect width="1200" height="344" fill="#0F131B"/>
+
+    <!-- title bar -->
+    <rect width="1200" height="32" fill="#1B2230"/>
+    <rect y="31" width="1200" height="1" fill="#2B3648"/>
+    <circle cx="22" cy="16" r="6" fill="#FF5F57"/><circle cx="42" cy="16" r="6" fill="#FEBC2E"/><circle cx="62" cy="16" r="6" fill="#28C840"/>
+    <text x="600" y="21" fill="#7C8798" text-anchor="middle" font-size="12.5">registry.ts — cathedral.framework</text>
+
+    <!-- activity bar -->
+    <rect y="32" width="46" height="290" fill="#121826"/>
+    <rect x="45" y="32" width="1" height="290" fill="#2B3648"/>
+    <g fill="#4C5870">
+      <rect x="16" y="52" width="15" height="2.4" rx="1.2" fill="#4FD1C5"/><rect x="16" y="57" width="15" height="2.4" rx="1.2" fill="#4FD1C5"/><rect x="16" y="62" width="10" height="2.4" rx="1.2" fill="#4FD1C5"/>
+      <circle cx="23" cy="94" r="6.5" fill="none" stroke="#4C5870" stroke-width="2"/><path d="M27.5 98.5 l4 4" stroke="#4C5870" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="18" cy="128" r="3"/><circle cx="29" cy="122" r="3"/><circle cx="29" cy="134" r="3"/>
+      <path d="M18 128 L29 122 M18 128 L29 134" stroke="#4C5870" stroke-width="1.6"/>
+      <rect x="16" y="158" width="14" height="11" rx="2" fill="none" stroke="#4C5870" stroke-width="1.8"/><path d="M20 158 v-3 h6 v3" fill="none" stroke="#4C5870" stroke-width="1.8"/>
+    </g>
+
+    <!-- file tree -->
+    <rect x="46" y="32" width="216" height="290" fill="#121826"/>
+    <rect x="261" y="32" width="1" height="290" fill="#2B3648"/>
+    <text x="62" y="54" fill="#4C5870" font-size="10.5" letter-spacing="1.6">EXPLORER</text>
+    <g font-size="12.5">
+      <text x="62" y="78" fill="#7C8798">▾ <tspan fill="#E2E8F0">cathedral</tspan></text>
+      <text x="76" y="98" fill="#7C8798">▾ <tspan fill="#E2E8F0">tools</tspan></text>
+      <rect x="46" y="104" width="216" height="20" fill="#4FD1C5" fill-opacity=".12"/>
+      <rect x="46" y="104" width="2.5" height="20" fill="#4FD1C5"/>
+      <text x="92" y="118" fill="#4FD1C5">registry.ts</text>
+      <text x="92" y="138" fill="#7C8798">orders.ts</text>
+      <text x="92" y="158" fill="#7C8798">products.ts</text>
+      <text x="92" y="178" fill="#7C8798">agents.ts</text>
+      <text x="76" y="198" fill="#7C8798">▸ <tspan fill="#9AA6B8">adapters</tspan></text>
+      <text x="76" y="218" fill="#7C8798">▸ <tspan fill="#9AA6B8">schema</tspan></text>
+      <text x="62" y="238" fill="#7C8798">▸ <tspan fill="#9AA6B8">server</tspan></text>
+      <text x="62" y="262" fill="#7C8798">  <tspan fill="#9AA6B8">package.json</tspan></text>
+    </g>
+    <g class="probe" font-size="11">
+      <circle cx="62" cy="296" r="4" fill="#68D391"/>
+      <text x="74" y="300" fill="#7C8798">18 tools registered</text>
+    </g>
+
+    <!-- tab strip -->
+    <rect x="262" y="32" width="938" height="30" fill="#161C26"/>
+    <rect x="262" y="61" width="938" height="1" fill="#2B3648"/>
+    <rect x="262" y="32" width="132" height="30" fill="#0F131B"/>
+    <rect x="262" y="32" width="132" height="2" fill="#4FD1C5"/>
+    <text x="280" y="52" fill="#4FD1C5" font-size="12.5">registry.ts</text>
+    <circle cx="378" cy="47" r="3.5" fill="#F6AD55" class="save"/>
+    <text x="410" y="52" fill="#7C8798" font-size="12.5">server.ts</text>
+    <text x="500" y="52" fill="#7C8798" font-size="12.5">schema.sql</text>
+
+    <!-- code -->
+    <g>
+      <text class="ln" x="292" y="86" text-anchor="end">1</text>
+      <text x="308" y="86"><tspan class="cm">// cathedral/tools/registry.ts — MCP surface</tspan></text>
+      <text class="ln" x="292" y="105" text-anchor="end">2</text>
+      <text x="308" y="105"><tspan class="kw">import</tspan><tspan class="pl"> { defineTool, z } </tspan><tspan class="kw">from</tspan><tspan class="str"> "@cathedral/core"</tspan><tspan class="op">;</tspan></text>
+      <text class="ln" x="292" y="124" text-anchor="end">3</text>
+      <text class="ln" x="292" y="143" text-anchor="end">4</text>
+      <text x="308" y="143"><tspan class="kw">export const</tspan><tspan class="ty"> listOrders </tspan><tspan class="op">= </tspan><tspan class="fn">defineTool</tspan><tspan class="op">({</tspan></text>
+      <text class="ln" x="292" y="162" text-anchor="end">5</text>
+      <text x="308" y="162"><tspan class="pl">  name: </tspan><tspan class="str">"orders.list"</tspan><tspan class="op">,</tspan></text>
+      <text class="ln" x="292" y="181" text-anchor="end">6</text>
+      <text x="308" y="181"><tspan class="pl">  input: </tspan><tspan class="ty">z</tspan><tspan class="op">.</tspan><tspan class="fn">object</tspan><tspan class="op">({</tspan><tspan class="pl"> storeId: </tspan><tspan class="ty">z</tspan><tspan class="op">.</tspan><tspan class="fn">uuid</tspan><tspan class="op">(),</tspan><tspan class="pl"> limit: </tspan><tspan class="ty">z</tspan><tspan class="op">.</tspan><tspan class="fn">int</tspan><tspan class="op">().</tspan><tspan class="fn">max</tspan><tspan class="op">(</tspan><tspan class="num">100</tspan><tspan class="op">) }),</tspan></text>
+
+      <!-- typed block -->
+      <text class="ln" x="292" y="200" text-anchor="end">7</text>
+      <text x="308" y="200"><tspan class="kw">  async</tspan><tspan class="fn"> run</tspan><tspan class="op">({</tspan><tspan class="pl"> storeId, limit </tspan><tspan class="op">}, </tspan><tspan class="ty">ctx</tspan><tspan class="op">) {</tspan></text>
+      <rect class="ty1" x="308" y="188" width="248" height="17" fill="#0F131B"/>
+
+      <text class="ln" x="292" y="219" text-anchor="end">8</text>
+      <text x="308" y="219"><tspan class="kw">    const</tspan><tspan class="pl"> rows </tspan><tspan class="op">= </tspan><tspan class="kw">await</tspan><tspan class="ty"> ctx</tspan><tspan class="op">.</tspan><tspan class="pl">db</tspan><tspan class="op">.</tspan><tspan class="pl">orders</tspan></text>
+      <rect class="ty2" x="308" y="207" width="280" height="17" fill="#0F131B"/>
+
+      <text class="ln" x="292" y="238" text-anchor="end">9</text>
+      <text x="308" y="238"><tspan class="op">      .</tspan><tspan class="fn">where</tspan><tspan class="op">({</tspan><tspan class="pl"> store_id: storeId </tspan><tspan class="op">})</tspan></text>
+      <rect class="ty3" x="308" y="226" width="256" height="17" fill="#0F131B"/>
+
+      <text class="ln" x="292" y="257" text-anchor="end">10</text>
+      <text x="308" y="257"><tspan class="op">      .</tspan><tspan class="fn">order</tspan><tspan class="op">(</tspan><tspan class="str">"created_at"</tspan><tspan class="op">, </tspan><tspan class="str">"desc"</tspan><tspan class="op">)</tspan></text>
+      <rect class="ty4" x="308" y="245" width="201" height="17" fill="#0F131B"/>
+
+      <text class="ln" x="292" y="276" text-anchor="end">11</text>
+      <text x="308" y="276"><tspan class="op">      .</tspan><tspan class="fn">limit</tspan><tspan class="op">(</tspan><tspan class="pl">limit</tspan><tspan class="op">);  </tspan><tspan class="kw">return</tspan><tspan class="pl"> rows</tspan><tspan class="op">.</tspan><tspan class="fn">map</tspan><tspan class="op">(</tspan><tspan class="fn">toSummary</tspan><tspan class="op">);</tspan></text>
+      <rect class="ty5" x="308" y="264" width="312" height="17" fill="#0F131B"/>
+
+      <text class="ln" x="292" y="295" text-anchor="end">12</text>
+      <text x="308" y="295"><tspan class="op">  },</tspan></text>
+      <text class="ln" x="292" y="314" text-anchor="end">13</text>
+      <text x="308" y="314"><tspan class="op">});</tspan></text>
+
+      <!-- caret -->
+      <g class="cur"><rect class="blink" x="158" y="190" width="8" height="15" fill="#4FD1C5"/></g>
+    </g>
+
+    <!-- minimap -->
+    <rect x="1120" y="62" width="80" height="260" fill="#121826" fill-opacity=".6"/>
+    <g fill="#2B3648">
+      <rect x="1128" y="74" width="52" height="3" rx="1.5"/><rect x="1128" y="82" width="64" height="3" rx="1.5"/>
+      <rect x="1128" y="98" width="46" height="3" rx="1.5" fill="#3E4A60"/><rect x="1128" y="106" width="34" height="3" rx="1.5"/>
+      <rect x="1128" y="114" width="60" height="3" rx="1.5"/><rect x="1136" y="122" width="42" height="3" rx="1.5" fill="#3E4A60"/>
+      <rect x="1136" y="130" width="50" height="3" rx="1.5"/><rect x="1136" y="138" width="38" height="3" rx="1.5"/>
+      <rect x="1136" y="146" width="56" height="3" rx="1.5" fill="#3E4A60"/><rect x="1128" y="154" width="28" height="3" rx="1.5"/>
+      <rect x="1128" y="162" width="20" height="3" rx="1.5"/>
+    </g>
+    <rect x="1122" y="70" width="76" height="100" fill="#4FD1C5" fill-opacity=".07" stroke="#4FD1C5" stroke-opacity=".25"/>
+
+    <!-- status bar -->
+    <rect y="322" width="1200" height="22" fill="#1B2230"/>
+    <rect y="322" width="1200" height="1" fill="#2B3648"/>
+    <g font-size="11" fill="#7C8798">
+      <text x="20" y="337"><tspan fill="#4FD1C5">⎇ main</tspan>  ·  TypeScript  ·  UTF-8  ·  LF  ·  Ln 11, Col 38</text>
+      <text x="700" y="337" fill="#68D391">✓ 0 problems</text>
+      <text x="820" y="337" class="save" fill="#F6AD55">● unsaved</text>
+      <text x="820" y="337" class="saved" fill="#68D391">✓ saved</text>
+      <text x="1180" y="337" text-anchor="end" fill="#4C5870">claude-code · pair session</text>
+    </g>
+
+    <rect x=".75" y=".75" width="1198.5" height="342.5" rx="14" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+  </g>
+</svg>
