@@ -1,9 +1,10 @@
 <!-- ============================================================
      1COMMERCE OS v7.0 — a GitHub profile disguised as an operating system.
      Every window below is a self-contained animated SVG living in /assets:
-     pure CSS/SMIL, no scripts, nothing fetched at render time. The repo
-     file manager is emitted by tools/gen_repo_windows.py at authoring
-     time; nothing on this page depends on GitHub Actions to render.
+     pure CSS/SMIL, no scripts, no external requests. The repo file manager
+     is emitted by tools/gen_repo_windows.py at authoring time. The only
+     things fetched at render time are the two stat cards below, which are
+     rendered by external services; nothing here needs GitHub Actions.
      ============================================================ -->
 
 <!-- menu bar -->
