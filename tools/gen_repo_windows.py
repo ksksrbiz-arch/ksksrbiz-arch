@@ -195,7 +195,7 @@ def main():
     # README block — single-line, whitespace-free (mobile-safe)
     payload = ('<!-- REPO-WINDOWS:START -->\n'
                f'<p align="center"><a href="https://github.com/{user}?tab=repositories">'
-               f'<img src="{RAW}/repos-fm.svg?v=8" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>\n'
+               f'<img src="{RAW}/repos-fm.svg?v=9" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>\n'
                '<!-- REPO-WINDOWS:END -->')
     md = open(README).read()
     marked = re.search(r'<!-- REPO-WINDOWS:START -->.*?<!-- REPO-WINDOWS:END -->', md, re.S)

@@ -1,5 +1,5 @@
 <!-- ============================================================
-     1COMMERCE OS v7.1 — a GitHub profile disguised as an operating system.
+     1COMMERCE OS v7.2 — a GitHub profile disguised as an operating system.
      Every window below is a self-contained animated SVG living in /assets:
      pure CSS/SMIL, no scripts, no external requests. The repo file manager
      is emitted by tools/gen_repo_windows.py at authoring time. The only
@@ -8,60 +8,63 @@
      ============================================================ -->
 
 <!-- menu bar -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-menubar.svg?v=8" alt="1COMMERCE OS menu bar" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-menubar.svg?v=9" alt="1COMMERCE OS menu bar" width="100%"></p>
 
 <!-- boot sequence → desktop -->
-<p align="center"><a href="https://1commerce.online/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-boot.svg?v=8" alt="1COMMERCE OS boots: a BIOS self-test, a brand splash with a rising sun over cyan ridgelines, then a live desktop session — a prod deploy, a live order feed, or an arcade break, different on every boot" width="100%"></a></p>
+<p align="center"><a href="https://1commerce.online/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-boot.svg?v=9" alt="1COMMERCE OS boots: a BIOS self-test, a brand splash with a rising sun over cyan ridgelines, then a live desktop session — a prod deploy, a live order feed, or an arcade break, different on every boot" width="100%"></a></p>
 
 <!-- terminal + activity monitor -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-terminal.svg?v=8" alt="Terminal running whoami then neofetch: 1COMMERCE OS v7.1, kernel cathedral.framework, shell claude-code, stack TypeScript · Next.js · Node · Supabase · Python, host Pacific Northwest UTC−7, uptime infinite" width="59.5%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-activity.svg?v=8" alt="Activity Monitor: shipping velocity, commit pulse, running processes" width="39%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-terminal.svg?v=9" alt="Terminal running whoami then neofetch: 1COMMERCE OS v7.2, kernel cathedral.framework, shell claude-code, stack TypeScript · Next.js · Node · Supabase · Python, host Pacific Northwest UTC−7, uptime infinite" width="59.5%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-activity.svg?v=9" alt="Activity Monitor: shipping velocity, commit pulse, running processes" width="39%"></p>
 
 <!-- services: what the business actually sells -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-services.svg?v=8" alt="services — full-stack development for hire: websites and web apps (Next.js, React, Node, TypeScript), e-commerce and storefronts (Shopify and custom), managed hosting with deploy-on-push, SSL, monitoring and backups, and maintenance and support on retainer or hourly. Pacific Northwest, working with clients anywhere" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-services.svg?v=9" alt="services — full-stack development for hire: websites and web apps (Next.js, React, Node, TypeScript), e-commerce and storefronts (Shopify and custom), managed hosting with deploy-on-push, SSL, monitoring and backups, and maintenance and support on retainer or hourly. Pacific Northwest, working with clients anywhere" width="100%"></p>
+
+
+<!-- client work: real, live, public sites -->
+<p align="center"><a href="https://tobereadshop.com"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/client-tbr.svg?v=9" alt="tobereadshop.com — To Be Read, the Clackamas Book Exchange in Milwaukie, Oregon: a used bookstore site with browse, trade and events, thousands of titles in store and online sales via PangoBooks and Bookshop.org. Built in Next.js, hosted and deployed by 1COMMERCE" width="32.6%"></a><a href="https://precisioncorebuilders.com"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/client-pcb.svg?v=9" alt="precisioncorebuilders.com — Precision Core Builders of Eugene, Oregon: custom homes, remodels and additions, licensed CCB #246527, with a free on-site estimate call to action. Built in React, hosted and deployed by 1COMMERCE" width="32.6%"></a><a href="https://montuckymoonshine.com"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/client-montucky.svg?v=9" alt="montuckymoonshine.com — a craft spirits storefront: product grid, add to cart and live Shopify checkout. Built on Shopify, hosted and deployed by 1COMMERCE" width="32.6%"></a></p>
 
 <!-- managed hosting status board (generated by tools/gen_status_board.py) -->
 <!-- STATUS-BOARD:START -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-hosting.svg?v=8" alt="status.1commerce — managed hosting and deployment: client sites with live status, 30-day uptime, TLS, stack, response time and last deploy, plus fleet uptime, sites managed and average response summary" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-hosting.svg?v=9" alt="status.1commerce — managed hosting and deployment: the three client sites with their stack, hosting, HTTPS status and live status, over summary tiles for client sites live, HTTPS with HSTS on all of them, and deploy-on-push" width="100%"></p>
 <!-- STATUS-BOARD:END -->
 
 <!-- editor: real source from the Cathedral Framework -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-editor.svg?v=8" alt="editor.app — the Cathedral Framework source open in an editor: an MCP tool definition in TypeScript (defineTool with a zod input schema and an async run body querying orders), file tree, minimap and status bar, with the run body typing itself out" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-editor.svg?v=9" alt="editor.app — the Cathedral Framework source open in an editor: an MCP tool definition in TypeScript (defineTool with a zod input schema and an async run body querying orders), file tree, minimap and status bar, with the run body typing itself out" width="100%"></p>
 
-
-<!-- client work & platform -->
-<p align="center"><a href="https://github.com/t7451/unifyone-netlify-supabase"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-unifyone.svg?v=8" alt="UnifyOne — the multi-tenant control plane running: a 7-day GMV bar chart ticking up to $51.7k, live tenant storefronts and their order counts" width="32.6%"></a><a href="https://github.com/ksksrbiz-arch/onecommerce-mcp-server"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-mcp.svg?v=8" alt="onecommerce-mcp-server — a live MCP tool-call log over stdio: orders.list, products.upsert, automations.run, stores.metrics and ai.describe streaming in with latencies, 18 tools registered, p95 68ms, 0 errors" width="32.6%"></a><a href="https://montucky-moonshine-proposal.netlify.app"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-moonshine.svg?v=8" alt="montucky-moonshine — a client storefront running: a three-jug product grid, a cursor clicking ADD TO CART and the Shopify cart badge incrementing" width="32.6%"></a></p>
+<!-- platform & tooling I build and run myself -->
+<p align="center"><a href="https://github.com/t7451/unifyone-netlify-supabase"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-unifyone.svg?v=9" alt="UnifyOne — the multi-tenant control plane running: a 7-day GMV bar chart ticking up to $51.7k, live tenant storefronts and their order counts" width="49.4%"></a><a href="https://github.com/ksksrbiz-arch/onecommerce-mcp-server"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-mcp.svg?v=9" alt="onecommerce-mcp-server — a live MCP tool-call log over stdio with per-call latencies, 18 tools registered, p95 68ms, 0 errors" width="49.4%"></a></p>
 
 <!-- ~/repos file manager (generated by tools/gen_repo_windows.py) -->
 <!-- REPO-WINDOWS:START -->
-<p align="center"><a href="https://github.com/ksksrbiz-arch?tab=repositories"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repos-fm.svg?v=8" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>
+<p align="center"><a href="https://github.com/ksksrbiz-arch?tab=repositories"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/repos-fm.svg?v=9" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>
 <!-- REPO-WINDOWS:END -->
 
 <!-- side quests: personal projects, clearly separated from client work -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-divider-side.svg?v=8" alt="— SIDE QUESTS: built for fun, not for clients —" width="100%"></p>
-<p align="center"><a href="https://github.com/ksksrbiz-arch/Graph"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-graph.svg?v=8" alt="Graph — a force-directed graph simulation running: 128 nodes and 341 edges settling, with charge and link parameters and a falling alpha value" width="32.6%"></a><a href="https://github.com/ksksrbiz-arch/prediction-alpha-engine"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-alpha.svg?v=8" alt="prediction-alpha-engine — model versus market: candlesticks with a fair-value curve drawn over them and a BUY YES signal firing at +7.2% edge" width="32.6%"></a><a href="https://github.com/ksksrbiz-arch/mojave-run"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-mojave.svg?v=8" alt="mojave-run — the arcade driver running: a car dodging obstacles across a scrolling desert highway at 60fps while the score climbs past 9,980" width="32.6%"></a></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-divider-side.svg?v=9" alt="— SIDE QUESTS: built for fun, not for clients —" width="100%"></p>
+<p align="center"><a href="https://github.com/ksksrbiz-arch/Graph"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-graph.svg?v=9" alt="Graph — a force-directed graph simulation running: 128 nodes and 341 edges settling, with charge and link parameters and a falling alpha value" width="32.6%"></a><a href="https://github.com/ksksrbiz-arch/prediction-alpha-engine"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-alpha.svg?v=9" alt="prediction-alpha-engine — model versus market: candlesticks with a fair-value curve drawn over them and a BUY YES signal firing at +7.2% edge" width="32.6%"></a><a href="https://github.com/ksksrbiz-arch/mojave-run"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/app-mojave.svg?v=9" alt="mojave-run — the arcade driver running: a car dodging obstacles across a scrolling desert highway at 60fps while the score climbs past 9,980" width="32.6%"></a></p>
 
 <!-- research lab: divider + four experiment windows -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-rain.svg?v=8" alt="— RESEARCH LAB —" width="100%"></p>
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-hologram.svg?v=8" alt="hologram.app — a rotating 3D wireframe globe (orthographic projection) with satellite uplink and flowing trade routes: the planetary commerce network" width="49.4%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-cortex.svg?v=8" alt="cortex.app — a 4×6×6×1 neural decision engine; pulses propagate through the layers until the output neuron fires BUY" width="49.4%"></p>
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-lorenz.svg?v=8" alt="chaos.app — a Lorenz attractor numerically integrated with RK4 (sigma=10, rho=28, beta=8/3) drawing itself on loop" width="49.4%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-breakout.svg?v=8" alt="arcade.app — self-playing Breakout: an 85-second physics simulation baked into the SVG; every bounce computed, all 40 bricks cleared" width="49.4%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-rain.svg?v=9" alt="— RESEARCH LAB —" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-hologram.svg?v=9" alt="hologram.app — a rotating 3D wireframe globe (orthographic projection) with satellite uplink and flowing trade routes: the planetary commerce network" width="49.4%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-cortex.svg?v=9" alt="cortex.app — a 4×6×6×1 neural decision engine; pulses propagate through the layers until the output neuron fires BUY" width="49.4%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-lorenz.svg?v=9" alt="chaos.app — a Lorenz attractor numerically integrated with RK4 (sigma=10, rho=28, beta=8/3) drawing itself on loop" width="49.4%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-breakout.svg?v=9" alt="arcade.app — self-playing Breakout: an 85-second physics simulation baked into the SVG; every bounce computed, all 40 bricks cleared" width="49.4%"></p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-life.svg?v=8" alt="life.app — Conway's Game of Life: a Gosper glider gun, 140 generations simulated cell-by-cell and baked into the SVG" width="49.4%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-terrain.svg?v=8" alt="terrain.app — procedural wireframe terrain flyover: value-noise ridgelines with perspective easing, somewhere over the Mojave" width="49.4%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-life.svg?v=9" alt="life.app — Conway's Game of Life: a Gosper glider gun, 140 generations simulated cell-by-cell and baked into the SVG" width="49.4%"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/lab-terrain.svg?v=9" alt="terrain.app — procedural wireframe terrain flyover: value-noise ridgelines with perspective easing, somewhere over the Mojave" width="49.4%"></p>
 
 <!-- dock: tech stack -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-dock.svg?v=8" alt="Dock: JavaScript, TypeScript, Node, React, Next.js, Python, Postgres, Supabase, Tailwind, Vercel, Docker, Git, GitHub" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-dock.svg?v=9" alt="Dock: JavaScript, TypeScript, Node, React, Next.js, Python, Postgres, Supabase, Tailwind, Vercel, Docker, Git, GitHub" width="100%"></p>
 
 <!-- live telemetry (server-rendered — needs no Actions) -->
 <p align="center"><img height="170em" src="https://github-stats-pi-tawny.vercel.app/api?username=ksksrbiz-arch&show_icons=true&include_all_commits=true&bg_color=0F131B&title_color=4FD1C5&text_color=E2E8F0&icon_color=4FD1C5&border_color=2B3648" alt="GitHub stats for ksksrbiz-arch"><img height="170em" src="https://streak-stats.demolab.com?user=ksksrbiz-arch&background=0F131B&border=2B3648&stroke=4FD1C5&ring=4FD1C5&fire=F6AD55&currStreakNum=E2E8F0&sideNums=E2E8F0&currStreakLabel=4FD1C5&sideLabels=7C8798&dates=7C8798" alt="GitHub streak for ksksrbiz-arch"></p>
 
 <!-- connect -->
-<p align="center"><a href="https://1commerce.online/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-website.svg?v=8" alt="Website: 1commerce.online"></a><a href="https://1commerce.shop/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-shop.svg?v=8" alt="Shop: 1commerce.shop"></a><a href="https://www.linkedin.com/in/1commerce-future"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-linkedin.svg?v=8" alt="LinkedIn: 1commerce-future"></a></p>
-<p align="center"><a href="https://www.youtube.com/@0nestakk"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-youtube.svg?v=8" alt="YouTube: @0nestakk"></a><a href="https://www.instagram.com/1commerce_llc/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-instagram.svg?v=8" alt="Instagram: @1commerce_llc"></a><a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-facebook.svg?v=8" alt="Facebook: DevOps.NW.Enterprises"></a></p>
+<p align="center"><a href="https://1commerce.online/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-website.svg?v=9" alt="Website: 1commerce.online"></a><a href="https://1commerce.shop/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-shop.svg?v=9" alt="Shop: 1commerce.shop"></a><a href="https://www.linkedin.com/in/1commerce-future"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-linkedin.svg?v=9" alt="LinkedIn: 1commerce-future"></a></p>
+<p align="center"><a href="https://www.youtube.com/@0nestakk"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-youtube.svg?v=9" alt="YouTube: @0nestakk"></a><a href="https://www.instagram.com/1commerce_llc/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-instagram.svg?v=9" alt="Instagram: @1commerce_llc"></a><a href="https://www.facebook.com/DevOps.NW.Enterprises/"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/pill-facebook.svg?v=9" alt="Facebook: DevOps.NW.Enterprises"></a></p>
 
 <!-- screensaver: kicks in when you idle at the bottom of the page -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-screensaver.svg?v=8" alt="conway.scr — the 1COMMERCE wordmark spelled in live cells, then dissolving into Conway's Game of Life (B3/S23, 85 generations)" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-screensaver.svg?v=9" alt="conway.scr — the 1COMMERCE wordmark spelled in live cells, then dissolving into Conway's Game of Life (B3/S23, 85 generations)" width="100%"></p>
 
 <!-- shutdown -->
-<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-shutdown.svg?v=8" alt="Thanks for visiting — 1COMMERCE OS stays online, new builds ship weekly" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets/os-shutdown.svg?v=9" alt="Thanks for visiting — 1COMMERCE OS stays online, new builds ship weekly" width="100%"></p>
 
 <p align="center"><img src="https://komarev.com/ghpvc/?username=ksksrbiz-arch&label=visitors&color=4FD1C5&style=flat-square" alt="Profile views"><a href="https://github.com/ksksrbiz-arch?tab=followers"><img src="https://img.shields.io/github/followers/ksksrbiz-arch?label=followers&style=flat-square&color=4FD1C5" alt="Followers"></a></p>
 
@@ -93,7 +96,17 @@ Pacific Northwest · working with clients anywhere · [1commerce.online](https:/
 - 🌐 [1commerce.online](https://1commerce.online) · 🛍️ [1commerce.shop](https://1commerce.shop)
 - 🌲 Pacific Northwest · UTC−7
 
-### Featured builds
+### Client work
+
+| Site | What it is | Stack |
+| --- | --- | --- |
+| [tobereadshop.com](https://tobereadshop.com) | **To Be Read** — used bookstore & book exchange, Milwaukie OR | Next.js |
+| [precisioncorebuilders.com](https://precisioncorebuilders.com) | **Precision Core Builders** — custom homes & remodeling, Eugene OR (CCB #246527) | React |
+| [montuckymoonshine.com](https://montuckymoonshine.com) | **Montucky Moonshine** — craft spirits storefront | Shopify |
+
+All three are designed, built, deployed and hosted by 1COMMERCE.
+
+### Platform & side projects
 
 | Project | What it is |
 | --- | --- |

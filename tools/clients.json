@@ -1,21 +1,41 @@
 {
   "_comment": [
-    "Client sites shown on the managed-hosting status board (assets/os-hosting.svg).",
+    "Client sites shown on the managed-hosting board (assets/os-hosting.svg).",
     "EDIT THIS FILE, then run: python3 tools/gen_status_board.py",
     "",
-    "Entries with \"placeholder\": true render anonymized (client · <sector>) so no",
-    "client is named publicly by accident. Set a real \"domain\" and drop the",
-    "placeholder flag once you're happy for that client to be listed.",
+    "Only put a site here once the client is happy to be named publicly.",
     "",
-    "uptime/response/deployed are display values you control — nothing is polled."
+    "Fields stack/host/tls/live describe verifiable facts about the deployment.",
+    "uptime and response are OPTIONAL and omitted by default on purpose: this",
+    "board is a static SVG and nothing is polled, so a hard-coded '99.98%' next",
+    "to a real client's domain would be an unverifiable public claim about your",
+    "service. Add them only when you have real figures you're happy to stand behind."
   ],
   "brand": "1COMMERCE",
   "sites": [
-    { "domain": "montuckymoonshine.com", "sector": "retail",     "stack": "Shopify",  "uptime": "99.98", "response": 128, "deployed": "2d ago",  "ssl": true },
-    { "domain": "1commerce.online",      "sector": "studio",     "stack": "Next.js",  "uptime": "100",   "response": 92,  "deployed": "6h ago",  "ssl": true },
-    { "domain": "1commerce.shop",        "sector": "commerce",   "stack": "Shopify",  "uptime": "99.99", "response": 141, "deployed": "1d ago",  "ssl": true },
-    { "placeholder": true, "sector": "hospitality", "stack": "Next.js", "uptime": "99.97", "response": 116, "deployed": "4d ago", "ssl": true },
-    { "placeholder": true, "sector": "services",    "stack": "Astro",   "uptime": "100",   "response": 88,  "deployed": "9d ago", "ssl": true },
-    { "placeholder": true, "sector": "trades",      "stack": "WordPress","uptime": "99.95","response": 203, "deployed": "3w ago", "ssl": true }
+    {
+      "domain": "montuckymoonshine.com",
+      "sector": "craft spirits · retail",
+      "stack": "Shopify",
+      "host": "Shopify + Cloudflare",
+      "tls": true,
+      "live": true
+    },
+    {
+      "domain": "tobereadshop.com",
+      "sector": "used bookstore · Milwaukie, OR",
+      "stack": "Next.js",
+      "host": "Netlify + Cloudflare",
+      "tls": true,
+      "live": true
+    },
+    {
+      "domain": "precisioncorebuilders.com",
+      "sector": "custom homes · Eugene, OR",
+      "stack": "React",
+      "host": "Netlify",
+      "tls": true,
+      "live": true
+    }
   ]
 }
