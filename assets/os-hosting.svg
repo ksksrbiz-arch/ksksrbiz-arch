@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="status.1commerce — managed hosting: 6 client sites with uptime, SSL, stack, response time and last deploy">
+  <style>
+    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
+    @keyframes led { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .sweep { animation:sw 4s ease-in-out infinite; }
+    @keyframes sw { 0%,100%{opacity:.25} 50%{opacity:.7} }
+    .beat { animation:bt 2.2s ease-in-out infinite; }
+    @keyframes bt { 0%,100%{opacity:.55} 50%{opacity:1} }
+  </style>
+  <defs>
+    <clipPath id="hb"><rect width="1200" height="440" rx="14"/></clipPath>
+    <linearGradient id="upg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#68D391"/><stop offset="1" stop-color="#4FD1C5"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#hb)">
+    <rect width="1200" height="440" fill="#0F131B"/>
+    <rect width="1200" height="34" fill="#1B2230"/>
+    <rect y="33" width="1200" height="1" fill="#2B3648"/>
+    <circle cx="22" cy="17" r="6" fill="#FF5F57"/><circle cx="42" cy="17" r="6" fill="#FEBC2E"/><circle cx="62" cy="17" r="6" fill="#28C840"/>
+    <text x="600" y="22" font-size="13" fill="#7C8798" text-anchor="middle" font-family="'SFMono-Regular',Consolas,Menlo,monospace">status.1commerce — managed hosting &amp; deployment</text>
+
+    <!-- summary strip -->
+    <rect x="24" y="48" width="270" height="52" rx="10" fill="#161C26" stroke="#2B3648"/>
+    <text x="42" y="70" font-size="10.5" fill="#4C5870" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">FLEET UPTIME · 30d</text>
+    <text x="42" y="92" font-size="19" font-weight="800" fill="#68D391" font-family="'SFMono-Regular',Consolas,monospace">99.98%</text>
+    <text x="272" y="92" font-size="11" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">all systems go</text>
+
+    <rect x="308" y="48" width="210" height="52" rx="10" fill="#161C26" stroke="#2B3648"/>
+    <text x="326" y="70" font-size="10.5" fill="#4C5870" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">SITES MANAGED</text>
+    <text x="326" y="92" font-size="19" font-weight="800" fill="#F1F5FB" font-family="'SFMono-Regular',Consolas,monospace">6</text>
+    <text x="496" y="92" font-size="11" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">SSL on all</text>
+
+    <rect x="532" y="48" width="210" height="52" rx="10" fill="#161C26" stroke="#2B3648"/>
+    <text x="550" y="70" font-size="10.5" fill="#4C5870" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">AVG RESPONSE</text>
+    <text x="550" y="92" font-size="19" font-weight="800" fill="#4FD1C5" font-family="'SFMono-Regular',Consolas,monospace">128ms</text>
+    <text x="720" y="92" font-size="11" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">edge cached</text>
+
+    <!-- uptime sparkbars -->
+    <rect x="756" y="48" width="420" height="52" rx="10" fill="#161C26" stroke="#2B3648"/>
+    <text x="774" y="66" font-size="10.5" fill="#4C5870" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">LAST 30 DAYS</text>
+    <g class="sweep"><rect x="774" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="787" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="800" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="813" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="826" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="839" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="852" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="865" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="0.55"/><rect x="878" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="891" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="904" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="917" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="930" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="943" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="956" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="969" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="982" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="995" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1008" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1021" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="0.55"/><rect x="1034" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1047" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1060" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1073" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1086" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1099" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1112" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1125" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1138" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/><rect x="1151" y="72" width="9" height="20" rx="2" fill="url(#upg)" opacity="1"/></g>
+
+    <!-- column header -->
+    <g font-size="10.5" fill="#4C5870" letter-spacing="1.2" font-family="'SFMono-Regular',Consolas,monospace">
+      <text x="68" y="126">SITE</text>
+      <text x="473" y="126" text-anchor="middle">STACK</text>
+      <text x="620" y="126" text-anchor="end">UPTIME</text>
+      <text x="742" y="126" text-anchor="end">TLS</text>
+      <text x="880" y="126" text-anchor="end">RESP</text>
+      <text x="1046" y="126" text-anchor="end">LAST DEPLOY</text>
+      <text x="1176" y="126" text-anchor="end">STATUS</text>
+    </g>
+
+    <rect x="24" y="134" width="1152" height="38" rx="8" fill="#161C26" fill-opacity=".25"/>
+    <circle cx="48" cy="153" r="5" fill="#68D391" style="animation:led 2.6s ease-in-out 0.00s infinite"/>
+    <text x="68" y="158" font-size="14" font-weight="700" fill="#F1F5FB">montuckymoonshine.com</text>
+    <rect x="430" y="141" width="86" height="22" rx="11" fill="#68D391" fill-opacity=".13" stroke="#68D391" stroke-opacity=".45"/>
+    <text x="473" y="156" font-size="11" fill="#68D391" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">Shopify</text>
+    <text x="620" y="158" font-size="12.5" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">99.98%</text>
+    <text x="742" y="158" font-size="12" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">✓ SSL</text>
+    <text x="880" y="158" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">128ms</text>
+    <text x="1046" y="158" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">2d ago</text>
+    <text x="1176" y="158" font-size="12" fill="#4FD1C5" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">healthy</text><rect x="24" y="178" width="1152" height="38" rx="8" fill="#161C26" fill-opacity=".5"/>
+    <circle cx="48" cy="197" r="5" fill="#68D391" style="animation:led 2.6s ease-in-out 0.35s infinite"/>
+    <text x="68" y="202" font-size="14" font-weight="700" fill="#F1F5FB">1commerce.online</text>
+    <rect x="430" y="185" width="86" height="22" rx="11" fill="#F1F5FB" fill-opacity=".13" stroke="#F1F5FB" stroke-opacity=".45"/>
+    <text x="473" y="200" font-size="11" fill="#F1F5FB" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">Next.js</text>
+    <text x="620" y="202" font-size="12.5" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">100%</text>
+    <text x="742" y="202" font-size="12" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">✓ SSL</text>
+    <text x="880" y="202" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">92ms</text>
+    <text x="1046" y="202" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">6h ago</text>
+    <text x="1176" y="202" font-size="12" fill="#4FD1C5" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">healthy</text><rect x="24" y="222" width="1152" height="38" rx="8" fill="#161C26" fill-opacity=".25"/>
+    <circle cx="48" cy="241" r="5" fill="#68D391" style="animation:led 2.6s ease-in-out 0.70s infinite"/>
+    <text x="68" y="246" font-size="14" font-weight="700" fill="#F1F5FB">1commerce.shop</text>
+    <rect x="430" y="229" width="86" height="22" rx="11" fill="#68D391" fill-opacity=".13" stroke="#68D391" stroke-opacity=".45"/>
+    <text x="473" y="244" font-size="11" fill="#68D391" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">Shopify</text>
+    <text x="620" y="246" font-size="12.5" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">99.99%</text>
+    <text x="742" y="246" font-size="12" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">✓ SSL</text>
+    <text x="880" y="246" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">141ms</text>
+    <text x="1046" y="246" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">1d ago</text>
+    <text x="1176" y="246" font-size="12" fill="#4FD1C5" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">healthy</text><rect x="24" y="266" width="1152" height="38" rx="8" fill="#161C26" fill-opacity=".5"/>
+    <circle cx="48" cy="285" r="5" fill="#68D391" style="animation:led 2.6s ease-in-out 1.05s infinite"/>
+    <text x="68" y="290" font-size="14" font-weight="600" fill="#7C8798">client · hospitality</text>
+    <rect x="430" y="273" width="86" height="22" rx="11" fill="#F1F5FB" fill-opacity=".13" stroke="#F1F5FB" stroke-opacity=".45"/>
+    <text x="473" y="288" font-size="11" fill="#F1F5FB" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">Next.js</text>
+    <text x="620" y="290" font-size="12.5" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">99.97%</text>
+    <text x="742" y="290" font-size="12" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">✓ SSL</text>
+    <text x="880" y="290" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">116ms</text>
+    <text x="1046" y="290" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">4d ago</text>
+    <text x="1176" y="290" font-size="12" fill="#4FD1C5" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">healthy</text><rect x="24" y="310" width="1152" height="38" rx="8" fill="#161C26" fill-opacity=".25"/>
+    <circle cx="48" cy="329" r="5" fill="#68D391" style="animation:led 2.6s ease-in-out 1.40s infinite"/>
+    <text x="68" y="334" font-size="14" font-weight="600" fill="#7C8798">client · services</text>
+    <rect x="430" y="317" width="86" height="22" rx="11" fill="#B794F6" fill-opacity=".13" stroke="#B794F6" stroke-opacity=".45"/>
+    <text x="473" y="332" font-size="11" fill="#B794F6" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">Astro</text>
+    <text x="620" y="334" font-size="12.5" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">100%</text>
+    <text x="742" y="334" font-size="12" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">✓ SSL</text>
+    <text x="880" y="334" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">88ms</text>
+    <text x="1046" y="334" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">9d ago</text>
+    <text x="1176" y="334" font-size="12" fill="#4FD1C5" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">healthy</text><rect x="24" y="354" width="1152" height="38" rx="8" fill="#161C26" fill-opacity=".5"/>
+    <circle cx="48" cy="373" r="5" fill="#F6AD55" style="animation:led 2.6s ease-in-out 1.75s infinite"/>
+    <text x="68" y="378" font-size="14" font-weight="600" fill="#7C8798">client · trades</text>
+    <rect x="430" y="361" width="86" height="22" rx="11" fill="#63B3ED" fill-opacity=".13" stroke="#63B3ED" stroke-opacity=".45"/>
+    <text x="473" y="376" font-size="11" fill="#63B3ED" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">WordPress</text>
+    <text x="620" y="378" font-size="12.5" fill="#F6AD55" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">99.95%</text>
+    <text x="742" y="378" font-size="12" fill="#68D391" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">✓ SSL</text>
+    <text x="880" y="378" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">203ms</text>
+    <text x="1046" y="378" font-size="12" fill="#7C8798" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">3w ago</text>
+    <text x="1176" y="378" font-size="12" fill="#4FD1C5" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">healthy</text>
+
+    <rect y="406" width="1200" height="34" fill="#1B2230"/>
+    <rect y="406" width="1200" height="1" fill="#2B3648"/>
+    <g font-size="11.5" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
+      <circle class="beat" cx="36" cy="423" r="4" fill="#68D391"/>
+      <text x="50" y="427" fill="#7C8798">monitored continuously · deploys on push · backups nightly</text>
+      <text x="1176" y="427" fill="#4FD1C5" text-anchor="end">hosting &amp; deployment by 1COMMERCE ▸</text>
+    </g>
+    <rect x=".75" y=".75" width="1198.5" height="438.5" rx="14" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "_comment": [
+    "Client sites shown on the managed-hosting status board (assets/os-hosting.svg).",
+    "EDIT THIS FILE, then run: python3 tools/gen_status_board.py",
+    "",
+    "Entries with \"placeholder\": true render anonymized (client · <sector>) so no",
+    "client is named publicly by accident. Set a real \"domain\" and drop the",
+    "placeholder flag once you're happy for that client to be listed.",
+    "",
+    "uptime/response/deployed are display values you control — nothing is polled."
+  ],
+  "brand": "1COMMERCE",
+  "sites": [
+    { "domain": "montuckymoonshine.com", "sector": "retail",     "stack": "Shopify",  "uptime": "99.98", "response": 128, "deployed": "2d ago",  "ssl": true },
+    { "domain": "1commerce.online",      "sector": "studio",     "stack": "Next.js",  "uptime": "100",   "response": 92,  "deployed": "6h ago",  "ssl": true },
+    { "domain": "1commerce.shop",        "sector": "commerce",   "stack": "Shopify",  "uptime": "99.99", "response": 141, "deployed": "1d ago",  "ssl": true },
+    { "placeholder": true, "sector": "hospitality", "stack": "Next.js", "uptime": "99.97", "response": 116, "deployed": "4d ago", "ssl": true },
+    { "placeholder": true, "sector": "services",    "stack": "Astro",   "uptime": "100",   "response": 88,  "deployed": "9d ago", "ssl": true },
+    { "placeholder": true, "sector": "trades",      "stack": "WordPress","uptime": "99.95","response": 203, "deployed": "3w ago", "ssl": true }
+  ]
+}
