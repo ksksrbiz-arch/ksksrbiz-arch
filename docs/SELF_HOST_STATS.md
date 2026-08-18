@@ -7,10 +7,14 @@ This README already points at a **self-hosted** instance
 the shared public instance (`github-readme-stats.vercel.app`), which is used by
 millions and frequently returns `429 Too Many Requests` / `503` errors.
 
-The daily manual refresh (the scheduled workflow was removed in v6.2) appends a `cache_bust` param to these
-URLs so the cards re-render with fresh numbers. If you ever move the cards to a
-different host, deploying your own free instance on Vercel is a one-time,
-~5 minute setup — the steps below walk through it.
+No cache-busting parameter is appended to these URLs. A scheduled workflow used
+to add one daily, but it was removed in v6.2 along with the other Actions-based
+workflows, so the cards are now cached by the stat host and by GitHub's image
+proxy and refresh on their own schedule. To force a refresh by hand, append any
+changing query parameter (for example `&cache_bust=2`) to the URLs in README.md.
+
+If you ever move the cards to a different host, deploying your own free instance
+on Vercel is a one-time, ~5 minute setup — the steps below walk through it.
 
 ## Steps
 
@@ -44,7 +48,7 @@ different host, deploying your own free instance on Vercel is a one-time,
 ## Notes
 
 - Keep `PAT_1` secret; if it leaks, revoke it in GitHub token settings.
-- The `cache_bust` query param the daily workflow appends is harmless and works
-  against a self-hosted instance too.
+- A `cache_bust` query param is harmless and works against a self-hosted
+  instance too, if you ever want to add one manually.
 - Vercel's free tier is more than enough for a personal profile README.
 - Full docs: <https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own>
