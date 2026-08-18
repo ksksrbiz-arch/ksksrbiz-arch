@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="1COMMERCE OS boots: BIOS check, brand splash, then a different live desktop session each boot">
   <!--
-    1COMMERCE OS — boot hero, v7.1: TRIPLE BOOT.
+    1COMMERCE OS — boot hero, v7.2: TRIPLE BOOT.
     The 30s boot (BIOS → splash → desktop) runs three times on a 90s master
     cycle, and each boot logs into a DIFFERENT session:
       boot 1 → Finder + terminal deploy  (ship day)
@@ -470,7 +470,7 @@
     <g class="bios">
       <rect width="1200" height="430" fill="#090C11"/>
       <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="17" fill="#E2E8F0">
-        <g class="l1"><text x="70" y="88" fill="#4FD1C5" font-weight="700">1COMMERCE BIOS — v7.1 FABLE EDITION</text></g>
+        <g class="l1"><text x="70" y="88" fill="#4FD1C5" font-weight="700">1COMMERCE BIOS — v7.2 FABLE EDITION</text></g>
         <g class="l2">
           <text x="70" y="128">Memory check ......................... <tspan fill="#7C8798">128TB</tspan></text>
           <text x="560" y="128" class="ok ok2" fill="#28C840" font-weight="700">[ OK ]</text>

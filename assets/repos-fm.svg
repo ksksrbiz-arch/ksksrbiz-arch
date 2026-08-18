@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 504" width="1200" height="504" role="img" aria-label="Files — ~/repos: every repository, auto-indexed">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 556" width="1200" height="556" role="img" aria-label="Files — ~/repos: every repository, auto-indexed">
   <style>
     text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
     @keyframes led { 0%,100% {opacity:1;} 50% {opacity:.25;} }
@@ -7,9 +7,9 @@
     .sync { animation: spin 5s linear infinite; transform-box: fill-box; transform-origin: 50% 50%; }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
-  <defs><clipPath id="fm"><rect width="1200" height="504" rx="14"/></clipPath></defs>
+  <defs><clipPath id="fm"><rect width="1200" height="556" rx="14"/></clipPath></defs>
   <g clip-path="url(#fm)">
-    <rect width="1200" height="504" fill="#0F131B"/>
+    <rect width="1200" height="556" fill="#0F131B"/>
     <!-- title bar -->
     <rect width="1200" height="34" fill="#1B2230"/>
     <rect y="33" width="1200" height="1" fill="#2B3648"/>
@@ -24,16 +24,16 @@
     <rect x="274" y="43" width="300" height="28" rx="8" fill="#0F131B" stroke="#2B3648"/>
     <text x="290" y="62" font-size="12.5" fill="#F1F5FB" font-family="'SFMono-Regular',Consolas,Menlo,monospace"><tspan fill="#4FD1C5">🏠</tspan> home <tspan fill="#4C5870">›</tspan> <tspan fill="#4FD1C5" font-weight="700">repos</tspan></text>
     <rect x="880" y="43" width="296" height="28" rx="14" fill="#0F131B" stroke="#2B3648"/>
-    <text x="900" y="62" font-size="12.5" fill="#4C5870" font-family="'SFMono-Regular',Consolas,Menlo,monospace">⌕ search 7 repos<tspan class="scaret" fill="#4FD1C5">▌</tspan></text>
+    <text x="900" y="62" font-size="12.5" fill="#4C5870" font-family="'SFMono-Regular',Consolas,Menlo,monospace">⌕ search 8 repos<tspan class="scaret" fill="#4FD1C5">▌</tspan></text>
     <!-- sidebar -->
-    <rect y="80" width="210" height="424" fill="#121826"/>
-    <rect x="209" y="80" width="1" height="424" fill="#2B3648"/>
+    <rect y="80" width="210" height="476" fill="#121826"/>
+    <rect x="209" y="80" width="1" height="476" fill="#2B3648"/>
     <g font-family="'SFMono-Regular',Consolas,Menlo,monospace">
       <text x="22" y="110" font-size="10.5" fill="#4C5870" letter-spacing="2">SMART FOLDERS</text>
-      <text x="22" y="132" font-size="12.5" fill="#4FD1C5" font-weight="700">▸ all repos <tspan fill="#4C5870">(7)</tspan></text>
-      <circle cx="34" cy="150" r="4" fill="#63B3ED"/><text x="48" y="154" font-size="12" fill="#7C8798">typescript</text><text x="186" y="154" font-size="11" fill="#4C5870" text-anchor="end">2</text><circle cx="34" cy="174" r="4" fill="#F6E05E"/><text x="48" y="178" font-size="12" fill="#7C8798">javascript</text><text x="186" y="178" font-size="11" fill="#4C5870" text-anchor="end">2</text><circle cx="34" cy="198" r="4" fill="#63B3ED"/><text x="48" y="202" font-size="12" fill="#7C8798">python</text><text x="186" y="202" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="222" r="4" fill="#FC8181"/><text x="48" y="226" font-size="12" fill="#7C8798">html</text><text x="186" y="226" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="246" r="4" fill="#F6AD55"/><text x="48" y="250" font-size="12" fill="#7C8798">svg</text><text x="186" y="250" font-size="11" fill="#4C5870" text-anchor="end">1</text>
-      <text x="22" y="426" font-size="10.5" fill="#4C5870" letter-spacing="2">LOCATIONS</text>
-      <text x="22" y="448" font-size="12" fill="#7C8798">☁ 1commerce.online</text>
+      <text x="22" y="132" font-size="12.5" fill="#4FD1C5" font-weight="700">▸ all repos <tspan fill="#4C5870">(8)</tspan></text>
+      <circle cx="34" cy="150" r="4" fill="#63B3ED"/><text x="48" y="154" font-size="12" fill="#7C8798">typescript</text><text x="186" y="154" font-size="11" fill="#4C5870" text-anchor="end">3</text><circle cx="34" cy="174" r="4" fill="#F6E05E"/><text x="48" y="178" font-size="12" fill="#7C8798">javascript</text><text x="186" y="178" font-size="11" fill="#4C5870" text-anchor="end">2</text><circle cx="34" cy="198" r="4" fill="#63B3ED"/><text x="48" y="202" font-size="12" fill="#7C8798">python</text><text x="186" y="202" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="222" r="4" fill="#FC8181"/><text x="48" y="226" font-size="12" fill="#7C8798">html</text><text x="186" y="226" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="246" r="4" fill="#F6AD55"/><text x="48" y="250" font-size="12" fill="#7C8798">svg</text><text x="186" y="250" font-size="11" fill="#4C5870" text-anchor="end">1</text>
+      <text x="22" y="478" font-size="10.5" fill="#4C5870" letter-spacing="2">LOCATIONS</text>
+      <text x="22" y="500" font-size="12" fill="#7C8798">☁ 1commerce.online</text>
     </g>
     <!-- column header -->
     <g font-size="10.5" fill="#4C5870" font-family="'SFMono-Regular',Consolas,Menlo,monospace" letter-spacing="1">
@@ -53,61 +53,69 @@
     <rect x="232" y="169" width="30" height="30" rx="8" fill="#63B3ED" fill-opacity=".16" stroke="#63B3ED" stroke-opacity=".6"/>
     <text x="247" y="189" font-size="12" font-weight="800" fill="#63B3ED" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">TS</text>
     <circle cx="280" cy="184" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 0.3s infinite"/>
-    <text x="294" y="181" font-size="14.5" font-weight="700" fill="#F1F5FB">onecommerce-mcp-server</text>
-    <text x="294" y="198" font-size="11.5" fill="#7C8798">MCP server for 1COMMERCE / UnifyOne — 18 tools across the Cathedral Fram…</text>
+    <text x="294" y="181" font-size="14.5" font-weight="700" fill="#F1F5FB">tobe-</text>
+    <text x="294" y="198" font-size="11.5" fill="#7C8798">To Be Read — used bookstore site for the Clackamas Book Exchange, Milwau…</text>
     <text x="1136" y="181" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">typescript</text>
     <text x="1136" y="198" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
     <rect x="218" y="213" width="970" height="46" rx="8" fill="#161C26" fill-opacity=".25"/>
     <rect x="232" y="221" width="30" height="30" rx="8" fill="#63B3ED" fill-opacity=".16" stroke="#63B3ED" stroke-opacity=".6"/>
-    <text x="247" y="241" font-size="12" font-weight="800" fill="#63B3ED" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">PY</text>
+    <text x="247" y="241" font-size="12" font-weight="800" fill="#63B3ED" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">TS</text>
     <circle cx="280" cy="236" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 0.6s infinite"/>
-    <text x="294" y="233" font-size="14.5" font-weight="700" fill="#F1F5FB">prediction-alpha-engine</text>
-    <text x="294" y="250" font-size="11.5" fill="#7C8798">Prediction-market alpha engine — Kalshi/Polymarket ingestion, ML edge sc…</text>
-    <text x="1136" y="233" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">python</text>
+    <text x="294" y="233" font-size="14.5" font-weight="700" fill="#F1F5FB">onecommerce-mcp-server</text>
+    <text x="294" y="250" font-size="11.5" fill="#7C8798">MCP server for 1COMMERCE / UnifyOne — 18 tools across the Cathedral Fram…</text>
+    <text x="1136" y="233" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">typescript</text>
     <text x="1136" y="250" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
     <rect x="218" y="265" width="970" height="46" rx="8" fill="#161C26" fill-opacity=".55"/>
-    <rect x="232" y="273" width="30" height="30" rx="8" fill="#F6E05E" fill-opacity=".16" stroke="#F6E05E" stroke-opacity=".6"/>
-    <text x="247" y="293" font-size="12" font-weight="800" fill="#F6E05E" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">JS</text>
+    <rect x="232" y="273" width="30" height="30" rx="8" fill="#63B3ED" fill-opacity=".16" stroke="#63B3ED" stroke-opacity=".6"/>
+    <text x="247" y="293" font-size="12" font-weight="800" fill="#63B3ED" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">PY</text>
     <circle cx="280" cy="288" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 0.9s infinite"/>
-    <text x="294" y="285" font-size="14.5" font-weight="700" fill="#F1F5FB">Graph</text>
-    <text x="294" y="302" font-size="11.5" fill="#7C8798">Interactive graph visualization in JavaScript</text>
-    <text x="1136" y="285" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">javascript</text>
+    <text x="294" y="285" font-size="14.5" font-weight="700" fill="#F1F5FB">prediction-alpha-engine</text>
+    <text x="294" y="302" font-size="11.5" fill="#7C8798">Prediction-market alpha engine — Kalshi/Polymarket ingestion, ML edge sc…</text>
+    <text x="1136" y="285" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">python</text>
     <text x="1136" y="302" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
     <rect x="218" y="317" width="970" height="46" rx="8" fill="#161C26" fill-opacity=".25"/>
-    <rect x="232" y="325" width="30" height="30" rx="8" fill="#FC8181" fill-opacity=".16" stroke="#FC8181" stroke-opacity=".6"/>
-    <text x="247" y="345" font-size="12" font-weight="800" fill="#FC8181" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">‹›</text>
+    <rect x="232" y="325" width="30" height="30" rx="8" fill="#F6E05E" fill-opacity=".16" stroke="#F6E05E" stroke-opacity=".6"/>
+    <text x="247" y="345" font-size="12" font-weight="800" fill="#F6E05E" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">JS</text>
     <circle cx="280" cy="340" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 1.2s infinite"/>
-    <text x="294" y="337" font-size="14.5" font-weight="700" fill="#F1F5FB">montucky-moonshine-proposal</text>
-    <text x="294" y="354" font-size="11.5" fill="#7C8798">Premium storefront redesign wired straight into Shopify</text>
-    <text x="1136" y="337" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">html</text>
+    <text x="294" y="337" font-size="14.5" font-weight="700" fill="#F1F5FB">Graph</text>
+    <text x="294" y="354" font-size="11.5" fill="#7C8798">Interactive graph visualization in JavaScript</text>
+    <text x="1136" y="337" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">javascript</text>
     <text x="1136" y="354" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
     <rect x="218" y="369" width="970" height="46" rx="8" fill="#161C26" fill-opacity=".55"/>
-    <rect x="232" y="377" width="30" height="30" rx="8" fill="#F6E05E" fill-opacity=".16" stroke="#F6E05E" stroke-opacity=".6"/>
-    <text x="247" y="397" font-size="12" font-weight="800" fill="#F6E05E" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">JS</text>
+    <rect x="232" y="377" width="30" height="30" rx="8" fill="#FC8181" fill-opacity=".16" stroke="#FC8181" stroke-opacity=".6"/>
+    <text x="247" y="397" font-size="12" font-weight="800" fill="#FC8181" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">‹›</text>
     <circle cx="280" cy="392" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 1.5s infinite"/>
-    <text x="294" y="389" font-size="14.5" font-weight="700" fill="#F1F5FB">mojave-run</text>
-    <text x="294" y="406" font-size="11.5" fill="#7C8798">A wasteland arcade driver built for the browser</text>
-    <text x="1136" y="389" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">javascript</text>
+    <text x="294" y="389" font-size="14.5" font-weight="700" fill="#F1F5FB">montucky-moonshine-proposal</text>
+    <text x="294" y="406" font-size="11.5" fill="#7C8798">Premium storefront redesign wired straight into Shopify</text>
+    <text x="1136" y="389" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">html</text>
     <text x="1136" y="406" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
-    <rect x="218" y="421" width="970" height="46" rx="8" fill="#B794F6" fill-opacity=".12" stroke="#B794F6" stroke-opacity=".55"/>
-    <rect x="232" y="429" width="30" height="30" rx="8" fill="#F6AD55" fill-opacity=".16" stroke="#F6AD55" stroke-opacity=".6"/>
-    <text x="247" y="449" font-size="12" font-weight="800" fill="#F6AD55" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">◠</text>
+    <rect x="218" y="421" width="970" height="46" rx="8" fill="#161C26" fill-opacity=".25"/>
+    <rect x="232" y="429" width="30" height="30" rx="8" fill="#F6E05E" fill-opacity=".16" stroke="#F6E05E" stroke-opacity=".6"/>
+    <text x="247" y="449" font-size="12" font-weight="800" fill="#F6E05E" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">JS</text>
     <circle cx="280" cy="444" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 1.8s infinite"/>
-    <text x="294" y="441" font-size="14.5" font-weight="700" fill="#F1F5FB">ksksrbiz-arch</text>
-    <text x="294" y="458" font-size="11.5" fill="#7C8798">1COMMERCE OS — this profile: an operating system built from animated SVGs</text>
-    <text x="1136" y="441" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">svg</text>
+    <text x="294" y="441" font-size="14.5" font-weight="700" fill="#F1F5FB">mojave-run</text>
+    <text x="294" y="458" font-size="11.5" fill="#7C8798">A wasteland arcade driver built for the browser</text>
+    <text x="1136" y="441" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">javascript</text>
     <text x="1136" y="458" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
+    <rect x="218" y="473" width="970" height="46" rx="8" fill="#B794F6" fill-opacity=".12" stroke="#B794F6" stroke-opacity=".55"/>
+    <rect x="232" y="481" width="30" height="30" rx="8" fill="#F6AD55" fill-opacity=".16" stroke="#F6AD55" stroke-opacity=".6"/>
+    <text x="247" y="501" font-size="12" font-weight="800" fill="#F6AD55" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace">◠</text>
+    <circle cx="280" cy="496" r="3.5" fill="#68D391" style="animation:led 2.4s ease-in-out 2.1s infinite"/>
+    <text x="294" y="493" font-size="14.5" font-weight="700" fill="#F1F5FB">ksksrbiz-arch</text>
+    <text x="294" y="510" font-size="11.5" fill="#7C8798">1COMMERCE OS — this profile: an operating system built from animated SVGs</text>
+    <text x="1136" y="493" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">svg</text>
+    <text x="1136" y="510" font-size="11" fill="#4C5870" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">dir ▸</text>
     
     <!-- status bar -->
-    <rect y="472" width="1200" height="32" fill="#1B2230"/>
-    <rect y="472" width="1200" height="1" fill="#2B3648"/>
+    <rect y="524" width="1200" height="32" fill="#1B2230"/>
+    <rect y="524" width="1200" height="1" fill="#2B3648"/>
     <g font-size="11.5" fill="#7C8798" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
       <g class="sync" stroke="#4C5870" stroke-width="1.4" fill="none">
-        <path d="M26 482 a6 6 0 1 1 -3.5 10.5" stroke-linecap="round"/>
+        <path d="M26 534 a6 6 0 1 1 -3.5 10.5" stroke-linecap="round"/>
       </g>
-      <text x="42" y="493">7 items · 1 selected · indexed by tools/gen_repo_windows.py</text>
-      <text x="1176" y="493" text-anchor="end" fill="#4FD1C5">click anywhere to browse on GitHub ▸</text>
+      <text x="42" y="545">8 items · 1 selected · indexed by tools/gen_repo_windows.py</text>
+      <text x="1176" y="545" text-anchor="end" fill="#4FD1C5">click anywhere to browse on GitHub ▸</text>
     </g>
-    <rect x=".75" y=".75" width="1198.5" height="502.5" rx="14" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+    <rect x=".75" y=".75" width="1198.5" height="554.5" rx="14" fill="none" stroke="#2B3648" stroke-width="1.5"/>
   </g>
 </svg>
