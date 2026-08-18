@@ -21,7 +21,6 @@ import json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets")
-README = os.path.join(ROOT, "README.md")
 DATA = os.path.join(ROOT, "tools", "clients.json")
 RAW = "https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets"
 

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220" role="img" aria-label="Side quests, built for fun and not for clients: Graph, an interactive force-directed graph visualization in JavaScript; prediction-alpha-engine, a Kalshi and Polymarket alpha engine with ML edge scoring in Python; and mojave-run, a browser arcade driver in JavaScript.">
+  <style>
+    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .nd { transform-box:fill-box; transform-origin:50% 50%; animation:nd 4s ease-in-out infinite; }
+    .n2{animation-delay:.6s}.n3{animation-delay:1.2s}.n4{animation-delay:1.8s}
+    @keyframes nd { 0%,100%{transform:scale(1)} 50%{transform:scale(1.35)} }
+    .ed { stroke-dasharray:3 4; animation:ed 1.4s linear infinite; }
+    @keyframes ed { to{stroke-dashoffset:-7} }
+    .cd { animation:cd 4.6s ease-in-out infinite; }
+    .cd2{animation-delay:.35s}.cd3{animation-delay:.7s}.cd4{animation-delay:1.05s}
+    @keyframes cd { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .road { animation:rd .5s linear infinite; }
+    @keyframes rd { to{stroke-dashoffset:-30} }
+    .car { animation:car 1.3s ease-in-out infinite; }
+    @keyframes car { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-2px)} }
+    .go { animation:go 2.6s ease-in-out infinite; }
+    .g2{animation-delay:.6s}.g3{animation-delay:1.2s}
+    @keyframes go { 0%,100%{opacity:.65} 50%{opacity:1} }
+  </style>
+  <defs><clipPath id="sq"><rect width="1200" height="220" rx="14"/></clipPath></defs>
+  <g clip-path="url(#sq)">
+    <rect width="1200" height="220" fill="#0F131B"/>
+    <rect width="1200" height="34" fill="#1B2230"/><rect y="33" width="1200" height="1" fill="#2B3648"/>
+    <circle cx="22" cy="17" r="6" fill="#FF5F57"/><circle cx="42" cy="17" r="6" fill="#FEBC2E"/><circle cx="62" cy="17" r="6" fill="#28C840"/>
+    <text x="600" y="22" class="mono" font-size="13" fill="#7C8798" text-anchor="middle">side-quests — built for fun, not for clients</text>
+
+    <!-- Graph -->
+    <rect x="32" y="52" width="368" height="120" rx="11" fill="#161C26" stroke="#2B3648"/>
+    <g transform="translate(88,112)">
+      <g stroke="#46536B" stroke-width="1.2" fill="none">
+        <path class="ed" d="M-26 -18 L4 -26"/><path class="ed" d="M4 -26 L28 -8"/>
+        <path class="ed" d="M-26 -18 L-14 12"/><path class="ed" d="M-14 12 L14 22"/>
+        <path class="ed" d="M14 22 L28 -8"/><path class="ed" d="M-26 -18 L14 22"/>
+      </g>
+      <circle class="nd"    cx="-26" cy="-18" r="6" fill="#4FD1C5"/>
+      <circle class="nd n2" cx="4"   cy="-26" r="4.5" fill="#F6AD55"/>
+      <circle class="nd n3" cx="28"  cy="-8"  r="5" fill="#B794F6"/>
+      <circle class="nd n4" cx="-14" cy="12"  r="6.5" fill="#4FD1C5"/>
+      <circle class="nd n2" cx="14"  cy="22"  r="4.5" fill="#68D391"/>
+    </g>
+    <text x="150" y="88" font-size="15" font-weight="800" fill="#F1F5FB">Graph</text>
+    <text x="150" y="108" font-size="11.5" fill="#9AA6B8">Force-directed graph visualization,</text>
+    <text x="150" y="124" font-size="11.5" fill="#9AA6B8">hand-rolled in plain JavaScript.</text>
+    <rect x="150" y="136" width="74" height="19" rx="9.5" fill="#F6E05E" fill-opacity=".13" stroke="#F6E05E" stroke-opacity=".45"/>
+    <text x="187" y="149" class="mono" font-size="9.5" fill="#F6E05E" text-anchor="middle">JavaScript</text>
+    <text class="go mono" x="380" y="149" font-size="11" font-weight="700" fill="#4FD1C5" text-anchor="end">open ▸</text>
+
+    <!-- alpha engine -->
+    <rect x="416" y="52" width="368" height="120" rx="11" fill="#161C26" stroke="#2B3648"/>
+    <g stroke-width="2">
+      <g class="cd">    <line x1="452" y1="118" x2="452" y2="142" stroke="#68D391"/><rect x="448" y="122" width="8" height="14" rx="2" fill="#68D391"/></g>
+      <g class="cd cd2"><line x1="470" y1="106" x2="470" y2="132" stroke="#FC8181"/><rect x="466" y="112" width="8" height="14" rx="2" fill="#FC8181"/></g>
+      <g class="cd cd3"><line x1="488" y1="94"  x2="488" y2="122" stroke="#68D391"/><rect x="484" y="100" width="8" height="16" rx="2" fill="#68D391"/></g>
+      <g class="cd cd4"><line x1="506" y1="84"  x2="506" y2="112" stroke="#68D391"/><rect x="502" y="90"  width="8" height="16" rx="2" fill="#68D391"/></g>
+    </g>
+    <text x="534" y="88" font-size="15" font-weight="800" fill="#F1F5FB">prediction-alpha-engine</text>
+    <text x="534" y="108" font-size="11.5" fill="#9AA6B8">Kalshi / Polymarket ingestion with</text>
+    <text x="534" y="124" font-size="11.5" fill="#9AA6B8">ML edge scoring and automation.</text>
+    <rect x="534" y="136" width="60" height="19" rx="9.5" fill="#63B3ED" fill-opacity=".13" stroke="#63B3ED" stroke-opacity=".45"/>
+    <text x="564" y="149" class="mono" font-size="9.5" fill="#63B3ED" text-anchor="middle">Python</text>
+    <text class="go g2 mono" x="764" y="149" font-size="11" font-weight="700" fill="#4FD1C5" text-anchor="end">open ▸</text>
+
+    <!-- mojave run -->
+    <rect x="800" y="52" width="368" height="120" rx="11" fill="#161C26" stroke="#2B3648"/>
+    <rect x="820" y="86" width="88" height="58" rx="8" fill="#141B2E"/>
+    <circle cx="884" cy="102" r="9" fill="#F6AD55"/>
+    <rect x="820" y="118" width="88" height="26" fill="#2B1E38"/>
+    <path class="road" d="M822 131 H906" stroke="#F6AD55" stroke-width="2.5" stroke-dasharray="12 10" fill="none" opacity=".8"/>
+    <g class="car">
+      <path d="M842 126 l4 -5 h11 l4 5 z" fill="#B794F6"/>
+      <rect x="838" y="125" width="27" height="6" rx="3" fill="#4FD1C5"/>
+      <circle cx="845" cy="132" r="2.6" fill="#0F131B" stroke="#9AA6B8" stroke-width="1"/>
+      <circle cx="858" cy="132" r="2.6" fill="#0F131B" stroke="#9AA6B8" stroke-width="1"/>
+    </g>
+    <text x="926" y="88" font-size="15" font-weight="800" fill="#F1F5FB">mojave-run</text>
+    <text x="926" y="108" font-size="11.5" fill="#9AA6B8">A wasteland arcade driver built</text>
+    <text x="926" y="124" font-size="11.5" fill="#9AA6B8">for the browser. Survive the Mojave.</text>
+    <rect x="926" y="136" width="74" height="19" rx="9.5" fill="#F6E05E" fill-opacity=".13" stroke="#F6E05E" stroke-opacity=".45"/>
+    <text x="963" y="149" class="mono" font-size="9.5" fill="#F6E05E" text-anchor="middle">JavaScript</text>
+    <text class="go g3 mono" x="1148" y="149" font-size="11" font-weight="700" fill="#4FD1C5" text-anchor="end">insert coin ▸</text>
+
+    <rect y="186" width="1200" height="34" fill="#1B2230"/><rect y="186" width="1200" height="1" fill="#2B3648"/>
+    <text x="32" y="208" class="mono" font-size="11.5" fill="#7C8798">personal projects · not client work · kept here so the two never get confused</text>
+    <text x="1168" y="208" class="mono" font-size="11.5" fill="#4C5870" text-anchor="end">3 side quests</text>
+    <rect x=".75" y=".75" width="1198.5" height="218.5" rx="14" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+  </g>
+</svg>
