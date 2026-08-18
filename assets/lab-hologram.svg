@@ -35,7 +35,7 @@
     <rect width="590" height="36" fill="#161C26"/>
     <rect y="35" width="590" height="1" fill="#2B3648"/>
     <circle cx="22" cy="18" r="6" fill="#FF5F57"/><circle cx="42" cy="18" r="6" fill="#FEBC2E"/><circle cx="62" cy="18" r="6" fill="#28C840"/>
-    <text x="295" y="23" font-size="13" fill="#7C8798" text-anchor="middle">hologram.app — planetary commerce net</text>
+    <text x="295" y="23" font-size="13" fill="#7C8798" text-anchor="middle">hologram.app — global edge network</text>
 
     <!-- projector base + cone -->
     <ellipse cx="295" cy="332" rx="60" ry="9" fill="#1B2230" stroke="#2B3648"/>
@@ -110,7 +110,7 @@
 
     <g font-size="11" fill="#7C8798">
       <text x="24" y="60">rotation: orthographic · rx = R·|sin(φ+ωt)|</text>
-      <text x="566" y="60" text-anchor="end" fill="#4FD1C5">42 regions · 1 platform</text>
+      <text x="566" y="60" text-anchor="end" fill="#4FD1C5">42 edge regions · 1 platform</text>
       <text x="24" y="344">holo-link stable</text>
       <text x="566" y="344" text-anchor="end">sat uplink: 6s orbit</text>
     </g>
