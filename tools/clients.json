@@ -36,6 +36,14 @@
       "host": "Netlify",
       "tls": true,
       "live": true
+    },
+    {
+      "domain": "windowsbyclearview.com",
+      "sector": "replacement & new-construction windows · Vancouver, WA",
+      "stack": "Astro",
+      "host": "Cloudflare Pages",
+      "tls": true,
+      "live": true
     }
   ]
 }
