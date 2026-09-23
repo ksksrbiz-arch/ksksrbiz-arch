@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="windowsbyclearview.com — Clearview Windows, replacement and new-construction window installation in Vancouver Washington, WA L&amp;I registered CLEARVW74601">
+  <style>
+    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
+    .mono { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
+    .old { animation:oldp 7s ease-in-out infinite; }
+    .new { animation:newp 7s ease-in-out infinite; }
+    @keyframes oldp { 0%,45%{opacity:1} 55%,100%{opacity:0} }
+    @keyframes newp { 0%,45%{opacity:0} 55%,100%{opacity:1} }
+    .tag { animation:tag 7s steps(1,end) infinite; }
+    @keyframes tag { 0%,52%{opacity:0;transform:translateY(4px)} 55%,96%{opacity:1;transform:translateY(0)} 98%,100%{opacity:0;transform:translateY(4px)} }
+    .shine { animation:sh 3.4s linear infinite; }
+    @keyframes sh { 0%{transform:translateX(-70px)} 100%{transform:translateX(150px)} }
+    .cta { animation:cta 3.2s ease-in-out infinite; }
+    @keyframes cta { 0%,100%{opacity:.85} 50%{opacity:1} }
+    .go { animation:go 2.6s ease-in-out infinite; }
+    @keyframes go { 0%,100%{opacity:.6} 50%{opacity:1} }
+  </style>
+  <defs>
+    <clipPath id="cv"><rect width="380" height="240" rx="12"/></clipPath>
+    <clipPath id="pane"><rect x="38" y="100" width="100" height="56"/></clipPath>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BEE3F8"/><stop offset="1" stop-color="#63B3ED"/></linearGradient>
+  </defs>
+  <g clip-path="url(#cv)">
+    <rect width="380" height="240" fill="#0F131B"/>
+    <rect width="380" height="24" fill="#1B2230"/><rect y="23" width="380" height="1" fill="#2B3648"/>
+    <circle cx="14" cy="12" r="4" fill="#FF5F57"/><circle cx="28" cy="12" r="4" fill="#FEBC2E"/><circle cx="42" cy="12" r="4" fill="#28C840"/>
+    <text x="190" y="16" class="mono" font-size="10.5" fill="#7C8798" text-anchor="middle">windowsbyclearview.com</text>
+
+    <!-- site header -->
+    <rect y="24" width="380" height="30" fill="#161C26"/>
+    <rect x="18" y="35" width="14" height="14" rx="1.5" fill="none" stroke="#63B3ED" stroke-width="1.6"/>
+    <path d="M18 42 H32 M25 35 V49" stroke="#63B3ED" stroke-width="1.6"/>
+    <text x="38" y="44" font-size="13.5" font-weight="800" fill="#F1F5FB" letter-spacing=".3">ClearView</text>
+    <g class="mono" font-size="8.5" fill="#7C8798">
+      <text x="196" y="43">REPLACEMENT</text><text x="266" y="43">NEW BUILD</text><text x="322" y="43">ESTIMATE</text>
+    </g>
+
+    <text x="18" y="72" class="mono" font-size="9.5" fill="#4C5870" letter-spacing="1.2">REPLACEMENT &amp; NEW-CONSTRUCTION WINDOWS · VANCOUVER, WA</text>
+
+    <!-- wall + window swapping old for new -->
+    <rect x="18" y="82" width="140" height="90" rx="4" fill="#1B2230" stroke="#2B3648"/>
+    <rect x="30" y="94" width="116" height="68" rx="3" fill="#161C26" stroke="#2B3648" stroke-width="2"/>
+
+    <g clip-path="url(#pane)">
+      <g class="old">
+        <rect x="38" y="100" width="100" height="56" fill="#4C5870"/>
+        <path d="M60 100 L74 128 L58 156 M100 100 L88 130 L112 156" stroke="#2B3648" stroke-width="1.6" fill="none"/>
+        <rect x="38" y="100" width="100" height="56" fill="#0F131B" fill-opacity=".25"/>
+      </g>
+      <g class="new">
+        <rect x="38" y="100" width="100" height="56" fill="url(#glass)"/>
+        <g class="shine"><path d="M0 156 L26 100 L46 100 L20 156 Z" fill="#F1F5FB" fill-opacity=".35"/></g>
+      </g>
+    </g>
+    <path d="M88 100 V156 M38 128 H138" stroke="#1B2230" stroke-width="3"/>
+    <rect x="38" y="100" width="100" height="56" fill="none" stroke="#1B2230" stroke-width="3"/>
+
+    <g class="tag">
+      <rect x="96" y="86" width="52" height="16" rx="8" fill="#68D391"/>
+      <text x="122" y="97.5" class="mono" font-size="8.5" font-weight="800" fill="#0F131B" text-anchor="middle">NEW PANE</text>
+    </g>
+
+    <!-- stat + CTA -->
+    <rect x="176" y="82" width="88" height="40" rx="9" fill="#161C26" stroke="#2B3648"/>
+    <text x="220" y="99" class="mono" font-size="8.5" fill="#7C8798" text-anchor="middle">WA L&amp;I REG</text>
+    <text x="220" y="113" class="mono" font-size="10.5" font-weight="800" fill="#68D391" text-anchor="middle">CLEARVW74601</text>
+
+    <rect x="272" y="82" width="90" height="40" rx="9" fill="#161C26" stroke="#2B3648"/>
+    <text x="317" y="99" class="mono" font-size="8.5" fill="#7C8798" text-anchor="middle">STACK</text>
+    <text x="317" y="113" class="mono" font-size="10.5" font-weight="800" fill="#63B3ED" text-anchor="middle">Astro</text>
+
+    <rect class="cta" x="176" y="132" width="186" height="30" rx="15" fill="#63B3ED"/>
+    <text x="269" y="151.5" class="mono" font-size="9.5" font-weight="800" fill="#0F131B" text-anchor="middle">GET A FREE ESTIMATE</text>
+
+    <g class="mono" font-size="9" fill="#68D391"><text x="18" y="188">● live production estimate delivery</text></g>
+
+    <rect y="206" width="380" height="34" fill="#161C26"/><rect y="206" width="380" height="1" fill="#2B3648"/>
+    <rect x="17" y="214" width="18" height="18" rx="5" fill="#63B3ED"/>
+    <text x="26" y="227" class="mono" font-size="10" font-weight="800" fill="#0F131B" text-anchor="middle">C</text>
+    <text x="42" y="221" font-size="12.5" font-weight="700" fill="#F1F5FB">windowsbyclearview.com</text>
+    <text x="42" y="233" class="mono" font-size="9" fill="#7C8798">client build · Astro · hosted &amp; deployed</text>
+    <text class="go" x="362" y="228" font-size="11.5" font-weight="700" fill="#4FD1C5" text-anchor="end">visit ▸</text>
+    <rect x=".75" y=".75" width="378.5" height="238.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
+  </g>
+</svg>
