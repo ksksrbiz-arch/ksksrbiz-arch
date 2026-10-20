@@ -34,11 +34,25 @@ Four businesses. Four different briefs. Websites and storefronts I designed, bui
 
 ### The Walking Dead Universe Atlas
 
-<p align="center"><a href="https://walking-dead-universe-atlas.vercel.app/"><img src="./assets/project-atlas-feature.svg" alt="The Walking Dead Universe Atlas — an interactive personal project connecting maps, timelines and character data. Built with React and TypeScript." width="100%"></a></p>
+<p align="center">
+<a href="https://walking-dead-universe-atlas.vercel.app/">
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/project-atlas-mobile.svg">
+  <img src="./assets/project-atlas-feature.svg" alt="The Walking Dead Universe Atlas — a universe explorer with maps, timelines, people and watch guides. An animated schematic route stays synchronized with its journey timeline." width="100%">
+</picture>
+</a>
+</p>
 
-A mobile-first atlas that turns a sprawling fictional universe into connected maps, timelines and character data. **React + TypeScript**, backed by normalized JSON registries.
+A connected guide to **places, timelines, people and what to watch**. Follow journeys through episode evidence, compare up to three routes, and explore with spoiler-aware playback.
 
-[Explore the atlas ↗](https://walking-dead-universe-atlas.vercel.app/) · [View the code](https://github.com/ksksrbiz-arch/walking-dead-universe-atlas)
+[**Explore the atlas ↗**](https://walking-dead-universe-atlas.vercel.app/) · [View the code](https://github.com/ksksrbiz-arch/walking-dead-universe-atlas)
+
+<p align="center"><a href="https://walking-dead-universe-atlas.vercel.app/"><img src="./assets/project-atlas-journeys.svg" alt="Compare up to three journeys: an animated illustration of different paths through a shared world." width="390"></a>
+<a href="https://walking-dead-universe-atlas.vercel.app/"><img src="./assets/project-atlas-spoilers.svg" alt="Spoiler-aware journeys: the visible evidence advances while later story details stay behind a spoiler boundary." width="390"></a></p>
+
+**React · TypeScript · Vite · Vercel** — structured JSON registries, global search and shareable links.
+
+*The animations illustrate features; routes and geography are schematic. Reduced-motion preferences show static compositions.*
 
 ### Commerce platforms & agent tooling
 

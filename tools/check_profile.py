@@ -14,6 +14,7 @@ assert local_sources, 'README must include local artwork'
 for source in local_sources:
     assert (ROOT / source.split('?')[0]).is_file(), f'Missing image: {source}'
 assert './assets/os-identity-mobile.svg' in local_sources
+assert './assets/project-atlas-mobile.svg' in local_sources
 assert 'raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets' not in readme
 assert 'https://1commerce.online' not in readme
 assert '[Website](https://1commercesolutions.com)' in readme
@@ -21,7 +22,10 @@ assert 'mailto:skdev@1commerce.online' in readme
 for target in re.findall(r'\]\((\./[^)#]+)', readme):
     assert (ROOT / target).exists(), f'Missing local link: {target}'
 # Generated replays must have valid SMIL timing and actual static alternatives.
-for asset in (ROOT / 'assets').glob('lab-study-*.svg'):
+animated_studies = list((ROOT / 'assets').glob('lab-study-*.svg'))
+animated_studies += [ROOT / 'assets' / f'project-atlas-{name}.svg'
+                     for name in ('feature', 'mobile', 'journeys', 'spoilers')]
+for asset in animated_studies:
     root = ET.parse(asset).getroot()
     assert any(node.get('class') == 'motion' for node in root.iter())
     assert any(node.get('class') == 'still' for node in root.iter())
@@ -39,4 +43,4 @@ sample = {'domain': 'a&b.example', 'sector': 'Windows & trim <contractor>',
 root = ET.fromstring(board('A&B "studio"', [sample]))
 assert sample['sector'] in ''.join(root.itertext())
 assert readme.count('<details>') == readme.count('</details>')
-print('PASS: SVGs, local images/links, marketing URL, research replay timing/static alternatives, disclosures, and client-data escaping.')
+print('PASS: SVGs, local images/links, marketing URL, research and Atlas timing/static alternatives, disclosures, and client-data escaping.')
