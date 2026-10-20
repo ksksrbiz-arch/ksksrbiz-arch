@@ -140,31 +140,14 @@ def clients():
 
 
 def atlas():
-    s = '<rect x="500" width="500" height="420" fill="#172322"/>'
-    # Abstract geographic contours: illustrative, not a claimed exact map.
-    for i in range(9):
-        x=510+i*19
-        s += f'<path d="M{x} -30C{x+115} 65 {x-75} 105 {x+80} 193S{x+12} 326 {x+170} 450" stroke="#91A58A" stroke-opacity=".15" fill="none"/>'
-    s += '<path class="signal" d="M580 272L649 174L761 231L859 120L935 179" fill="none" stroke="#FF987A" stroke-width="2"/>'
-    for i,(x,y) in enumerate([(580,272),(649,174),(761,231),(859,120),(935,179)]):
-        s += f'<circle class="pulse" cx="{x}" cy="{y}" r="17" fill="#FF987A" fill-opacity=".1" stroke="#FF987A" stroke-opacity=".3" style="animation-delay:{i*.6}s"/><circle cx="{x}" cy="{y}" r="5" fill="#FF987A"/>'
-    s += text(649,148,'ALEXANDRIA',12,'#C9D6CC',500,'class="mono" text-anchor="middle"')
-    s += text(761,265,'THE KINGDOM',12,'#C9D6CC',500,'class="mono" text-anchor="middle"')
-    s += text(859,93,'HILLTOP',12,'#C9D6CC',500,'class="mono" text-anchor="middle"')
-    s += text(532,381,'MAP / TIMELINE / CHARACTERS',13,'#AFC0B0',400,'class="mono" letter-spacing="1"')
-    s += text(32,45,'PERSONAL BUILD / FEATURED PROJECT',13,CORAL,700,'class="mono" letter-spacing="1"')
-    s += text(28,119,'THE WALKING',48,FG,800,'letter-spacing="-1.5"')
-    s += text(28,170,'DEAD UNIVERSE',48,FG,800,'letter-spacing="-1.5"')
-    s += text(28,224,'ATLAS',56,CORAL,800,'letter-spacing="-1.5"')
-    s += text(32,270,'A sprawling universe. One connected view.',19,MUTED)
-    s += text(32,301,'Interactive maps, timelines and character data.',18,MUTED)
-    s += text(32,344,'REACT + TYPESCRIPT',13,CYAN,700,'class="mono" letter-spacing="1"')
-    s += text(32,384,'Explore the atlas',18,FG,700) + '<path d="M202 379h28l-7-7 M230 379l-7 7" stroke="#FF987A" fill="none" stroke-width="2"/>'
-    svg('project-atlas-feature.svg',1000,420,'The Walking Dead Universe Atlas — a personal React and TypeScript project with interactive maps, timelines and character data.',s)
+    # Keep one source of truth for the responsive Atlas dossier and companions.
+    from gen_atlas_showcase import generate
+    generate()
+
 
 if __name__ == '__main__':
     hero()
     hero(mobile=True)
     clients()
     atlas()
-    print('Generated 7 self-contained showcase SVGs.')
+    print('Generated 10 self-contained showcase SVGs.')
