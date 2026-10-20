@@ -25,6 +25,17 @@
 
 The GitHub stats endpoint returned a valid stats SVG. The Atlas, Precision Core Builders, Montucky Moonshine and both featured platform repository links returned HTTP 200. Automated requests to 1commerce.online, To Be Read and ClearView returned 403; those links were retained. Other destinations have not all been independently verified.
 
-A full GitHub browser/mobile rendering and animation playback check was not completed: the local Playwright browser executable was unavailable. Static asset rendering and source validation do not substitute for that check.
+Follow-up browser verification completed on the PR branch in connected Chrome at 1920px desktop and 390px mobile widths. All README images loaded, including the repaired hosting board. Desktop client cards display two per row; mobile cards stack at the available width with no horizontal page overflow. The mobile picture source switches to os-identity-mobile.svg. Navigation to Client work works. Native browser rendering of the new hero and client cards was visually inspected. This is responsive browser emulation, not a physical-phone test.
 
 No GitHub Actions were run or added. The existing manual-only workflow was left unchanged. Hosting metadata and the repository index remain manually generated snapshots; they should not be treated as live monitoring.
+
+## Astra visual redesign
+
+- New desktop and portrait mobile identity heroes with persistent headline and animated isometric brand artwork.
+- Four individually illustrated client cards and a full-width Atlas project feature.
+- Existing boot, hosting and file-manager artwork retained inside expandable tours.
+- New artwork supports reduced-motion preferences and is reproducible through `python3 tools/gen_profile_showcase.py`.
+- Local image paths resolve to the current Git branch, including the mobile picture source and generated repository window.
+- Removed the visitor counter after confirming it failed to load in GitHub.
+- New artwork is illustrative, explicitly labeled, and introduces no performance or revenue claims.
+- All SVGs and local image sources pass offline checks; generator output is deterministic.
