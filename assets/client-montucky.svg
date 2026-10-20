@@ -1,82 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="montucky-moonshine-proposal — premium Shopify storefront: product grid, add to cart and a live cart badge">
-  <style>
-    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
-    .mono { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
-    .cur { animation:cur 6s ease-in-out infinite; }
-    @keyframes cur {
-      0%,10%{transform:translate(300px,180px);opacity:0}
-      14%{opacity:1} 34%{transform:translate(188px,168px)}
-      44%{transform:translate(188px,168px)} 46%{transform:translate(188px,171px)}
-      52%{transform:translate(188px,168px)} 80%{transform:translate(300px,60px);opacity:1}
-      92%,100%{opacity:0;transform:translate(300px,60px)}
-    }
-    .press { animation:pr 6s steps(1,end) infinite; }
-    @keyframes pr { 0%,44%{opacity:0} 45%,51%{opacity:1} 52%,100%{opacity:0} }
-    .badge0 { animation:b0 6s steps(1,end) infinite; }
-    .badge1 { animation:b1 6s steps(1,end) infinite; }
-    @keyframes b0 { 0%,51%{opacity:1} 52%,100%{opacity:0} }
-    @keyframes b1 { 0%,51%{opacity:0} 52%,100%{opacity:1} }
-    .pop { animation:pop 6s ease-out infinite; transform-box:fill-box; transform-origin:50% 50%; }
-    @keyframes pop { 0%,51%{transform:scale(1)} 55%{transform:scale(1.3)} 60%,100%{transform:scale(1)} }
-    .go { animation:go 2.6s ease-in-out infinite; }
-    @keyframes go { 0%,100%{opacity:.6} 50%{opacity:1} }
-  </style>
-  <defs>
-    <clipPath id="s"><rect width="380" height="240" rx="12"/></clipPath>
-    <linearGradient id="jug" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6AD55"/><stop offset="1" stop-color="#B7791F"/></linearGradient>
-  </defs>
-  <g clip-path="url(#s)">
-    <rect width="380" height="240" fill="#0F131B"/>
-    <rect width="380" height="24" fill="#1B2230"/><rect y="23" width="380" height="1" fill="#2B3648"/>
-    <circle cx="14" cy="12" r="4" fill="#FF5F57"/><circle cx="28" cy="12" r="4" fill="#FEBC2E"/><circle cx="42" cy="12" r="4" fill="#28C840"/>
-    <text x="190" y="16" class="mono" font-size="10.5" fill="#7C8798" text-anchor="middle">montuckymoonshine.com</text>
-
-    <!-- storefront nav -->
-    <rect y="24" width="380" height="30" fill="#161C26"/>
-    <text x="18" y="44" font-size="13" font-weight="800" fill="#F6AD55" font-family="Georgia,serif">MONTUCKY</text>
-    <g class="mono" font-size="9" fill="#7C8798">
-      <text x="132" y="43">SHOP</text><text x="172" y="43">STORY</text><text x="216" y="43">FIND US</text>
-    </g>
-    <path d="M330 38 h6 l4 12 h16 l4 -9 h-21" fill="none" stroke="#E2E8F0" stroke-width="1.4" stroke-linecap="round"/>
-    <circle cx="345" cy="53" r="1.8" fill="#E2E8F0"/><circle cx="354" cy="53" r="1.8" fill="#E2E8F0"/>
-    <g class="pop"><circle cx="357" cy="35" r="7.5" fill="#FC8181"/>
-      <text x="357" y="38.5" class="mono" font-size="9" font-weight="800" fill="#0F131B" text-anchor="middle"><tspan class="badge0">1</tspan><tspan class="badge1" x="357">2</tspan></text>
-    </g>
-
-    <!-- product grid -->
-    <g>
-      <rect x="18" y="64" width="106" height="96" rx="8" fill="#161C26" stroke="#2B3648"/>
-      <path d="M60 92 h22 v10 c9 4 12 11 12 19 v14 a6 6 0 0 1 -6 6 h-34 a6 6 0 0 1 -6 -6 v-14 c0 -8 3 -15 12 -19 z" fill="url(#jug)"/>
-      <rect x="64" y="87" width="14" height="7" rx="2" fill="#7C8798"/>
-      <text x="71" y="152" class="mono" font-size="9" fill="#9AA6B8" text-anchor="middle">ORIGINAL 750</text>
-
-      <rect x="136" y="64" width="106" height="96" rx="8" fill="#161C26" stroke="#4FD1C5" stroke-opacity=".5"/>
-      <path d="M178 92 h22 v10 c9 4 12 11 12 19 v14 a6 6 0 0 1 -6 6 h-34 a6 6 0 0 1 -6 -6 v-14 c0 -8 3 -15 12 -19 z" fill="#B794F6"/>
-      <rect x="182" y="87" width="14" height="7" rx="2" fill="#7C8798"/>
-      <text x="189" y="152" class="mono" font-size="9" fill="#F1F5FB" text-anchor="middle">HUCKLEBERRY</text>
-
-      <rect x="254" y="64" width="106" height="96" rx="8" fill="#161C26" stroke="#2B3648"/>
-      <path d="M296 92 h22 v10 c9 4 12 11 12 19 v14 a6 6 0 0 1 -6 6 h-34 a6 6 0 0 1 -6 -6 v-14 c0 -8 3 -15 12 -19 z" fill="#68D391"/>
-      <rect x="300" y="87" width="14" height="7" rx="2" fill="#7C8798"/>
-      <text x="307" y="152" class="mono" font-size="9" fill="#9AA6B8" text-anchor="middle">APPLE PIE</text>
-    </g>
-
-    <!-- price + CTA -->
-    <text x="18" y="182" class="mono" font-size="14" font-weight="800" fill="#F6AD55">$38.00</text>
-    <text x="70" y="182" class="mono" font-size="9" fill="#4C5870">750ml · 100 proof</text>
-    <rect x="136" y="168" width="106" height="26" rx="13" fill="#4FD1C5"/>
-    <rect class="press" x="136" y="168" width="106" height="26" rx="13" fill="#2E6B75"/>
-    <text x="189" y="185" class="mono" font-size="10" font-weight="800" fill="#0F131B" text-anchor="middle">ADD TO CART</text>
-    <g class="mono" font-size="9" fill="#68D391"><text x="362" y="185" text-anchor="end">✓ Shopify checkout</text></g>
-
-    <g class="cur"><path d="M0 0 L0 13 L3.7 10.2 L6.5 15.8 L8.6 14.7 L10.2 8.9 L5.8 9.2 Z" fill="#F1F5FB" stroke="#0F131B" stroke-width="1"/></g>
-
-    <rect y="206" width="380" height="34" fill="#161C26"/><rect y="206" width="380" height="1" fill="#2B3648"/>
-    <rect x="17" y="214" width="18" height="18" rx="5" fill="#68D391"/>
-    <text x="26" y="227" class="mono" font-size="10" font-weight="800" fill="#161C26" text-anchor="middle">S</text>
-    <text x="42" y="221" font-size="12.5" font-weight="700" fill="#F1F5FB">montuckymoonshine.com</text>
-    <text x="42" y="233" class="mono" font-size="9" fill="#7C8798">client build · Shopify · hosted &amp; deployed</text>
-    <text class="go" x="362" y="228" font-size="11.5" font-weight="700" fill="#4FD1C5" text-anchor="end">visit ▸</text>
-    <rect x=".75" y=".75" width="378.5" height="238.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="416" viewBox="0 0 480 416" role="img" aria-labelledby="title desc">
+<title id="title">Montucky Moonshine — COMMERCE / CRAFT SPIRITS. Brand, product discovery and Shopify checkout. Built with Shopify. montuckymoonshine.com</title><desc id="desc">Handcrafted animated vector artwork. Motion is disabled when reduced motion is requested.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif}
+.mono{font-family:'DejaVu Sans Mono',Consolas,monospace}
+.orbit{transform-origin:765px 272px;animation:orbit 42s linear infinite}
+.float{animation:float 7s ease-in-out infinite}
+.signal{stroke-dasharray:5 12;animation:signal 18s linear infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.book{animation:book 9s ease-in-out infinite}
+.draw{stroke-dasharray:900;stroke-dashoffset:0;animation:draw 10s ease-in-out infinite}
+.shine{animation:shine 8s ease-in-out infinite}
+.bottle{animation:bottle 7s ease-in-out infinite}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes signal{to{stroke-dashoffset:-170}}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes book{0%,12%,100%{transform:translateY(0)}5%,9%{transform:translateY(-12px)}}
+@keyframes draw{0%,100%{stroke-dashoffset:0}55%{stroke-dashoffset:0}75%{stroke-dashoffset:900}95%{stroke-dashoffset:0}}
+@keyframes shine{0%,15%{transform:translateX(-180px);opacity:0}30%{opacity:.7}70%{transform:translateX(180px);opacity:0}100%{opacity:0}}
+@keyframes bottle{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><defs><clipPath id="frame"><rect width="480" height="416" rx="20"/></clipPath></defs>
+<g clip-path="url(#frame)"><rect width="480" height="416" fill="#0B1017"/><rect width="480" height="246" fill="#B49CCA" fill-opacity=".07"/><text x="26" y="32" font-size="12" fill="#A7B6BA" font-weight="400" class="mono" letter-spacing="1">03 / CLIENT WORK</text><text x="454" y="32" font-size="12" fill="#B49CCA" font-weight="700" class="mono" text-anchor="end">Shopify</text><circle cx="242" cy="139" r="84" fill="#B49CCA" fill-opacity=".09"/><path d="M42 218H438" stroke="#B49CCA" stroke-opacity=".4"/><g class="bottle" style="animation-delay:0s"><ellipse cx="128" cy="211" rx="43" ry="7" fill="#000" fill-opacity=".3"/><path d="M110 100h36v24c19 7 25 24 25 42v32q0 9-9 9h-68q-9 0-9-9v-32c0-18 6-35 25-42Z" fill="#E4BC78"/><rect x="113" y="91" width="30" height="12" rx="3" fill="#D5D6C4"/><rect x="96" y="157" width="64" height="31" rx="2" fill="#0B1017" fill-opacity=".8"/><text x="128" y="177" font-size="12" fill="#E4BC78" font-weight="700" class="mono" text-anchor="middle">M / M</text></g><g class="bottle" style="animation-delay:1s"><ellipse cx="240" cy="211" rx="43" ry="7" fill="#000" fill-opacity=".3"/><path d="M222 72h36v24c19 7 25 24 25 42v32q0 9-9 9h-68q-9 0-9-9v-32c0-18 6-35 25-42Z" fill="#B49CCA"/><rect x="225" y="63" width="30" height="12" rx="3" fill="#D5D6C4"/><rect x="208" y="129" width="64" height="31" rx="2" fill="#0B1017" fill-opacity=".8"/><text x="240" y="149" font-size="12" fill="#B49CCA" font-weight="700" class="mono" text-anchor="middle">M / M</text></g><g class="bottle" style="animation-delay:2s"><ellipse cx="352" cy="211" rx="43" ry="7" fill="#000" fill-opacity=".3"/><path d="M334 100h36v24c19 7 25 24 25 42v32q0 9-9 9h-68q-9 0-9-9v-32c0-18 6-35 25-42Z" fill="#87AD91"/><rect x="337" y="91" width="30" height="12" rx="3" fill="#D5D6C4"/><rect x="320" y="157" width="64" height="31" rx="2" fill="#0B1017" fill-opacity=".8"/><text x="352" y="177" font-size="12" fill="#87AD91" font-weight="700" class="mono" text-anchor="middle">M / M</text></g><path d="M26 246H454" stroke="#2B3B43"/><text x="26" y="278" font-size="11" fill="#B49CCA" font-weight="700" class="mono" letter-spacing="1.5">COMMERCE / CRAFT SPIRITS</text><text x="24" y="315" font-size="30" fill="#EDF3EF" font-weight="700" letter-spacing="-.8">Montucky Moonshine</text><text x="26" y="345" font-size="17" fill="#A7B6BA" font-weight="400" >Brand, product discovery and Shopify checkout.</text><text x="26" y="388" font-size="14" fill="#EDF3EF" font-weight="400" class="mono">montuckymoonshine.com</text><circle cx="440" cy="381" r="17" fill="#B49CCA"/><path d="M434 387L446 375 M436 375h10v10" fill="none" stroke="#0B1017" stroke-width="1.7"/><path d="M26 409H454" stroke="#1C2D35"/></g>
+<rect x=".75" y=".75" width="478.5" height="414.5" rx="20" fill="none" stroke="#2B3B43" stroke-width="1.5"/>
 </svg>

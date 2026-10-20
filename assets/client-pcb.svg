@@ -1,67 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="precisioncorebuilders.com — Precision Core Builders, custom homes remodels and additions in Eugene Oregon, licensed CCB 246527">
-  <style>
-    text { font-family:'Segoe UI',Helvetica,Arial,sans-serif; }
-    .mono { font-family:'SFMono-Regular',Consolas,Menlo,monospace; }
-    .draw { stroke-dasharray:620; animation:dr 9s ease-in-out infinite; }
-    .draw2 { stroke-dasharray:300; animation:dr2 9s ease-in-out infinite; }
-    @keyframes dr  { 0%{stroke-dashoffset:620} 40%,88%{stroke-dashoffset:0;opacity:1} 96%,100%{stroke-dashoffset:620;opacity:0} }
-    @keyframes dr2 { 0%,30%{stroke-dashoffset:300} 62%,88%{stroke-dashoffset:0;opacity:1} 96%,100%{stroke-dashoffset:300;opacity:0} }
-    .rule { animation:ru 9s ease-in-out infinite; }
-    @keyframes ru { 0%,100%{opacity:.25} 50%{opacity:.6} }
-    .cta { animation:cta 3s ease-in-out infinite; }
-    @keyframes cta { 0%,100%{opacity:.85} 50%{opacity:1} }
-    .go { animation:go 2.6s ease-in-out infinite; }
-    @keyframes go { 0%,100%{opacity:.6} 50%{opacity:1} }
-  </style>
-  <defs><clipPath id="pc"><rect width="380" height="240" rx="12"/></clipPath></defs>
-  <g clip-path="url(#pc)">
-    <rect width="380" height="240" fill="#0F131B"/>
-    <rect width="380" height="24" fill="#1B2230"/><rect y="23" width="380" height="1" fill="#2B3648"/>
-    <circle cx="14" cy="12" r="4" fill="#FF5F57"/><circle cx="28" cy="12" r="4" fill="#FEBC2E"/><circle cx="42" cy="12" r="4" fill="#28C840"/>
-    <text x="190" y="16" class="mono" font-size="10.5" fill="#7C8798" text-anchor="middle">precisioncorebuilders.com</text>
-
-    <!-- site header -->
-    <rect y="24" width="380" height="30" fill="#161C26"/>
-    <path d="M18 44 l7 -9 l7 9 z" fill="#F6AD55"/>
-    <text x="38" y="44" font-size="11.5" font-weight="800" fill="#F1F5FB" letter-spacing=".6">PRECISION CORE</text>
-    <g class="mono" font-size="8.5" fill="#7C8798">
-      <text x="196" y="43">HOMES</text><text x="242" y="43">REMODELS</text><text x="306" y="43">CONTACT</text>
-    </g>
-
-    <text x="18" y="72" class="mono" font-size="9.5" fill="#4C5870" letter-spacing="1.2">CUSTOM HOMES · REMODELS · ADDITIONS</text>
-
-    <!-- blueprint house drawing itself -->
-    <g class="rule" stroke="#2B3648" stroke-width=".8">
-      <path d="M18 90 H274 M18 110 H274 M18 130 H274 M18 150 H274"/>
-      <path d="M60 82 V172 M110 82 V172 M160 82 V172 M210 82 V172"/>
-    </g>
-    <g fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-      <path class="draw" d="M40 168 V112 L146 66 L252 112 V168 Z"/>
-    </g>
-    <g fill="none" stroke="#F6AD55" stroke-width="1.6" stroke-linecap="round">
-      <path class="draw2" d="M76 168 V132 H112 V168 M170 168 V128 H214 V168 M146 66 V96 M40 112 H252"/>
-    </g>
-    <g class="mono" font-size="7.5" fill="#4FD1C5" opacity=".8">
-      <text x="146" y="180" text-anchor="middle">— 42' —</text>
-    </g>
-
-    <!-- licence + CTA -->
-    <rect x="286" y="82" width="76" height="38" rx="9" fill="#161C26" stroke="#2B3648"/>
-    <text x="324" y="99" class="mono" font-size="8.5" fill="#7C8798" text-anchor="middle">LICENSED</text>
-    <text x="324" y="112" class="mono" font-size="10" font-weight="800" fill="#68D391" text-anchor="middle">CCB #246527</text>
-
-    <rect class="cta" x="286" y="128" width="76" height="44" rx="9" fill="#4FD1C5"/>
-    <text x="324" y="146" class="mono" font-size="8.5" font-weight="800" fill="#0F131B" text-anchor="middle">FREE ON-SITE</text>
-    <text x="324" y="159" class="mono" font-size="8.5" font-weight="800" fill="#0F131B" text-anchor="middle">ESTIMATE</text>
-
-    <text x="18" y="196" class="mono" font-size="9" fill="#7C8798">Eugene, OR · 541-852-5144</text>
-
-    <rect y="206" width="380" height="34" fill="#161C26"/><rect y="206" width="380" height="1" fill="#2B3648"/>
-    <rect x="17" y="214" width="18" height="18" rx="5" fill="#4FD1C5"/>
-    <text x="26" y="227" class="mono" font-size="10" font-weight="800" fill="#0F131B" text-anchor="middle">P</text>
-    <text x="42" y="221" font-size="12.5" font-weight="700" fill="#F1F5FB">precisioncorebuilders.com</text>
-    <text x="42" y="233" class="mono" font-size="9" fill="#7C8798">client build · React · hosted &amp; deployed</text>
-    <text class="go" x="362" y="228" font-size="11.5" font-weight="700" fill="#4FD1C5" text-anchor="end">visit ▸</text>
-    <rect x=".75" y=".75" width="378.5" height="238.5" rx="12" fill="none" stroke="#2B3648" stroke-width="1.5"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="416" viewBox="0 0 480 416" role="img" aria-labelledby="title desc">
+<title id="title">Precision Core Builders — CONSTRUCTION / LOCAL BUSINESS. Custom homes. A clear path to an estimate. Built with React. precisioncorebuilders.com</title><desc id="desc">Handcrafted animated vector artwork. Motion is disabled when reduced motion is requested.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif}
+.mono{font-family:'DejaVu Sans Mono',Consolas,monospace}
+.orbit{transform-origin:765px 272px;animation:orbit 42s linear infinite}
+.float{animation:float 7s ease-in-out infinite}
+.signal{stroke-dasharray:5 12;animation:signal 18s linear infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.book{animation:book 9s ease-in-out infinite}
+.draw{stroke-dasharray:900;stroke-dashoffset:0;animation:draw 10s ease-in-out infinite}
+.shine{animation:shine 8s ease-in-out infinite}
+.bottle{animation:bottle 7s ease-in-out infinite}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes signal{to{stroke-dashoffset:-170}}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes book{0%,12%,100%{transform:translateY(0)}5%,9%{transform:translateY(-12px)}}
+@keyframes draw{0%,100%{stroke-dashoffset:0}55%{stroke-dashoffset:0}75%{stroke-dashoffset:900}95%{stroke-dashoffset:0}}
+@keyframes shine{0%,15%{transform:translateX(-180px);opacity:0}30%{opacity:.7}70%{transform:translateX(180px);opacity:0}100%{opacity:0}}
+@keyframes bottle{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><defs><clipPath id="frame"><rect width="480" height="416" rx="20"/></clipPath></defs>
+<g clip-path="url(#frame)"><rect width="480" height="416" fill="#0B1017"/><rect width="480" height="246" fill="#6CE5D1" fill-opacity=".07"/><text x="26" y="32" font-size="12" fill="#A7B6BA" font-weight="400" class="mono" letter-spacing="1">02 / CLIENT WORK</text><text x="454" y="32" font-size="12" fill="#6CE5D1" font-weight="700" class="mono" text-anchor="end">React</text><g stroke="#6CE5D1" stroke-opacity=".09"><path d="M40 59V224"/><path d="M60 59V224"/><path d="M80 59V224"/><path d="M100 59V224"/><path d="M120 59V224"/><path d="M140 59V224"/><path d="M160 59V224"/><path d="M180 59V224"/><path d="M200 59V224"/><path d="M220 59V224"/><path d="M240 59V224"/><path d="M260 59V224"/><path d="M280 59V224"/><path d="M300 59V224"/><path d="M320 59V224"/><path d="M340 59V224"/><path d="M360 59V224"/><path d="M380 59V224"/><path d="M400 59V224"/><path d="M420 59V224"/><path d="M440 59V224"/><path d="M40 60H450"/><path d="M40 80H450"/><path d="M40 100H450"/><path d="M40 120H450"/><path d="M40 140H450"/><path d="M40 160H450"/><path d="M40 180H450"/><path d="M40 200H450"/><path d="M40 220H450"/></g><path d="M95 201V128L237 65L379 128V201Z M95 128H379 M143 201V145H197V201 M276 201V145H332V201 M237 65V111" fill="none" stroke="#6CE5D1" stroke-opacity=".2" stroke-width="2"/><path class="draw" d="M95 201V128L237 65L379 128V201Z M95 128H379 M143 201V145H197V201 M276 201V145H332V201 M237 65V111" fill="none" stroke="#6CE5D1" stroke-width="2" stroke-linejoin="round"/><path d="M95 217H379 M95 212V222 M379 212V222 M237 58V45" stroke="#E4BC78"/><text x="237" y="238" font-size="10" fill="#E4BC78" font-weight="400" class="mono" text-anchor="middle" letter-spacing="1.5">FROM BLUEPRINT TO BROWSER</text><path d="M26 246H454" stroke="#2B3B43"/><text x="26" y="278" font-size="11" fill="#6CE5D1" font-weight="700" class="mono" letter-spacing="1.5">CONSTRUCTION / LOCAL BUSINESS</text><text x="24" y="315" font-size="30" fill="#EDF3EF" font-weight="700" letter-spacing="-.8">Precision Core Builders</text><text x="26" y="345" font-size="17" fill="#A7B6BA" font-weight="400" >Custom homes. A clear path to an estimate.</text><text x="26" y="388" font-size="14" fill="#EDF3EF" font-weight="400" class="mono">precisioncorebuilders.com</text><circle cx="440" cy="381" r="17" fill="#6CE5D1"/><path d="M434 387L446 375 M436 375h10v10" fill="none" stroke="#0B1017" stroke-width="1.7"/><path d="M26 409H454" stroke="#1C2D35"/></g>
+<rect x=".75" y=".75" width="478.5" height="414.5" rx="20" fill="none" stroke="#2B3B43" stroke-width="1.5"/>
 </svg>
