@@ -27,7 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets")
 README = os.path.join(ROOT, "README.md")
 SEED = os.path.join(ROOT, "tools", "repos.json")
-RAW = "https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets"
+RAW = "./assets"
 
 # midnight theme
 BG, PANEL, TITLE, BORDER, SIDE = "#0F131B", "#161C26", "#1B2230", "#2B3648", "#121826"
@@ -195,7 +195,7 @@ def main():
     # README block — single-line, whitespace-free (mobile-safe)
     payload = ('<!-- REPO-WINDOWS:START -->\n'
                f'<p align="center"><a href="https://github.com/{user}?tab=repositories">'
-               f'<img src="{RAW}/repos-fm.svg?v=10" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>\n'
+               f'<img src="{RAW}/repos-fm.svg" alt="Files — ~/repos: every repository auto-indexed in one file-manager window" width="100%"></a></p>\n'
                '<!-- REPO-WINDOWS:END -->')
     md = open(README).read()
     marked = re.search(r'<!-- REPO-WINDOWS:START -->.*?<!-- REPO-WINDOWS:END -->', md, re.S)

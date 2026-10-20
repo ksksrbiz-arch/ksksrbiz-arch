@@ -18,6 +18,7 @@ hard-coding a percentage next to a real client's domain would be an
 unverifiable public claim about the service.
 """
 import json, os, re, sys
+from html import escape
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets")
@@ -25,7 +26,7 @@ DATA = os.path.join(ROOT, "tools", "clients.json")
 RAW = "https://raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets"
 
 BG, PANEL, TITLE, BORDER = "#0F131B", "#161C26", "#1B2230", "#2B3648"
-TEXT, MUTED, DIM = "#F1F5FB", "#7C8798", "#4C5870"
+TEXT, MUTED, DIM = "#F1F5FB", "#A6B2C5", "#94A3B8"
 CYAN, VIOLET, AMBER, GREEN, CORAL = "#4FD1C5", "#B794F6", "#F6AD55", "#68D391", "#FF8B6A"
 
 STACK_COLOR = {"Next.js": "#F1F5FB", "Shopify": GREEN, "Astro": VIOLET,
@@ -42,6 +43,7 @@ def load_sites():
 
 def board(brand, sites):
     """Render the hosting status board as a standalone SVG string."""
+    brand = escape(str(brand), quote=True)
     W = 1200
     TB, HEAD, ROW, FOOT = 34, 76, 48, 34
     TB_ = TB
@@ -58,14 +60,14 @@ def board(brand, sites):
         # uptime/response only render when the JSON actually supplies them
         extra = ""
         if s_.get("uptime"):
-            extra += f'<text x="1046" y="{y+24}" font-size="12" fill="{GREEN}" text-anchor="end" font-family="\'SFMono-Regular\',Consolas,monospace">{s_["uptime"]}%</text>'
+            extra += f'<text x="1046" y="{y+24}" font-size="12" fill="{GREEN}" text-anchor="end" font-family="\'SFMono-Regular\',Consolas,monospace">{escape(str(s_["uptime"]), quote=True)}%</text>'
         rows.append(f'''<rect x="24" y="{y}" width="{W-48}" height="{ROW-6}" rx="8" fill="{PANEL}" fill-opacity="{".5" if i%2 else ".25"}"/>
     <circle cx="48" cy="{y+19}" r="5" fill="{dot}" style="animation:led 2.6s ease-in-out {i*.35:.2f}s infinite"/>
-    <text x="68" y="{y+17}" font-size="14" font-weight="700" fill="{TEXT}">{s_["domain"]}</text>
-    <text x="68" y="{y+32}" font-size="10.5" fill="{DIM}">{s_.get("sector","")}</text>
+    <text x="68" y="{y+17}" font-size="14" font-weight="700" fill="{TEXT}">{escape(str(s_["domain"]), quote=True)}</text>
+    <text x="68" y="{y+32}" font-size="10.5" fill="{DIM}">{escape(str(s_.get("sector","")), quote=True)}</text>
     <rect x="470" y="{y+7}" width="86" height="22" rx="11" fill="{sc}" fill-opacity=".13" stroke="{sc}" stroke-opacity=".45"/>
-    <text x="513" y="{y+22}" font-size="11" fill="{sc}" text-anchor="middle" font-family="\'SFMono-Regular\',Consolas,monospace">{s_.get("stack","—")}</text>
-    <text x="760" y="{y+24}" font-size="12" fill="{MUTED}" text-anchor="end" font-family="\'SFMono-Regular\',Consolas,monospace">{s_.get("host","—")}</text>
+    <text x="513" y="{y+22}" font-size="11" fill="{sc}" text-anchor="middle" font-family="\'SFMono-Regular\',Consolas,monospace">{escape(str(s_.get("stack","—")), quote=True)}</text>
+    <text x="760" y="{y+24}" font-size="12" fill="{MUTED}" text-anchor="end" font-family="\'SFMono-Regular\',Consolas,monospace">{escape(str(s_.get("host","—")), quote=True)}</text>
     <text x="880" y="{y+24}" font-size="12" fill="{GREEN}" text-anchor="end" font-family="\'SFMono-Regular\',Consolas,monospace">{"✓ HTTPS" if s_.get("tls") else "—"}</text>
     {extra}
     <text x="1176" y="{y+24}" font-size="12" fill="{CYAN if live else AMBER}" text-anchor="end" font-family="\'SFMono-Regular\',Consolas,monospace">{"live" if live else "staging"}</text>''')
@@ -79,10 +81,10 @@ def board(brand, sites):
         chips += (f'<rect x="{cx}" y="{TB_+38}" width="{w:.0f}" height="20" rx="10" fill="{col}" fill-opacity=".14" '
                   f'stroke="{col}" stroke-opacity=".45"/>'
                   f'<text x="{cx + w/2:.0f}" y="{TB_+52}" font-size="11" fill="{col}" text-anchor="middle" '
-                  f'font-family="\'SFMono-Regular\',Consolas,monospace">{st}</text>')
+                  f'font-family="\'SFMono-Regular\',Consolas,monospace">{escape(str(st), quote=True)}</text>')
         cx += w + 10
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="status.{brand.lower()} — managed hosting: {n} client sites with uptime, SSL, stack, response time and last deploy">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="status.{brand.lower()} — managed hosting: {n} client sites with recorded HTTPS, stack and hosting details; static snapshot">
   <style>
     text {{ font-family:'Segoe UI',Helvetica,Arial,sans-serif; }}
     @keyframes led {{ 0%,100%{{opacity:1}} 50%{{opacity:.3}} }}
@@ -106,12 +108,12 @@ def board(brand, sites):
 
     <!-- summary strip -->
     <rect x="24" y="{TB+14}" width="270" height="52" rx="10" fill="{PANEL}" stroke="{BORDER}"/>
-    <text x="42" y="{TB+36}" font-size="10.5" fill="{DIM}" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">CLIENT SITES LIVE</text>
+    <text x="42" y="{TB+36}" font-size="10.5" fill="{DIM}" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">CLIENT SITES LISTED</text>
     <text x="42" y="{TB+58}" font-size="19" font-weight="800" fill="{GREEN}" font-family="'SFMono-Regular',Consolas,monospace">{n}</text>
     <text x="272" y="{TB+58}" font-size="11" fill="{MUTED}" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">built &amp; hosted here</text>
 
     <rect x="308" y="{TB+14}" width="210" height="52" rx="10" fill="{PANEL}" stroke="{BORDER}"/>
-    <text x="326" y="{TB+36}" font-size="10.5" fill="{DIM}" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">HTTPS + HSTS</text>
+    <text x="326" y="{TB+36}" font-size="10.5" fill="{DIM}" letter-spacing="1.6" font-family="'SFMono-Regular',Consolas,monospace">HTTPS</text>
     <text x="326" y="{TB+58}" font-size="19" font-weight="800" fill="{TEXT}" font-family="'SFMono-Regular',Consolas,monospace">{"all" if tls_all else "partial"}</text>
     <text x="496" y="{TB+58}" font-size="11" fill="{MUTED}" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace">certs managed</text>
 
@@ -140,7 +142,7 @@ def board(brand, sites):
     <rect y="{H-FOOT}" width="{W}" height="1" fill="{BORDER}"/>
     <g font-size="11.5" font-family="'SFMono-Regular',Consolas,Menlo,monospace">
       <circle class="beat" cx="36" cy="{H-FOOT+17}" r="4" fill="{GREEN}"/>
-      <text x="50" y="{H-FOOT+21}" fill="{MUTED}">monitored continuously · deploys on push · backups nightly</text>
+      <text x="50" y="{H-FOOT+21}" fill="{MUTED}">Portfolio snapshot · maintained manually · not live monitoring</text>
       <text x="1176" y="{H-FOOT+21}" fill="{CYAN}" text-anchor="end">hosting &amp; deployment by {brand} ▸</text>
     </g>
     <rect x=".75" y=".75" width="{W-1.5}" height="{H-1.5}" rx="14" fill="none" stroke="{BORDER}" stroke-width="1.5"/>
