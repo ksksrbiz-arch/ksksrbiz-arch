@@ -1,6 +1,6 @@
 <!-- Handcrafted SVGs, CSS/SMIL only. No Actions, scripts, fonts or remote assets inside the artwork. -->
 <p align="center">
-<a href="https://1commerce.online/">
+<a href="https://1commercesolutions.com/">
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/os-identity-mobile.svg">
   <img src="./assets/os-identity.svg" alt="Keith J. Skaggs — 1COMMERCE. Good ideas. Working software. Websites, commerce and connected systems. Founder of 1Commerce LLC in the Pacific Northwest." width="100%">
@@ -62,7 +62,7 @@ This profile is also a small operating system: hand-built animated SVGs, simulat
 <p align="center"><a href="mailto:skdev@1commerce.online"><img src="./assets/os-menubar.svg" alt="1COMMERCE OS menu bar: Finder, File, Build, Ship, Automate; available for new work, Pacific Northwest (Pacific time), and skdev@1commerce.online" width="100%"></a></p>
 
 <!-- boot sequence → desktop -->
-<p align="center"><a href="https://1commerce.online/"><img src="./assets/os-boot.svg" alt="1COMMERCE OS boots: a BIOS self-test, a brand splash with a rising sun over cyan ridgelines, then a live desktop session — a simulated deploy, sample order feed, or arcade break in a repeating three-session cycle" width="100%"></a></p>
+<p align="center"><a href="https://1commercesolutions.com/"><img src="./assets/os-boot.svg" alt="1COMMERCE OS boots: a BIOS self-test, a brand splash with a rising sun over cyan ridgelines, then a live desktop session — a simulated deploy, sample order feed, or arcade break in a repeating three-session cycle" width="100%"></a></p>
 
 <!-- terminal + client ops panel -->
 <p align="center"><img src="./assets/os-terminal.svg" alt="Terminal running whoami then neofetch: 1COMMERCE OS v8.0, full-stack development for hire — sites, storefronts and hosting; kernel cathedral.framework, shell claude-code, host Pacific Northwest (Pacific time)" width="600"><img src="./assets/os-activity.svg" alt="Ops panel for the managed client sites: montuckymoonshine.com on Shopify, tobereadshop.com on Next.js and precisioncorebuilders.com on React, all live over HTTPS; the care plan covers SSL renewal, nightly backups, updates and uptime monitoring" width="390"></p>
@@ -107,19 +107,45 @@ This profile is also a small operating system: hand-built animated SVGs, simulat
 
 ## Research lab
 
-Self-contained SVG experiments in simulation, geometry and animation.
+<p align="center"><img src="./assets/lab-masthead.svg" alt="Research lab — computational field notes. Six studies in rules, motion and emergence." width="100%"></p>
 
-<!-- research lab -->
-<p align="center"><img src="./assets/os-rain.svg" alt="— RESEARCH LAB —" width="100%"></p>
-<p align="center"><img src="./assets/lab-lorenz.svg" alt="chaos.app — a Lorenz attractor numerically integrated with RK4 (sigma=10, rho=28, beta=8/3) drawing itself on loop" width="380"><img src="./assets/lab-hologram.svg" alt="hologram.app — a rotating 3D wireframe globe (orthographic projection) with satellite uplink and flowing trade routes" width="380"></p>
+Six experiments in how simple rules produce complex behavior. **Computed in Python. Replayed as SVG.** Open any study for a closer look.
+
+<p align="center"><a href="./assets/lab-study-chaos.svg"><img src="./assets/lab-study-chaos.svg" alt="01 — Order inside chaos. A Lorenz attractor integrated with fourth-order Runge–Kutta, with a highlighted trajectory moving through the two lobes." width="390"></a>
+<a href="./assets/lab-study-life.svg"><img src="./assets/lab-study-life.svg" alt="02 — Small rules, new worlds. A Gosper glider gun evolves through 120 generations of Conway’s Game of Life on a finite grid." width="390"></a></p>
+<p align="center"><a href="./assets/lab-study-globe.svg"><img src="./assets/lab-study-globe.svg" alt="03 — A world in projection. A rotating wireframe sphere, tilted and projected from three dimensions into two." width="390"></a>
+<a href="./assets/lab-study-physics.svg"><img src="./assets/lab-study-physics.svg" alt="04 — Play is a physics problem. A 42-second Breakout replay with ball, brick, wall and paddle collisions computed at 120 simulation steps per second." width="390"></a></p>
+<p align="center"><a href="./assets/lab-study-terrain.svg"><img src="./assets/lab-study-terrain.svg" alt="05 — Build a place from noise. A smoothly changing wireframe landscape generated from periodic value noise and perspective projection." width="390"></a>
+<a href="./assets/lab-study-signals.svg"><img src="./assets/lab-study-signals.svg" alt="06 — Follow the signal. Pulses travel through a 4–6–6–1 connection graph. This is a signal-flow illustration, not a trained neural network." width="390"></a></p>
+
+[Inspect the generator](./tools/gen_research_lab.py) · [Lorenz](./assets/lab-study-chaos.svg) · [Life](./assets/lab-study-life.svg) · [Globe](./assets/lab-study-globe.svg) · [Breakout](./assets/lab-study-physics.svg) · [Terrain](./assets/lab-study-terrain.svg) · [Signals](./assets/lab-study-signals.svg)
 
 <details>
-<summary>🔬 Five more experiments — a neural decision engine, self-playing Breakout, Conway's Game of Life, a procedural terrain flyover and the screensaver</summary>
+<summary><b>Field notes</b> — the methods behind the motion</summary>
 
-<p align="center"><img src="./assets/lab-cortex.svg" alt="cortex.app — a 4×6×6×1 neural decision engine; pulses propagate through the layers until the output neuron fires BUY" width="380"><img src="./assets/lab-breakout.svg" alt="arcade.app — self-playing Breakout: an 85-second physics simulation baked into the SVG; every bounce computed, all 40 bricks cleared" width="380"></p>
-<p align="center"><img src="./assets/lab-life.svg" alt="life.app — Conway's Game of Life: a Gosper glider gun, 140 generations simulated cell-by-cell and baked into the SVG" width="380"><img src="./assets/lab-terrain.svg" alt="terrain.app — procedural wireframe terrain flyover: value-noise ridgelines with perspective easing, somewhere over the Mojave" width="380"></p>
+| Study | What the code does |
+| --- | --- |
+| **01 · Lorenz** | Integrates the Lorenz equations with RK4, using σ = 10, ρ = 28, β = 8/3 and a 0.006 time step. Projects the x/z trajectory. |
+| **02 · Life** | Applies B3/S23 to a Gosper glider gun for 120 generations on a finite 48 × 27 grid. Cells outside the grid are dead. |
+| **03 · Globe** | Rotates spherical coordinates, applies tilt and roll, then projects them orthographically. The orbit is a geometric illustration. |
+| **04 · Breakout** | Steps the simulation at 120 Hz, detects circle/rectangle collisions and moves a paddle with bounded tracking speed. Replays 42 seconds at 20 sampled positions per second. |
+| **05 · Terrain** | Interpolates a deterministic, periodic value-noise field and projects its elevations in perspective. The field loops continuously. |
+| **06 · Signals** | Choreographs pulses through a 4 → 6 → 6 → 1 graph. Illustrates signal propagation; no training, learned weights or inference. |
 
-<p align="center"><img src="./assets/os-screensaver.svg" alt="conway.scr — the 1COMMERCE wordmark spelled in live cells, then dissolving into Conway's Game of Life (B3/S23, 85 generations)" width="100%"></p>
+The new studies include separate static compositions for **reduced-motion** preferences. Each SVG is self-contained: no JavaScript, external fonts or live data. The generator checks Life oscillators, projection bounds, finite Lorenz values, periodic noise and the Breakout arena before writing any artwork.
+
+Regenerate with `python3 tools/gen_research_lab.py`, or run only the checks with `python3 tools/gen_research_lab.py --check`.
+
+</details>
+
+<details>
+<summary><b>Original experiment archive</b> — the first OS windows and cellular screensaver</summary>
+
+The original animated experiments remain intact:
+
+[chaos.app](./assets/lab-lorenz.svg) · [life.app](./assets/lab-life.svg) · [hologram.app](./assets/lab-hologram.svg) · [arcade.app](./assets/lab-breakout.svg) · [terrain.app](./assets/lab-terrain.svg) · [cortex.app](./assets/lab-cortex.svg) · [Matrix divider](./assets/os-rain.svg)
+
+<p align="center"><img src="./assets/os-screensaver.svg" alt="Original cellular screensaver: the 1COMMERCE wordmark becomes a Conway’s Game of Life simulation." width="100%"></p>
 
 </details>
 
@@ -133,13 +159,13 @@ Self-contained SVG experiments in simulation, geometry and animation.
 
 ## Connect
 
-[Email](mailto:skdev@1commerce.online) · [Website](https://1commerce.online) · [Shop](https://1commerce.shop) · [LinkedIn](https://www.linkedin.com/in/1commerce-future/) · [YouTube](https://www.youtube.com/@0nestakk) · [Instagram](https://www.instagram.com/1commerce_llc/)
+[Email](mailto:skdev@1commerce.online) · [Website](https://1commercesolutions.com) · [Shop](https://1commerce.shop) · [LinkedIn](https://www.linkedin.com/in/1commerce-future/) · [YouTube](https://www.youtube.com/@0nestakk) · [Instagram](https://www.instagram.com/1commerce_llc/)
 
 <details>
 <summary>Contact card</summary>
 
 <!-- connect -->
-<p align="center"><a href="mailto:skdev@1commerce.online"><img src="./assets/os-connect.svg" alt="Get in touch: email skdev@1commerce.online, or find 1COMMERCE at 1commerce.online, 1commerce.shop, LinkedIn in/1commerce-future, YouTube @0nestakk and Instagram @1commerce_llc" width="100%"></a></p>
+<p align="center"><a href="mailto:skdev@1commerce.online"><img src="./assets/os-connect.svg" alt="Get in touch: email skdev@1commerce.online, or find 1COMMERCE at 1commercesolutions.com, 1commerce.shop, LinkedIn in/1commerce-future, YouTube @0nestakk and Instagram @1commerce_llc" width="100%"></a></p>
 
 </details>
 
@@ -166,14 +192,14 @@ afterwards. Side projects and experiments live further down the page.
 | **Hosting, deploy & uptime** | Managed hosting, SSL, deploy-on-push, monitoring and backups |
 | **Maintenance & support** | Updates, fixes and content — retainer or hourly |
 
-Pacific Northwest · working with clients anywhere · [1commerce.online](https://1commerce.online)
+Pacific Northwest · working with clients anywhere · [1commercesolutions.com](https://1commercesolutions.com)
 
 - 🔭 Building **1COMMERCE / UnifyOne** and the Cathedral Framework
 - 🌐 Shipping and hosting **client sites, storefronts and web apps**
 - ⚙️ Designing **MCP servers** & agentic tooling
 - 🧰 Full-stack in **TypeScript** (Next.js · Node · Supabase) + **Python**
 - 🤖 Pair-programming with **Claude Code** every day
-- 🌐 [1commerce.online](https://1commerce.online) · 🛍️ [1commerce.shop](https://1commerce.shop)
+- 🌐 [1commercesolutions.com](https://1commercesolutions.com) · 🛍️ [1commerce.shop](https://1commerce.shop)
 - 🌲 Pacific Northwest · Pacific time
 
 ### Client work
@@ -243,7 +269,7 @@ Highlights:
   through illustrative scenes: a control plane, a tool-call log, a force
   simulation, a market chart, a storefront checkout, an arcade game.
 
-Several **Research Lab** windows use computed simulation and geometry:
+The **original archived Research Lab** windows use computed simulation and geometry:
 
 - `chaos.app` — a real **Lorenz attractor**, numerically integrated with
   RK4 (σ=10, ρ=28, β=8/3, ~2,100 sample points) and baked into the path data.

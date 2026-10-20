@@ -157,7 +157,7 @@ def fm_window(user, repos):
       <text x="22" y="{TB+TOOL+52}" font-size="12.5" fill="{CYAN}" font-weight="700">▸ all repos <tspan fill="{DIM}">({n})</tspan></text>
       {''.join(side_langs)}
       <text x="22" y="{H-FOOT-46}" font-size="10.5" fill="{DIM}" letter-spacing="2">LOCATIONS</text>
-      <text x="22" y="{H-FOOT-24}" font-size="12" fill="{MUTED}">☁ 1commerce.online</text>
+      <text x="22" y="{H-FOOT-24}" font-size="12" fill="{MUTED}">☁ 1commercesolutions.com</text>
     </g>
     <!-- column header -->
     <g font-size="10.5" fill="{DIM}" font-family="'SFMono-Regular',Consolas,Menlo,monospace" letter-spacing="1">
