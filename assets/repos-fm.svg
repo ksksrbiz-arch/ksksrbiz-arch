@@ -33,7 +33,7 @@
       <text x="22" y="132" font-size="12.5" fill="#4FD1C5" font-weight="700">▸ all repos <tspan fill="#4C5870">(10)</tspan></text>
       <circle cx="34" cy="150" r="4" fill="#63B3ED"/><text x="48" y="154" font-size="12" fill="#7C8798">typescript</text><text x="186" y="154" font-size="11" fill="#4C5870" text-anchor="end">4</text><circle cx="34" cy="174" r="4" fill="#F6E05E"/><text x="48" y="178" font-size="12" fill="#7C8798">javascript</text><text x="186" y="178" font-size="11" fill="#4C5870" text-anchor="end">2</text><circle cx="34" cy="198" r="4" fill="#63B3ED"/><text x="48" y="202" font-size="12" fill="#7C8798">python</text><text x="186" y="202" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="222" r="4" fill="#FC8181"/><text x="48" y="226" font-size="12" fill="#7C8798">html</text><text x="186" y="226" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="246" r="4" fill="#7C8798"/><text x="48" y="250" font-size="12" fill="#7C8798">astro</text><text x="186" y="250" font-size="11" fill="#4C5870" text-anchor="end">1</text><circle cx="34" cy="270" r="4" fill="#F6AD55"/><text x="48" y="274" font-size="12" fill="#7C8798">svg</text><text x="186" y="274" font-size="11" fill="#4C5870" text-anchor="end">1</text>
       <text x="22" y="582" font-size="10.5" fill="#4C5870" letter-spacing="2">LOCATIONS</text>
-      <text x="22" y="604" font-size="12" fill="#7C8798">☁ 1commerce.online</text>
+      <text x="22" y="604" font-size="12" fill="#7C8798">☁ 1commercesolutions.com</text>
     </g>
     <!-- column header -->
     <g font-size="10.5" fill="#4C5870" font-family="'SFMono-Regular',Consolas,Menlo,monospace" letter-spacing="1">

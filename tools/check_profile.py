@@ -15,6 +15,23 @@ for source in local_sources:
     assert (ROOT / source.split('?')[0]).is_file(), f'Missing image: {source}'
 assert './assets/os-identity-mobile.svg' in local_sources
 assert 'raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets' not in readme
+assert 'https://1commerce.online' not in readme
+assert '[Website](https://1commercesolutions.com)' in readme
+assert 'mailto:skdev@1commerce.online' in readme
+for target in re.findall(r'\]\((\./[^)#]+)', readme):
+    assert (ROOT / target).exists(), f'Missing local link: {target}'
+# Generated replays must have valid SMIL timing and actual static alternatives.
+for asset in (ROOT / 'assets').glob('lab-study-*.svg'):
+    root = ET.parse(asset).getroot()
+    assert any(node.get('class') == 'motion' for node in root.iter())
+    assert any(node.get('class') == 'still' for node in root.iter())
+    assert 'prefers-reduced-motion' in asset.read_text()
+    for node in root.iter():
+        if 'keyTimes' in node.attrib:
+            times = [float(t) for t in node.get('keyTimes').split(';')]
+            assert times[0] == 0 and times[-1] == 1 and times == sorted(times)
+            values = node.get('values', node.get('keyPoints', '')).split(';')
+            assert len(values) == len(times), f'Invalid animation timing: {asset}'
 # Regression: client content is data, including ampersands and quotes.
 sample = {'domain': 'a&b.example', 'sector': 'Windows & trim <contractor>',
           'stack': 'A&B', 'host': '"Cloud" & edge', 'tls': True, 'live': True,
@@ -22,4 +39,4 @@ sample = {'domain': 'a&b.example', 'sector': 'Windows & trim <contractor>',
 root = ET.fromstring(board('A&B "studio"', [sample]))
 assert sample['sector'] in ''.join(root.itertext())
 assert readme.count('<details>') == readme.count('</details>')
-print('PASS: all SVGs parse, README image and picture sources exist, artwork follows the current branch, disclosure blocks balance, generator escapes client data.')
+print('PASS: SVGs, local images/links, marketing URL, research replay timing/static alternatives, disclosures, and client-data escaping.')
