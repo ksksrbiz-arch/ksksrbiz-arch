@@ -18,6 +18,8 @@ assert './assets/project-atlas-mobile.svg' in local_sources
 assert 'raw.githubusercontent.com/ksksrbiz-arch/ksksrbiz-arch/main/assets' not in readme
 assert 'https://1commerce.online' not in readme
 assert '[Website](https://1commercesolutions.com)' in readme
+assert '[Shop](https://shop.1commercesolutions.com)' in readme
+assert 'https://1commerce.shop' not in readme
 assert 'mailto:skdev@1commerce.online' in readme
 for target in re.findall(r'\]\((\./[^)#]+)', readme):
     assert (ROOT / target).exists(), f'Missing local link: {target}'
