@@ -55,7 +55,7 @@
 
       <rect x="18" y="174" width="344" height="24" rx="6" fill="#161C26" fill-opacity=".55"/>
       <circle class="led" cx="32" cy="186" r="3.5" fill="#68D391" style="animation-delay:.7s"/>
-      <text x="46" y="190" fill="#E2E8F0">1commerce.shop</text>
+      <text x="46" y="190" fill="#E2E8F0">shop.1commercesolutions.com</text>
       <text x="352" y="190" fill="#F6AD55" text-anchor="end">318 orders</text>
     </g>
 
