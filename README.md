@@ -173,13 +173,13 @@ The original animated experiments remain intact:
 
 ## Connect
 
-[Email](mailto:skdev@1commerce.online) · [Website](https://1commercesolutions.com) · [Shop](https://1commerce.shop) · [LinkedIn](https://www.linkedin.com/in/1commerce-future/) · [YouTube](https://www.youtube.com/@0nestakk) · [Instagram](https://www.instagram.com/1commerce_llc/)
+[Email](mailto:skdev@1commerce.online) · [Website](https://1commercesolutions.com) · [Shop](https://shop.1commercesolutions.com) · [LinkedIn](https://www.linkedin.com/in/1commerce-future/) · [YouTube](https://www.youtube.com/@0nestakk) · [Instagram](https://www.instagram.com/1commerce_llc/)
 
 <details>
 <summary>Contact card</summary>
 
 <!-- connect -->
-<p align="center"><a href="mailto:skdev@1commerce.online"><img src="./assets/os-connect.svg" alt="Get in touch: email skdev@1commerce.online, or find 1COMMERCE at 1commercesolutions.com, 1commerce.shop, LinkedIn in/1commerce-future, YouTube @0nestakk and Instagram @1commerce_llc" width="100%"></a></p>
+<p align="center"><a href="mailto:skdev@1commerce.online"><img src="./assets/os-connect.svg" alt="Get in touch: email skdev@1commerce.online, or find 1COMMERCE at 1commercesolutions.com, shop.1commercesolutions.com, LinkedIn in/1commerce-future, YouTube @0nestakk and Instagram @1commerce_llc" width="100%"></a></p>
 
 </details>
 
@@ -213,7 +213,7 @@ Pacific Northwest · working with clients anywhere · [1commercesolutions.com](h
 - ⚙️ Designing **MCP servers** & agentic tooling
 - 🧰 Full-stack in **TypeScript** (Next.js · Node · Supabase) + **Python**
 - 🤖 Pair-programming with **Claude Code** every day
-- 🌐 [1commercesolutions.com](https://1commercesolutions.com) · 🛍️ [1commerce.shop](https://1commerce.shop)
+- 🌐 [1commercesolutions.com](https://1commercesolutions.com) · 🛍️ [shop.1commercesolutions.com](https://shop.1commercesolutions.com)
 - 🌲 Pacific Northwest · Pacific time
 
 ### Client work
